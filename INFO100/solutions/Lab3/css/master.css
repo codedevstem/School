@@ -71,18 +71,19 @@ section:last-of-type {
   border-bottom: none;
 }
 
-form input {
+form input[type!="radio"] {
   margin-top: 1em;
   float: left;
 }
+
 form input[name~="search"] {
   margin-right: 1em;
 }
-form input[type~="textfield"],[type~="number"]{
+form input[type~="text"],[type~="number"]{
   width: 50%;
   min-width: 120px;
   display: inline-block;
-  clear: left;
+  clear: both;
 }
 textarea {
   box-sizing: border-box;
@@ -93,10 +94,16 @@ textarea {
 form input.register{
   float: right;
 }
-
-form li {
-  list-style-type: none;
+form input.evalButton {
+  float: left;
 }
+form select.evalSelect {
+  float: left;
+  width: 20%;
+  height: auto;
+  margin-right: 1em;
+}
+
 footer {
   position: fixed;
   bottom: 0px;
@@ -138,6 +145,14 @@ footer a:hover {
   }
   header nav a:last-of-type {
     border-bottom: none
+  }
+  form input.register {
+    float: left;
+    clear: both;
+  }
+  form input[type="radio"] {
+    height: 50%;
+    width: auto;
   }
   footer {
     float: none;
