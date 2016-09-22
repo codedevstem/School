@@ -1,3 +1,44 @@
+body {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 #cssChangeButton {
   float: right;
+}
+
+section {
+  margin-top: 5em;
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+
+#pictureOneSection {
+  float: left;
+  display: block;
+  width: auto;
+  position: relative;
+  width: 50%;
+
+
+
+}
+#pictureTwoSection {
+  float: right;
+  display: block;
+  position: relative;
+  width: auto;
+}
+#pictureThreeSection {
+  float: left;
+  display: inline-block;
+}
+#pictureFourSection {
+  float: right;
+  display: inline-block;
 }
