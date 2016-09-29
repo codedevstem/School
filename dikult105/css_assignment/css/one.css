@@ -2,7 +2,7 @@ body {
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
-  background-image: url("../images/bgSand.png");
+  background-color: #eee;
 }
 
 header {
@@ -22,29 +22,28 @@ section h1 {
   margin-bottom: 5%;
   height: auto;
   clear: both;
-  border-top: 1em solid black;
+  border: 1px solid black;
+  overflow: hidden;
 
 }
 section img {
   border-radius: 10%;
   float: left;
 
+  margin-left: 5%;
   text-align: center;
   clear: left;
   margin-bottom: 2em;
-  width: 100%;
-  max-width: 80%;
+  width: 80%;
+  max-width: 530px;
 }
 p {
-  max-width: 60%;
-  min-width: 60%;
-
   float: right;
   text-align: center;
-
   clear: right;
-  margin-right: 10%;
+  margin-right: 15%;
   margin-bottom: 3em;
+  min-width: 300px;
   font-size: 1.2em;
   font-family: 'Oleo Script', cursive;
 }
@@ -54,5 +53,23 @@ p {
 footer {
   position: fixed;
   bottom: 1px;
+
+}
+
+@media (max-width: 940px) {
+  p {
+    float: none;
+    margin-right: 0%;
+  }
+  section img {
+    float: none;
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1180px) {
+  p {
+    float: left;
+    
+  }
 
 }
