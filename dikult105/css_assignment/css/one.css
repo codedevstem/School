@@ -1,21 +1,58 @@
 body {
   width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #FEE8D6;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-image: url("../images/bgSand.png");
 }
+
 header {
   display: inline;
   width: 100%;
 }
-
-.pictureFrames {
-  max-width: 150%;
-  break-after: always;
-  float: left;
-  clear:both;
+header h1 {
+  text-align: center;
+  margin-left: 3em;
 }
 
+section h1 {
+  text-align: center;
+}
+.pictureFrames {
+  text-align: center;
+  margin-bottom: 5%;
+  height: auto;
+  clear: both;
+  border-top: 1em solid black;
+
+}
+section img {
+  border-radius: 10%;
+  float: left;
+
+  text-align: center;
+  clear: left;
+  margin-bottom: 2em;
+  width: 100%;
+  max-width: 80%;
+}
+p {
+  max-width: 60%;
+  min-width: 60%;
+
+  float: right;
+  text-align: center;
+
+  clear: right;
+  margin-right: 10%;
+  margin-bottom: 3em;
+  font-size: 1.2em;
+  font-family: 'Oleo Script', cursive;
+}
 #cssChangeButton {
   float: right;
+}
+footer {
+  position: fixed;
+  bottom: 1px;
+
 }
