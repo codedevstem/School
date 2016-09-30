@@ -6,32 +6,54 @@ body {
 }
 
 header {
-  display: inline;
   width: 100%;
+  text-align: center;
 }
 header h1 {
   text-align: center;
-  margin-left: 3em;
 }
-
+header button {
+  float: right;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border-bottom-left-radius: 40%;
+  background: #f1c40f;
+  font-size: 1.2em;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  color: black;
+  width: 8em;
+  height: 4em;
+  opacity: 0.4;
+}
+header button:active {
+  background: #e74c3c;
+  color: white;
+}
 section h1 {
   text-align: center;
+  font-family: 'Oleo Script', cursive;
 }
 .pictureFrames {
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 5%;
   height: auto;
   clear: both;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   overflow: hidden;
-
+  max-width: 665px;
+  min-width: 325px;
+  text-align: center;
+}
+.pictureFrames:first-of-type {
+  border-top: 2px solid black;
 }
 section img {
   border-radius: 10%;
-  float: left;
-
-  margin-left: 5%;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   clear: left;
   margin-bottom: 2em;
   width: 80%;
@@ -47,29 +69,31 @@ p {
   font-size: 1.2em;
   font-family: 'Oleo Script', cursive;
 }
-#cssChangeButton {
-  float: right;
-}
 footer {
-  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: static;
   bottom: 1px;
+  width: 100%;
 
 }
 
 @media (max-width: 940px) {
   p {
     float: none;
-    margin-right: 0%;
+    margin-right: 5%;
+    font-size: 1em;
   }
   section img {
     float: none;
-    margin-left: 0%;
+    margin-left: 5%;
   }
 }
 @media (min-width: 1180px) {
   p {
-    float: left;
-    
+
+
   }
 
 }
