@@ -30,12 +30,13 @@ function generateJobs(xml) {
   for (i = 0; i <x.length; i++) {
     jobs += "<section class='result'><h2>" +
     x[i].getElementsByTagName("POSITION")[0].childNodes[0].nodeValue +
-    "<button type='button' onclick='showHide(`job" + (i+1) +"Info`)'>Vis mer info</button></h2>" +
+    " <button type='button' onclick='showHide(`job" + (i+1) +"Info`)'>Vis mer info</button></h2>" +
     "<span id='job" + (i+1) +"Info'>" +
-    "<p>" + x[i].getElementsByTagName("WORKPLACE")[0].childNodes[0].nodeValue +
-    "</p><p>" + x[i].getElementsByTagName("EMPLOYEER")[0].childNodes[0].nodeValue +
-    "</p><p>" + x[i].getElementsByTagName("DATEREGISTERED")[0].childNodes[0].nodeValue +
-    "</p><p>" + x[i].getElementsByTagName("DEADLINE")[0].childNodes[0].nodeValue +
+    "<p>Arbeidsplass: " + x[i].getElementsByTagName("WORKPLACE")[0].childNodes[0].nodeValue +
+    "</p><p>Arbeidsgiver: " + x[i].getElementsByTagName("EMPLOYEER")[0].childNodes[0].nodeValue +
+    "</p><p>Registrert: " + x[i].getElementsByTagName("DATEREGISTERED")[0].childNodes[0].nodeValue +
+    "</p><p>Søknadsfrist: " + x[i].getElementsByTagName("DEADLINE")[0].childNodes[0].nodeValue +
+    "</p><p>Karakter: " + Math.floor((Math.random() * 6) + 1) +
     "</p></span></section>";
   }
   document.getElementById("allJobs").innerHTML = jobs;
