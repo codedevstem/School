@@ -89,11 +89,46 @@ footer {
     float: none;
     margin-left: 5%;
   }
-}
-@media (min-width: 1180px) {
-  p {
-
-
+  header button {
+    font-size: 1em;
+    width: 6em;
+    height: 3em;
   }
 
+}
+@media (max-width: 600px) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    text-align: center;
+  }
+  header button {
+    font-size: 0.8em;
+    width: 6em;
+    height: 3em;
+    opacity: 0.4;
+  }
+}
+@media (max-width: 460px) {
+  body {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  header button {
+    font-size: 0.8em;
+    width: 8em;
+    height: 2em;
+    opacity: 0.4;
+  }
+  .pictureFrames {
+    margin-left: 0;
+    min-width: 200px;
+    text-align: none;
+  }
+  p {
+    margin-right: 0;
+  }
 }
