@@ -1,27 +1,36 @@
 \documentclass{article}
-
+\usepackage[english]{babel}
+\usepackage{url}
 \begin{document}
 	\begin{titlepage}
 		\centering
-		{\scshape\Large Inf142 submission one.\par}
+		{\scshape\Large INF142 submission one.\par}
 		\vspace{3em}
 		{{\scshape\large By Kristian Os \par}}
 		\vfill
 		\large\today
-		
-		
 	\end{titlepage}
 	\tableofcontents
+	\pagebreak
+	
 	\section{DNSSEC}
-	
-		\subsection{Definition}
+		\subsection{Definitions}
+		DNS is an abbreviation for Domain Name System,
+		and DNSSEC for Domain Name System Security Extensions. 
 		
+		\subsection{What does DNS do?}
+		To reach another node on the Internet there must be denoted a number/name as an address. It must be unique so that one address only can point to one node.\\
+		ICANN manages these so that each node has one of these unique addresses. For the same reason as we do not reference our devices based on their MAC-addresses, DNS translates the name version of the address to a number. This makes it much easier to remember the different number versions of the address.
+		
+		\subsection{Security}
+		Within the DNS there are no security measures that can stand to the modern attacks that are getting more complex and malicious by the day. Recently a vulnerabilities in the DNS were found that allowed an attacker to 
 		
 	
-	
-	
+	\clearpage
 	\section{Two-factor authentication}
 		\subsection{Definition}
-	
-	
+	\nocite{*}
+	\bibliography{mainBib}
+	\bibliographystyle{plain}
+
 \end{document}
