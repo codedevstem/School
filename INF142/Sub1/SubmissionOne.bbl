@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{icann}
+Dnssec – what is it and why is it important?
+\newblock \url{https://www.icann.org/resources/pages/dnssec-qaa-2014-01-29-en}.
+\newblock Accessed: 10.10.2016.
+
+\bibitem{ovh}
+How to set up a dedicated server dnssec zone.
+\newblock \url{http://help.ovh.co.uk/dnssec#link2}.
+\newblock accessed: 13.10.2016.
+
+\bibitem{iana}
+Root ksk ceremonies.
+\newblock \url{https://www.iana.org/dnssec/ceremonies}.
+\newblock accessed: 13.10.2016.
+
+\end{thebibliography}
