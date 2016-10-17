@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.12)  17 OCT 2016 20:33
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.10)  17 OCT 2016 13:21
+>>>>>>> 642f3583af55bd8888fad59b568b256e2502076a
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -219,7 +223,11 @@ c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive
 /2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt10.pfb>
+<<<<<<< HEAD
 Output written on SubmissionOne.pdf (6 pages, 184137 bytes).
+=======
+Output written on SubmissionOne.pdf (5 pages, 104144 bytes).
+>>>>>>> 642f3583af55bd8888fad59b568b256e2502076a
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream

@@ -1,26 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca0fa010-ce4e-46b1-8780-6b23ab42cd8d" name="Default" comment="Finalized sem2 in INF100 and added content to sub1 in INF143&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../INF142/Sub1/uibLogo.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../INF142/Sub1/uibLogo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.bbl" />
+    <list default="true" id="ca0fa010-ce4e-46b1-8780-6b23ab42cd8d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/kos003-semoppg2/MagiskKvadrat.class" afterPath="$PROJECT_DIR$/out/production/kos003-semoppg2/MagiskKvadrat.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/kos003-semoppg2/YatzyEnkel.class" afterPath="$PROJECT_DIR$/out/production/kos003-semoppg2/YatzyEnkel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/kos003-semoppg2/YatzyOmkast.class" afterPath="$PROJECT_DIR$/out/production/kos003-semoppg2/YatzyOmkast.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/kos003-semoppg2/YatzyToSpiller.class" afterPath="$PROJECT_DIR$/out/production/kos003-semoppg2/YatzyToSpiller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.pdf" afterPath="$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.synctex.gz" afterPath="$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.synctex.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MagiskKvadrat.java" afterPath="$PROJECT_DIR$/src/MagiskKvadrat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/YatzyEnkel.java" afterPath="$PROJECT_DIR$/src/YatzyEnkel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/YatzyOmkast.java" afterPath="$PROJECT_DIR$/src/YatzyOmkast.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/YatzyToSpiller.java" afterPath="$PROJECT_DIR$/src/YatzyToSpiller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../INF142/Sub1/MainBib.bib" afterPath="$PROJECT_DIR$/../../INF142/Sub1/MainBib.bib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.aux" afterPath="$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.aux" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.blg" afterPath="$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.blg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.log" afterPath="$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.tex" afterPath="$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.tex" />
     </list>
     <ignored path="kos003-semoppg2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,18 +30,18 @@
       <file leaf-file-name="YatzyEnkel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/YatzyEnkel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="544">
               <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YatzyOmkast.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="YatzyOmkast.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/YatzyOmkast.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+            <state relative-caret-position="731">
+              <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="60" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,7 +52,7 @@
       <file leaf-file-name="YatzyToSpiller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/YatzyToSpiller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-952">
+            <state relative-caret-position="357">
               <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -81,18 +64,8 @@
       <file leaf-file-name="MagiskKvadrat.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MagiskKvadrat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
+            <state relative-caret-position="849">
               <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubmissionOne.log" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,9 +93,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/erMagiskKvadrat.java" />
         <option value="$PROJECT_DIR$/src/YatzyEnkel.java" />
-        <option value="$PROJECT_DIR$/src/YatzyOmkast.java" />
         <option value="$PROJECT_DIR$/src/YatzyToSpiller.java" />
         <option value="$PROJECT_DIR$/src/MagiskKvadrat.java" />
+        <option value="$PROJECT_DIR$/src/Person.java" />
+        <option value="$PROJECT_DIR$/src/YatzyOmkast.java" />
       </list>
     </option>
   </component>
@@ -162,7 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -197,7 +171,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -731,12 +705,21 @@
       <updated>1475765542180</updated>
       <workItem from="1475765545370" duration="5251000" />
       <workItem from="1475820244867" duration="3357000" />
-      <workItem from="1476376640668" duration="7160000" />
+      <workItem from="1476376640668" duration="7284000" />
+      <workItem from="1476437449900" duration="622000" />
     </task>
+    <task id="LOCAL-00001" summary="Finalized sem2 in INF100 and added content to sub1 in INF143&#10;">
+      <created>1476384618197</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1476384618197</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15768000" />
+    <option name="totallyTimeSpent" value="16514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
@@ -744,14 +727,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="93" y="100" width="774" height="847" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35339168" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35339168" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -766,6 +747,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="93" y="100" width="774" height="847" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -794,6 +777,42 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/YatzyEnkel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/YatzyOmkast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/YatzyToSpiller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MagiskKvadrat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/YatzyEnkel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -850,25 +869,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/YatzyEnkel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="544">
           <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/YatzyOmkast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/YatzyToSpiller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952">
+        <state relative-caret-position="357">
           <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -876,19 +885,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MagiskKvadrat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
+        <state relative-caret-position="849">
           <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../INF142/Sub1/SubmissionOne.log">
+    <entry file="file://$PROJECT_DIR$/src/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="24" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/YatzyOmkast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="60" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
