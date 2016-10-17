@@ -1,5 +1,15 @@
 \begin{thebibliography}{1}
 
+\bibitem{trustAnchor}
+Automated updates of dns security (dnssec) trust anchors.
+\newblock \url{https://tools.ietf.org/html/rfc5011}.
+\newblock accessed: 17.10.2016.
+
+\bibitem{IcannDnssec}
+Dnssec.
+\newblock \url{https://www.icann.org/resources/pages/dnssec-2012-02-25-en}.
+\newblock accessed: 17.10.2016.
+
 \bibitem{icann}
 Dnssec – what is it and why is it important?
 \newblock \url{https://www.icann.org/resources/pages/dnssec-qaa-2014-01-29-en}.
@@ -14,5 +24,14 @@ How to set up a dedicated server dnssec zone.
 Root ksk ceremonies.
 \newblock \url{https://www.iana.org/dnssec/ceremonies}.
 \newblock accessed: 13.10.2016.
+
+\bibitem{NLnetLabs}
+A short history on dnssec.
+\newblock \url{https://www.nlnetlabs.nl/projects/dnssec/history.html}.
+\newblock accessed: 17.10.2016.
+
+\bibitem{bellovin}
+Steven~M. Bellovin.
+\newblock Using the domain name system for system break-ins.
 
 \end{thebibliography}
