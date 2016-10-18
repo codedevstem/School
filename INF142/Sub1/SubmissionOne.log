@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.12)  17 OCT 2016 20:33
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.10)  17 OCT 2016 13:21
->>>>>>> 642f3583af55bd8888fad59b568b256e2502076a
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.10)  18 OCT 2016 14:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -183,13 +179,23 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
 
-<dnsVsDnssec.png, id=10, 511.9125pt x 213.79875pt>
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
+
+ []
+
+<dnsStruct.png, id=10, 322.20375pt x 278.54062pt>
+File: dnsStruct.png Graphic file (type png)
+ <use dnsStruct.png>
+Package pdftex.def Info: dnsStruct.png used on input line 35.
+(pdftex.def)             Requested size: 289.98068pt x 250.68423pt.
+
+<dnsVsDnssec.png, id=12, 511.9125pt x 213.79875pt>
 File: dnsVsDnssec.png Graphic file (type png)
  <use dnsVsDnssec.png>
-Package pdftex.def Info: dnsVsDnssec.png used on input line 41.
+Package pdftex.def Info: dnsVsDnssec.png used on input line 48.
 (pdftex.def)             Requested size: 345.0pt x 144.08934pt.
 
-[1] [2 <./dnsVsDnssec.png>] [3] [4
+[1] [2 <./dnsStruct.png>] [3 <./dnsVsDnssec.png>] [4
 
 ] (./SubmissionOne.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -209,10 +215,10 @@ Missing character: There is no “ in font cmr10!
 
 ] (./SubmissionOne.aux) ) 
 Here is how much of TeX's memory you used:
- 2098 strings out of 493013
- 28819 string characters out of 6136992
- 94657 words of memory out of 5000000
- 5630 multiletter control sequences out of 15000+600000
+ 2103 strings out of 493013
+ 28903 string characters out of 6136992
+ 95657 words of memory out of 5000000
+ 5634 multiletter control sequences out of 15000+600000
  6229 words of font info for 23 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,6n,25p,447b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -223,14 +229,10 @@ c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive
 /2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt10.pfb>
-<<<<<<< HEAD
-Output written on SubmissionOne.pdf (6 pages, 184137 bytes).
-=======
-Output written on SubmissionOne.pdf (5 pages, 104144 bytes).
->>>>>>> 642f3583af55bd8888fad59b568b256e2502076a
+Output written on SubmissionOne.pdf (6 pages, 208560 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

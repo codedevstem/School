@@ -18,7 +18,7 @@
 	\section{DNSSEC}
 		\subsection{Definitions}
         \begin{itemize}
-            \item DNS - is an abbreviation for Domain Name System
+            \item DNS - Domain Name System
             \item DNSSEC - for Domain Name System Security Extensions.
             \item Root zone - This is the first node, DNS looks in the DNS hierarchy
             \item ZSK - Composed of a public key and a private key. Used to sign the fields in the area\cite{ovh}
@@ -27,8 +27,16 @@
             \item gTLD - Generic top-level domain.
         \end{itemize}
 		\subsection{What does DNS do?}
-		To reach another node on the Internet there must be denoted a number/name as an address. It must be unique so that one address only can point to one node.\\
-		ICANN manages these so that each node has one of these unique addresses. For the same reason as we do not reference our devices based on their MAC-addresses, DNS translates the name version of the address to a number. This makes it much easier to remember the different number versions of the address.
+		To reach another node on the Internet there must be denoted a number/name as an address. It must be unique so that one address only can point to one node.
+        This system is made out of many layers where each super-zone controls many sub-zones. \\
+        
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale=0.9]{dnsStruct}
+            \caption{How the DNS layer is built up}
+        \end{figure}
+        \
+		There are many companies that manages these root DNS zone so that each node has one of these unique addresses. For the same reason as we do not reference our devices based on their MAC-addresses, DNS translates the name version of the address to a number. This makes it much easier to remember the different number versions of the address.
 		\subsection{Security}
 		Within the DNS there are no security measures that can stand to the modern attacks that are getting more complex and malicious by the day. Recently a vulnerabilities in the DNS were found that allowed an attacker to redirect a DNS lookup to retrieve a false IP-address. This way the user gets a fake version of the intended site and the attacker can steal information or manipulate messages/transactions for their own gain.
 	        \subsubsection{vulnerability? (Before DNSSEC)}
@@ -53,6 +61,7 @@
 		\subsection{In debt development of the DNSSEC}
 		Discussing from the point Sweden implemented DNSSEC into their ccTLD to date the technology has gone through a lot. In 2007 Automated updates of DNS security Trust Anchors was implemented.\cite{trustAnchor} 
 		Before this it the DNSSEC signatures normally came from the operating system or other trusted sources. Now it was possible to\cite{icann}
+        \subsection{Where are we know}
 
     
 	\clearpage
