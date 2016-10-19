@@ -5,51 +5,56 @@ The style file: plain.bst
 Database file #1: mainBib.bib
 Warning--entry type for "bellovin" isn't style-file defined
 --line 1 of file mainBib.bib
+Warning--entry type for "microsoftDnsModel" isn't style-file defined
+--line 103 of file mainBib.bib
 Warning--to sort, need author or key in ovh
+Warning--to sort, need author or key in microsoftDnsModel
 Warning--to sort, need author or key in icann
-Warning--to sort, need author or key in IcannDnssec
+Warning--to sort, need author or key in icannDnssec
 Warning--to sort, need author or key in iana
 Warning--to sort, need author or key in NLnetLabs
 Warning--to sort, need author or key in trustAnchor
-You've used 7 entries,
+Warning--to sort, need author or key in verisign
+Warning--to sort, need author or key in icannStats
+You've used 10 entries,
             2118 wiz_defined-function locations,
-            524 strings with 4727 characters,
-and the built_in function-call counts, 1223 in all, are:
-= -- 118
-> -- 13
+            537 strings with 5178 characters,
+and the built_in function-call counts, 1729 in all, are:
+= -- 169
+> -- 16
 < -- 0
-+ -- 10
++ -- 13
 - -- 2
-* -- 37
-:= -- 154
-add.period$ -- 20
-call.type$ -- 7
-change.case$ -- 22
+* -- 52
+:= -- 213
+add.period$ -- 29
+call.type$ -- 10
+change.case$ -- 31
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 49
-empty$ -- 161
+cite$ -- 19
+duplicate$ -- 70
+empty$ -- 230
 format.name$ -- 2
-if$ -- 295
+if$ -- 421
 int.to.chr$ -- 0
-int.to.str$ -- 7
+int.to.str$ -- 10
 missing$ -- 0
-newline$ -- 37
+newline$ -- 52
 num.names$ -- 2
-pop$ -- 68
+pop$ -- 98
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 21
 quote$ -- 0
-skip$ -- 40
+skip$ -- 54
 stack$ -- 0
-substring$ -- 36
-swap$ -- 7
+substring$ -- 51
+swap$ -- 10
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 28
-warning$ -- 6
+type$ -- 40
+warning$ -- 9
 while$ -- 2
-width$ -- 8
-write$ -- 63
-(There were 7 warnings)
+width$ -- 12
+write$ -- 90
+(There were 11 warnings)

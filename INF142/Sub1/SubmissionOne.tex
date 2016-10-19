@@ -27,31 +27,30 @@
             \item gTLD - Generic top-level domain.
         \end{itemize}
 		\subsection{What does DNS do?}
-		To reach another node on the Internet there must be denoted a number/name as an address. It must be unique so that one address only can point to one node.
+		For one node to reach another node on the Internet there must be denoted a number/name as an address. It must be unique so that one address only can point to one node. It might be looked at as the phone book of the Internet, where a telephone number are the ip-address and name are the domain name.
         This system is made out of many layers where each super-zone controls many sub-zones. \\
-        
         \begin{figure}[htbp]
             \centering
-            \includegraphics[scale=0.9]{dnsStruct}
-            \caption{How the DNS layer is built up}
-        \end{figure}
-        \
+            \includegraphics[scale=0.6]{dnsStruct}
+            \caption{How the DNS zone layer is built up\cite{microsoftDnsModel}}
+        \end{figure}\\
 		There are many companies that manages these root DNS zone so that each node has one of these unique addresses. For the same reason as we do not reference our devices based on their MAC-addresses, DNS translates the name version of the address to a number. This makes it much easier to remember the different number versions of the address.
 		\subsection{Security}
-		Within the DNS there are no security measures that can stand to the modern attacks that are getting more complex and malicious by the day. Recently a vulnerabilities in the DNS were found that allowed an attacker to redirect a DNS lookup to retrieve a false IP-address. This way the user gets a fake version of the intended site and the attacker can steal information or manipulate messages/transactions for their own gain.
+		Within the DNS there are no security measures that can stand to the modern attacks that are getting more complex and malicious by the day. Recently a vulnerabilities in the DNS were found that allowed an attacker to redirect a DNS lookup to retrieve a false IP-address. This way the user gets a fake version of the intended site and the attacker can steal information or manipulate messages/transactions for their own gain. However for this to work all domains that is registered must also implement DNSSEC on their own servers. This in turn requires the parent zones and TLD in question to have implemented DNSSEC as well.
 	        \subsubsection{vulnerability? (Before DNSSEC)}
 	        One DNS variant is DNS cache poisoning. For this exploit to work the attacker must get control of a DNS server and a DNS lookup must go through the poisoned DNS server. The attacker points an address like "www.uib.no" to a malicious IP-address. This way when a user types in "www.uib.no" he gets redirected to the malicious version of the site that the attacker owns.\cite{bellovin}
 	        \subsubsection{After the implementation of DNSSEC}
 	        With the implementation of DNSSEC organisations like UIB, Google and even the big tech leaders that controls the big nodes can sign the DNS records using public-key cryptography\cite{icann}
 	        Now that each DNS server is signed with one of these keys the browsers know when a server is compromised and can select another one that is trusted.\\
-	        \begin{figure}[ht]
+	        \begin{figure}[htbp]
 	        	\centering
 	        	\includegraphics[width=1.0\textwidth]{dnsVsDnssec}
-	        	\caption{Demonstrating DNSSEC on a theoretical plane.\cite{IcannDnssec}}
-	        	\label{normal_case}
+	        	\caption{Demonstrating DNSSEC on a theoretical plane.\cite{icannDnssec}}
 	        \end{figure}
 				\paragraph{Keys - KSK and ZSK}
 				KSK is a long term key and ZSK is a short term key. For the root zone these keys are generated at different intervals. These events are called "Root KSK Ceremonies" and here the KSK is used to sign a set of ZSKs that will be used to sign the DNS root zone for three months until the next new ceremony. \cite{iana}
+		\subsection{How does this help the average user}
+		For every TLD/domain/zone that implements DNSSEC the Internet becomes a little more safe to use. However there are many people who use the Internet today that may not have the expertise to show enough caution to defend against DNS attacks. There are also people that does not have the knowledge to recognise the many dangers of the Internet. These people will only have to hope that the site they use as a bank or their favourite shopping site does implement DNSSEC before their information gets redirected. 
 		\subsection{A brief history of DNS and DNSSEC}  
 		DNS was not implemented until a computer scientist Paul Mockapetris started the first DNS server in 1983. Before then everyone had to remember the relative IP-addresses which of course was very inconvenient and hard to do if you needed to keep track of many sites.
 		It became an internet standard in 1986 and eventually caught on in the year 1988.
@@ -60,13 +59,20 @@
 		The first zone to enable DNSSEC was Sweden, making .SE the first ccTLD to enable DNSSEC in march 2005.\cite{NLnetLabs}
 		\subsection{In debt development of the DNSSEC}
 		Discussing from the point Sweden implemented DNSSEC into their ccTLD to date the technology has gone through a lot. In 2007 Automated updates of DNS security Trust Anchors was implemented.\cite{trustAnchor} 
-		Before this it the DNSSEC signatures normally came from the operating system or other trusted sources. Now it was possible to\cite{icann}
-        \subsection{Where are we know}
-
-    
-	\clearpage
+		Before this it the DNSSEC signatures normally came from the operating system or other trusted sources. Now it was possible to update the DNSSEC signature at intervals so that the even cracking a key made it useless after a new key was generated, implemented and updated.\cite{icann} It was only in 2010 the first generic TLD was first signed. This was the .org domain and the root zone was signed later that year. Signing a TLD gave a massive boost in the promotion of DNSSEC deployment which is essential for the system to work. Also this is when the first KSK key ceremony ever. The next gTLD that implemented support for DNSSEC was .com only march the next year and in 2012 the number of signed TLDs was over 90.\cite{verisign}\\ At the start of 2015 there where 789 TLDs in the root zone in total, 615 had signed and 604 have trust anchors published as records in the root zone.\cite{icannStats} This is a tremendous growth when we look back to the early days of DNSSEC and how few TLDs that had signed only in 2010.
+        \subsection{Where are we now}
+		DNSSEC has only grown these past years and will hopefully grow even more. with a continue to grow even more in the future with a hope that all TLDs implement DNSSEC and to have trust anchors in the root zone. The current numbers give that 1502 are in the root zone in total, 1354 signed and 1342 have trust anchors in the root zone.\cite{icannStats}
+		\subsection{Conclusion}
+		While the implementation of DNSSEC does increase the authentication and integrity of DNS responses, it also takes a far bit more to actually implement it for each domain. As it stands when there are so many TLDs that have signed and implemented trust anchors in the root zone, we can only look forward and hope that all TLDs implement DNSSEC, so all domains have the choice at least to implement DNSSEC into their server.
+	    There will always be dangers on the Internet, but we should do what we can not to make it easy for those who want to harm the Internet
 	\section{Two-factor authentication}
-		\subsection{Definition}
+	There are many different ways of authenticating a person. Here it will be discussed some methods of generating a one-time password(OTP) where the user of a system must provide a OTP and in addition to this give a static password(SP). This is known as two-factor authentication. 
+		\subsection{Hardware OTP authentication}
+		This is a method of generating a OTP, where the user is asked to identify itself. Then the user provides his SP and then by generating a OTP the user uses a predefined hardware device to generate a number/string and types that into the machine. Only after this the user must present his SP. 
+		This gives great security since a potential attacker must know the targets login-id, have his hardware device and know his static password. Some sites that involves currency or other trade-able goods has started requiring a new OTP on an action that involves transfer of the currency/goods. It is also very easy to integrate as the use of this hardware is apparent for most users. Some negative sides of hardware authentication is the cost of making the devices, it may be inconvenient for the user to carry around a separate device to get access. Overall it is a good choice for a site that wants strong security and low upkeep costs.
+		\subsection{Call Authentication}
+		This method requires the user to register by giving the phone number to the site. When a user		
+		
         
     \clearpage
 	\nocite{*}

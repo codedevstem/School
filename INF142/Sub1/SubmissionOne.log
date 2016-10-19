@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.10)  18 OCT 2016 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.12)  19 OCT 2016 21:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -179,31 +179,30 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
-
- []
-
 <dnsStruct.png, id=10, 322.20375pt x 278.54062pt>
 File: dnsStruct.png Graphic file (type png)
  <use dnsStruct.png>
-Package pdftex.def Info: dnsStruct.png used on input line 35.
-(pdftex.def)             Requested size: 289.98068pt x 250.68423pt.
-
-<dnsVsDnssec.png, id=12, 511.9125pt x 213.79875pt>
+Package pdftex.def Info: dnsStruct.png used on input line 34.
+(pdftex.def)             Requested size: 193.32373pt x 167.12566pt.
+ [1 <./dnsStruct.png>] <dnsVsDnssec.png, id=19, 511.9125pt x 213.79875pt>
 File: dnsVsDnssec.png Graphic file (type png)
- <use dnsVsDnssec.png>
-Package pdftex.def Info: dnsVsDnssec.png used on input line 48.
+
+<use dnsVsDnssec.png>
+Package pdftex.def Info: dnsVsDnssec.png used on input line 47.
 (pdftex.def)             Requested size: 345.0pt x 144.08934pt.
-
-[1] [2 <./dnsStruct.png>] [3 <./dnsVsDnssec.png>] [4
-
-] (./SubmissionOne.bbl
+ [2] [3 <./dnsVsDnssec.png>] [4] [5] (./SubmissionOne.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--12
+Underfull \hbox (badness 1314) in paragraph at lines 9--13
+\OT1/cmr/m/n/10 be-gin-ning.  $\OT1/cmtt/m/n/10 http : / / www . verisign . com
+ / en _ US / domain-[]names / dnssec /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--30
 []\OT1/cmr/m/n/10 Dnssec.  $\OT1/cmtt/m/n/10 https : / / www . icann . org / re
 sources / pages /
  []
@@ -211,17 +210,23 @@ sources / pages /
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-) [5
+
+Underfull \hbox (badness 1221) in paragraph at lines 47--50
+[]\OT1/cmr/m/n/10 A short his-tory on dnssec.  $\OT1/cmtt/m/n/10 https : / / ww
+w . nlnetlabs . nl / projects /
+ []
+
+) [6
 
 ] (./SubmissionOne.aux) ) 
 Here is how much of TeX's memory you used:
- 2103 strings out of 493013
- 28903 string characters out of 6136992
- 95657 words of memory out of 5000000
- 5634 multiletter control sequences out of 15000+600000
+ 2105 strings out of 493013
+ 28931 string characters out of 6136992
+ 94662 words of memory out of 5000000
+ 5636 multiletter control sequences out of 15000+600000
  6229 words of font info for 23 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,6n,25p,447b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,7n,25p,1057b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2016/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmbx10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
 12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
@@ -229,10 +234,10 @@ c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive
 /2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on SubmissionOne.pdf (6 pages, 208560 bytes).
+Output written on SubmissionOne.pdf (7 pages, 214829 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
