@@ -66,12 +66,11 @@
 		While the implementation of DNSSEC does increase the authentication and integrity of DNS responses, it also takes a far bit more to actually implement it for each domain. As it stands when there are so many TLDs that have signed and implemented trust anchors in the root zone, we can only look forward and hope that all TLDs implement DNSSEC, so all domains have the choice at least to implement DNSSEC into their server.
 	    There will always be dangers on the Internet, but we should do what we can not to make it easy for those who want to harm the Internet
 	\section{Two-factor authentication}
-	There are many different ways of authenticating a person. Here it will be discussed some methods of generating a one-time password(OTP) where the user of a system must provide a OTP and in addition to this give a static password(SP). This is known as two-factor authentication. 
-		\subsection{Hardware OTP authentication}
-		This is a method of generating a OTP, where the user is asked to identify itself. Then the user provides his SP and then by generating a OTP the user uses a predefined hardware device to generate a number/string and types that into the machine. Only after this the user must present his SP. 
-		This gives great security since a potential attacker must know the targets login-id, have his hardware device and know his static password. Some sites that involves currency or other trade-able goods has started requiring a new OTP on an action that involves transfer of the currency/goods. It is also very easy to integrate as the use of this hardware is apparent for most users. Some negative sides of hardware authentication is the cost of making the devices, it may be inconvenient for the user to carry around a separate device to get access. Overall it is a good choice for a site that wants strong security and low upkeep costs.
-		\subsection{Call Authentication}
-		This method requires the user to register by giving the phone number to the site. When a user		
+	There are many different ways of generating a one-time password(OTP). Here it will be discussed some methods of generating a OTP and how they are used. For a password to be considered a OTP it must only be valid for one login session or transaction. 
+		\subsection{Security token}
+        One method of generating and distributing such password is to give each user a personal token that, when used, gives a one time password. In the device an precise clock that is synchronised with the clock on the authentication server. With these OTP time is a very big factor in the generation of passwords. The password algorithm is given the current time rather than, or with the previous password or a key. These OTP is only valid for a specific length after it has been generated.
+        
+			
 		
         
     \clearpage
