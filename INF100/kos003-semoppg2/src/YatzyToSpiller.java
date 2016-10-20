@@ -21,7 +21,6 @@ public class YatzyToSpiller {
         }
         // Create main game-loop
         while (numberOfRolls < 5) {
-            // Loop to control which player that has the turn
             for (int j = 0; j < players.length; j++) {
                 System.out.println(players[j] + " must throw the dices:");
                 diceValues = new int[5];

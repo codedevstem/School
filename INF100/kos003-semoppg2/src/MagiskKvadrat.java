@@ -25,12 +25,25 @@ public class MagiskKvadrat {
     }
 
     /**
-     *
+     * The number is 34 so each of the numbers must be there.
      * @param square The square to be checked.
      * @return True/False based on if it is a magical square.
      */
     private static boolean erMagiskKvadrat(int[][] square) {
-        int magicSum = 0, sum;
+        int magicSum = 34, sum;
+        boolean hasNumber;
+        //Check if all number between 1-16 is there.
+        for (int i = 1; i <= 16; i++) {
+            hasNumber = false;
+            for (int j = 0; j < SIZE_OF_SQUARE; j++) {
+                for (int k = 0; k < SIZE_OF_SQUARE; k++) {
+                    if (i == square[j][k]) {
+                        hasNumber = true;
+                    }
+                }
+            }
+            if (!hasNumber) return false;
+        }
         // Outer loop
         for (int i = 0; i < SIZE_OF_SQUARE; i++) {
             sum = 0;
@@ -39,10 +52,8 @@ public class MagiskKvadrat {
                 // Sum up the current row
                 sum += square[j][i];
             }
-            // Set magicSum
-            if (magicSum == 0) magicSum = sum;
             // Check if sum from current col equals magicSum
-            else if (magicSum != sum) return false;
+            if (magicSum != sum) return false;
             sum = 0;
             //Inner loop
             for (int j = 0; j < SIZE_OF_SQUARE; j++) {
