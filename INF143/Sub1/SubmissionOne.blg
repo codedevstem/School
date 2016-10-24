@@ -1,0 +1,67 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: SubmissionOne.aux
+The style file: plain.bst
+Database file #1: mainBib.bib
+Warning--entry type for "bellovin" isn't style-file defined
+--line 1 of file mainBib.bib
+Warning--entry type for "OTP-system" isn't style-file defined
+--line 13 of file mainBib.bib
+I was expecting a `,' or a `}'---line 17 of file mainBib.bib
+ :     
+ :     title = {A One-Time Password System},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "microsoftDnsModel" isn't style-file defined
+--line 115 of file mainBib.bib
+Warning--to sort, need author or key in ovh
+Warning--to sort, need author or key in microsoftDnsModel
+Warning--to sort, need author or key in icann
+Warning--to sort, need author or key in icannDnssec
+Warning--to sort, need author or key in iana
+Warning--to sort, need author or key in NLnetLabs
+Warning--to sort, need author or key in trustAnchor
+Warning--to sort, need author or key in verisign
+Warning--to sort, need author or key in icannStats
+You've used 11 entries,
+            2118 wiz_defined-function locations,
+            540 strings with 5226 characters,
+and the built_in function-call counts, 1910 in all, are:
+= -- 182
+> -- 23
+< -- 0
++ -- 16
+- -- 4
+* -- 57
+:= -- 241
+add.period$ -- 30
+call.type$ -- 11
+change.case$ -- 34
+chr.to.int$ -- 0
+cite$ -- 20
+duplicate$ -- 77
+empty$ -- 252
+format.name$ -- 4
+if$ -- 460
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 0
+newline$ -- 55
+num.names$ -- 4
+pop$ -- 106
+preamble$ -- 1
+purify$ -- 24
+quote$ -- 0
+skip$ -- 66
+stack$ -- 0
+substring$ -- 56
+swap$ -- 11
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 44
+warning$ -- 9
+while$ -- 4
+width$ -- 13
+write$ -- 95
+(There was 1 error message)

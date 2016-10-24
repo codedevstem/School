@@ -1,0 +1,58 @@
+\begin{thebibliography}{10}
+
+\bibitem{trustAnchor}
+Automated updates of dns security (dnssec) trust anchors.
+\newblock \url{https://tools.ietf.org/html/rfc5011}.
+\newblock accessed: 17.10.2016.
+
+\bibitem{verisign}
+Developing domain name system security extension (dnssec) since the beginning.
+\newblock
+  \url{http://www.verisign.com/en_US/domain-names/dnssec/index.xhtml?inc=www.verisigninc.com}.
+\newblock accessed: 18.10.2016.
+
+\bibitem{microsoftDnsModel}
+Dns architecture.
+\newblock
+  \url{https://technet.microsoft.com/en-us/library/dd197427(v=ws.10).aspx}.
+\newblock accessed: 19.10.2016.
+
+\bibitem{icannStats}
+Dns tld dnssec reports.
+\newblock
+  \url{http://stats.research.icann.org/dns/tld_report/archive/index.html}.
+\newblock accessed: 19.10.2016.
+
+\bibitem{icannDnssec}
+Dnssec.
+\newblock \url{https://www.icann.org/resources/pages/dnssec-2012-02-25-en}.
+\newblock accessed: 17.10.2016.
+
+\bibitem{icann}
+Dnssec – what is it and why is it important?
+\newblock \url{https://www.icann.org/resources/pages/dnssec-qaa-2014-01-29-en}.
+\newblock Accessed: 10.10.2016.
+
+\bibitem{ovh}
+How to set up a dedicated server dnssec zone.
+\newblock \url{http://help.ovh.co.uk/dnssec#link2}.
+\newblock accessed: 13.10.2016.
+
+\bibitem{iana}
+Root ksk ceremonies.
+\newblock \url{https://www.iana.org/dnssec/ceremonies}.
+\newblock accessed: 13.10.2016.
+
+\bibitem{NLnetLabs}
+A short history on dnssec.
+\newblock \url{https://www.nlnetlabs.nl/projects/dnssec/history.html}.
+\newblock accessed: 17.10.2016.
+
+\bibitem{bellovin}
+Steven~M. Bellovin.
+\newblock Using the domain name system for system break-ins.
+
+\bibitem{OTP-system}
+Metz... N.~Haller, Bellcore.
+
+\end{thebibliography}
