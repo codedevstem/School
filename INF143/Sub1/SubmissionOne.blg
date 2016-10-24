@@ -5,8 +5,15 @@ The style file: plain.bst
 Database file #1: mainBib.bib
 Warning--entry type for "bellovin" isn't style-file defined
 --line 1 of file mainBib.bib
+Warning--entry type for "OTP-system" isn't style-file defined
+--line 13 of file mainBib.bib
+I was expecting a `,' or a `}'---line 17 of file mainBib.bib
+ :     
+ :     title = {A One-Time Password System},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--entry type for "microsoftDnsModel" isn't style-file defined
---line 103 of file mainBib.bib
+--line 115 of file mainBib.bib
 Warning--to sort, need author or key in ovh
 Warning--to sort, need author or key in microsoftDnsModel
 Warning--to sort, need author or key in icann
@@ -16,45 +23,45 @@ Warning--to sort, need author or key in NLnetLabs
 Warning--to sort, need author or key in trustAnchor
 Warning--to sort, need author or key in verisign
 Warning--to sort, need author or key in icannStats
-You've used 10 entries,
+You've used 11 entries,
             2118 wiz_defined-function locations,
-            537 strings with 5178 characters,
-and the built_in function-call counts, 1729 in all, are:
-= -- 169
-> -- 16
+            540 strings with 5226 characters,
+and the built_in function-call counts, 1910 in all, are:
+= -- 182
+> -- 23
 < -- 0
-+ -- 13
-- -- 2
-* -- 52
-:= -- 213
-add.period$ -- 29
-call.type$ -- 10
-change.case$ -- 31
++ -- 16
+- -- 4
+* -- 57
+:= -- 241
+add.period$ -- 30
+call.type$ -- 11
+change.case$ -- 34
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 70
-empty$ -- 230
-format.name$ -- 2
-if$ -- 421
+cite$ -- 20
+duplicate$ -- 77
+empty$ -- 252
+format.name$ -- 4
+if$ -- 460
 int.to.chr$ -- 0
-int.to.str$ -- 10
+int.to.str$ -- 11
 missing$ -- 0
-newline$ -- 52
-num.names$ -- 2
-pop$ -- 98
+newline$ -- 55
+num.names$ -- 4
+pop$ -- 106
 preamble$ -- 1
-purify$ -- 21
+purify$ -- 24
 quote$ -- 0
-skip$ -- 54
+skip$ -- 66
 stack$ -- 0
-substring$ -- 51
-swap$ -- 10
+substring$ -- 56
+swap$ -- 11
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 40
+type$ -- 44
 warning$ -- 9
-while$ -- 2
-width$ -- 12
-write$ -- 90
-(There were 11 warnings)
+while$ -- 4
+width$ -- 13
+write$ -- 95
+(There was 1 error message)

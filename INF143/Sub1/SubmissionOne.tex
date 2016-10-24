@@ -24,7 +24,7 @@
             \item ZSK - Composed of a public key and a private key. Used to sign the fields in the area\cite{ovh}
             \item KSK - Composed of a public key and a private key. Used to sign the ZSK keys.\cite{ovh}
 			\item ccTLD - Country code top-level domain, E.g .no, .se, .uk. 
-            \item gTLD - Generic top-level domain.
+            \item gTLD - Generic top-level domain, E.g .com, .org, .net
         \end{itemize}
 		\subsection{What does DNS do?}
 		For one node to reach another node on the Internet there must be denoted a number/name as an address. It must be unique so that one address only can point to one node. It might be looked at as the phone book of the Internet, where a telephone number are the ip-address and name are the domain name.
@@ -66,10 +66,26 @@
 		While the implementation of DNSSEC does increase the authentication and integrity of DNS responses, it also takes a far bit more to actually implement it for each domain. As it stands when there are so many TLDs that have signed and implemented trust anchors in the root zone, we can only look forward and hope that all TLDs implement DNSSEC, so all domains have the choice at least to implement DNSSEC into their server.
 	    There will always be dangers on the Internet, but we should do what we can not to make it easy for those who want to harm the Internet
 	\section{Two-factor authentication}
-	There are many different ways of generating a one-time password(OTP). Here it will be discussed some methods of generating a OTP and how they are used. For a password to be considered a OTP it must only be valid for one login session or transaction. 
-		\subsection{Security token}
-        One method of generating and distributing such password is to give each user a personal token that, when used, gives a one time password. In the device an precise clock that is synchronised with the clock on the authentication server. With these OTP time is a very big factor in the generation of passwords. The password algorithm is given the current time rather than, or with the previous password or a key. These OTP is only valid for a specific length after it has been generated.
-        
+        \subsection{Generation}
+    	There are many different ways of generating a one-time password(OTP). Here it will be discussed some methods of generating a OTP and how they are used. For a password to be considered a OTP it must only be valid for one login session or transaction. 
+    		\subsection{Time-synchronized}
+            One method of generating and distributing such password is to give each user a personal token that, when used, gives a one time password. In the device an precise clock that is synchronised with the clock on the authentication server. With these OTP time is a very big factor in the generation of passwords. The password algorithm is given the current time rather than, or with the previous password or a key.One downside is the stability of clocks. If the clock in the token gets out of sync for whatever reason, this will fail since it will generate two different OTPs. If correct this OTP is only valid for a specific length after it has been generated. This method may generate a key on a variety of devices such as a mobile phone, mobile device running software or a proprietary device. 
+            \subsection{Mathematical algorithms}
+            One other branch of generating OTPs would be to generate from a purely mathematical point. Here one method would be to have a counter in both the authenticator and the generator. 
+            This way if the seed number(counter) is 04203 in both devices and they use an algorithm to calculate an OTP. This removes the risk of de-synchronisation and can give very powerful codes that is near impossible to crack.
+            Another version would be a hash chain. This requires a starting value and a hash function. This hash function may be of any implementation. Then only one more thing is needed, to hash the starting value many times. For example one could hash the seed 1000 times, insert that into the authenticator and when the user logs in he user a OTP that has hashed 999 times. This way the authenticator only needs to hash the OTP one time and compare it with the stored value that was hashed 1000 times beforehand. Now that the action was successful the authenticator stores the new value and it repeats until it needs to be reset for safety reasons.\cite{OTP-system}
+            This hash function is one-way so anyone who manages to snap up a OTP and tries to "de-hash" it does not get the next OTP. Only some other value.
+        \subsection{Distribution}
+        The act of making sure that the OTP gets to the user in a fast, secure and convenient method.
+            \subsubsection{Text messages}
+            One very common technology for distribute OPTs is by text messages. This is has a very low implementation cost and is available to most mobile devices and trough text-to-speech conversion, all telephone devices either land-line or mobile.
+            One drawback of this is the users cost of receiving each OTP and the fact that many of these passwords does not get encrypted very well. Also the delay from login initialization to login success can be a significant factor when customers choose a service.
+            \subsubsection{Mobile Application} 	
+            Many companies that has services that require authentication has started developing applications where you generate new codes all the time and last only for 20-30 seconds. This way there is constant change in the available OTP
+            \subsubsection{Hard-copy}
+            Some countries on-line banking systems have developed a system that is based on the order a set of OTPs has to be used. The bank sends the user a sheet of paper where the OTPs are hidden by a layer similar to scratch tickets at lotteries. Then when a user wants to login the user only has to scratch away the next OTP in the given order and use that. Making it so that it is just "generated" when in reality it was generated a long time ago. One big drawback of this is that it takes a very long time for the user to get his OTPs when the user starts or runs out of codes.
+    \subsection{Conclusion}
+    As described above there are quite a few ways of doing proper authentication by OTP and they all have their pros and cons. Thinking that one is a lot better than the others or that one is really bad will just lead to a stagnation in development of a technology that will dominate the authentication methods. The pursuit for faster, safer and overall better authentication should and will always be the goal for researchers and developers.
 			
 		
         

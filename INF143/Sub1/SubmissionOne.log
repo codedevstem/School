@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.10)  20 OCT 2016 13:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.10)  20 OCT 2016 20:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -190,7 +190,8 @@ File: dnsVsDnssec.png Graphic file (type png)
 <use dnsVsDnssec.png>
 Package pdftex.def Info: dnsVsDnssec.png used on input line 47.
 (pdftex.def)             Requested size: 345.0pt x 144.08934pt.
- [2] [3 <./dnsVsDnssec.png>] [4] (./SubmissionOne.bbl
+ [2] [3 <./dnsVsDnssec.png>] [4] [5] [6]
+(./SubmissionOne.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -216,14 +217,14 @@ Underfull \hbox (badness 1221) in paragraph at lines 47--50
 w . nlnetlabs . nl / projects /
  []
 
-) [5
+) [7
 
 ] (./SubmissionOne.aux) ) 
 Here is how much of TeX's memory you used:
- 2105 strings out of 493013
- 28931 string characters out of 6136992
- 94662 words of memory out of 5000000
- 5636 multiletter control sequences out of 15000+600000
+ 2106 strings out of 493013
+ 28943 string characters out of 6136992
+ 94667 words of memory out of 5000000
+ 5637 multiletter control sequences out of 15000+600000
  6229 words of font info for 23 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,7n,25p,1057b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -234,10 +235,10 @@ c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive
 /2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on SubmissionOne.pdf (6 pages, 213769 bytes).
+Output written on SubmissionOne.pdf (8 pages, 210574 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
