@@ -61,7 +61,7 @@ section img {
   width: 80%;
   max-width: 530px;
 }
-section p {
+section blockquote {
   float: left;
   clear: right;
   margin-left: 4em;
