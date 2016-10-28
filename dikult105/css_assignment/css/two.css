@@ -82,7 +82,7 @@ img {
     width: 100%;
 }
 footer {
-  position: fixed;
+  position: static;
   bottom: 1px;
   width: 100%;
   text-align: center;
