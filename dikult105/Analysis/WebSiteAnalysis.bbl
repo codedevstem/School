@@ -1,0 +1,15 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Beaird}{Beaird}{2010}]{PWebDesign}
+Beaird, J. (2010).
+\newblock {\em The Principles of Beautiful Web Design}.
+\newblock SitePoint Pty. Ltd.
+
+\bibitem[\protect\citeauthoryear{Walker}{Walker}{2003}]{SteveJobsQuote}
+Walker, R. (2003).
+\newblock \emph{The Guts of a New Machine}.
+\newblock
+  \url{http://www.nytimes.com/2003/11/30/magazine/the-guts-of-a-new-machine.html}
+  [Accessed: 10.11.2016].
+
+\end{thebibliography}

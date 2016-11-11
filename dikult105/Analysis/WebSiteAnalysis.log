@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.10)  10 NOV 2016 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.12)  11 NOV 2016 06:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -195,36 +195,41 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip46
 )
-(./WebSiteAnalysis.aux)
+(c:/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip47
+\bibsep=\skip48
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count99
+) (./WebSiteAnalysis.aux)
 \openout1 = `WebSiteAnalysis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-
-(c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+ (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count99
+\scratchcounter=\count100
 \scratchdimen=\dimen110
 \scratchbox=\box26
-\nofMPsegments=\count100
-\nofMParguments=\count101
+\nofMPsegments=\count101
+\nofMParguments=\count102
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count102
+\MPscratchCnt=\count103
 \MPscratchDim=\dimen111
-\MPnumerator=\count103
-\makeMPintoPDFobject=\count104
+\MPnumerator=\count104
+\makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks22
 ) (c:/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -244,7 +249,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box27
-Package hyperref Info: Link coloring OFF on input line 7.
+Package hyperref Info: Link coloring OFF on input line 10.
 
 (c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -252,66 +257,72 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count105
+\c@section@level=\count106
 )
-LaTeX Info: Redefining \ref on input line 7.
-LaTeX Info: Redefining \pageref on input line 7.
-LaTeX Info: Redefining \nameref on input line 7.
+LaTeX Info: Redefining \ref on input line 10.
+LaTeX Info: Redefining \pageref on input line 10.
+LaTeX Info: Redefining \nameref on input line 10.
 
 (./WebSiteAnalysis.out) (./WebSiteAnalysis.out)
 \@outlinefile=\write3
 \openout3 = `WebSiteAnalysis.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 17.
+(Font)              <7> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 17.
+(Font)              <5> on input line 20.
  [1
 
 {c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<frontpage.png, id=33, 1431.84938pt x 712.16063pt>
+<frontpage.png, id=37, 1431.84938pt x 712.16063pt>
 File: frontpage.png Graphic file (type png)
  <use frontpage.png>
-Package pdftex.def Info: frontpage.png used on input line 24.
+Package pdftex.def Info: frontpage.png used on input line 27.
 (pdftex.def)             Requested size: 344.98361pt x 171.5849pt.
 
-Overfull \hbox (4.42804pt too wide) in paragraph at lines 24--27
+Overfull \hbox (4.42804pt too wide) in paragraph at lines 27--30
 [][]   
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 \end{document}
-                    [1 <./frontpage.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
+l.37         \subsection
+                        {The Layout} [1 <./frontpage.png>]
+(./WebSiteAnalysis.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
+ [2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
  (./WebSiteAnalysis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 35.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
 Package rerunfilecheck Info: File `WebSiteAnalysis.out' has not changed.
-(rerunfilecheck)             Checksum: F8937086D3CA0158E2D49A9ED738857E;231.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
+(rerunfilecheck)             Checksum: 63CEAA89F0A1135A8B1878BEB455D291;310.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
- 5538 strings out of 493013
- 81351 string characters out of 6136992
- 171635 words of memory out of 5000000
- 9050 multiletter control sequences out of 15000+600000
- 6392 words of font info for 24 fonts, out of 8000000 for 9000
+ 5867 strings out of 493013
+ 85277 string characters out of 6136992
+ 179487 words of memory out of 5000000
+ 9366 multiletter control sequences out of 15000+600000
+ 6738 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,4n,28p,601b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,4n,32p,1145b,380s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/201
 6/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtcsc10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmtt10.pfb>
-Output written on WebSiteAnalysis.pdf (2 pages, 1582658 bytes).
+blic/amsfonts/cm/cmti10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmtt10.pfb>
+Output written on WebSiteAnalysis.pdf (3 pages, 1603453 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 88 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 54 words of extra memory for PDF output out of 10000 (max. 10000000)
 
