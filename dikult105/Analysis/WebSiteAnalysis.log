@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.12)  12 NOV 2016 16:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.10)  13 NOV 2016 19:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -195,30 +195,29 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip46
 )
-(c:/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip47
-\bibsep=\skip48
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count99
-) (./WebSiteAnalysis.aux)
+(c:/texlive/2016/texmf-dist/tex/latex/multibib/multibib.sty
+Package: multibib 2008/12/10 v1.4 Multiple bibliographies for one document.
+\mb@biblabelwidth=\count99
+)
+(./WebSiteAnalysis.aux)
 \openout1 = `WebSiteAnalysis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
- (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+
+(c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count100
 \scratchdimen=\dimen110
@@ -249,7 +248,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box27
-Package hyperref Info: Link coloring OFF on input line 10.
+Package hyperref Info: Link coloring OFF on input line 9.
 
 (c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -259,94 +258,139 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count106
 )
-LaTeX Info: Redefining \ref on input line 10.
-LaTeX Info: Redefining \pageref on input line 10.
-LaTeX Info: Redefining \nameref on input line 10.
+LaTeX Info: Redefining \ref on input line 9.
+LaTeX Info: Redefining \pageref on input line 9.
+LaTeX Info: Redefining \nameref on input line 9.
 
 (./WebSiteAnalysis.out) (./WebSiteAnalysis.out)
 \@outlinefile=\write3
 \openout3 = `WebSiteAnalysis.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 20.
+(Font)              <7> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 20.
+(Font)              <5> on input line 19.
  [1
 
 {c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 <frontPage.png, id=41, 1431.84938pt x 712.16063pt>
 File: frontPage.png Graphic file (type png)
  <use frontPage.png>
-Package pdftex.def Info: frontPage.png used on input line 29.
+Package pdftex.def Info: frontPage.png used on input line 28.
 (pdftex.def)             Requested size: 276.00105pt x 137.26793pt.
+
+
+LaTeX Warning: Citation `SteveJobsQuote' on page 1 undefined on input line 35.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37     \section
+l.39     \section
                  {The analysis} [1 <./frontPage.png>]
-Overfull \hbox (1.88338pt too wide) in paragraph at lines 38--38
+Overfull \hbox (1.88338pt too wide) in paragraph at lines 40--40
 []\OT1/cmr/bx/n/12 The squid in the room -focal points, shapes and colours 
  []
 
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-<LineBreaker.png, id=59, 703.87968pt x 460.72125pt>
+! Undefined control sequence.
+l.41 ...page that draws the viewerâ€™s eye" \citep
+                                                  [Page. 22]{PWebDesign}. Th...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.43 ...ense of informality and spontaneity"\citep
+                                                  [Page. 86]{PWebDesign}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.45 ...motion, much like the shape itself. \citep
+                                                  [Page. 50]{PWebDesign}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<LineBreaker.png, id=51, 703.87968pt x 460.72125pt>
 File: LineBreaker.png Graphic file (type png)
  <use LineBreaker.png>
-Package pdftex.def Info: LineBreaker.png used on input line 45.
+Package pdftex.def Info: LineBreaker.png used on input line 50.
 (pdftex.def)             Requested size: 276.00105pt x 180.65071pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--49
+[2]
+
+LaTeX Warning: Citation `WSINYE' on page 3 undefined on input line 55.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2]
-Overfull \hbox (16.01804pt too wide) in paragraph at lines 49--49
+Overfull \hbox (16.01804pt too wide) in paragraph at lines 57--57
 []\OT1/cmr/bx/n/12 The multi di-men-sional nav-i-ga-tional el-e-ments -Navigati
 on 
  []
 
-<NavMenu.png, id=67, 706.89093pt x 371.88937pt>
+<NavMenu.png, id=56, 706.89093pt x 371.88937pt>
 File: NavMenu.png Graphic file (type png)
  <use NavMenu.png>
-Package pdftex.def Info: NavMenu.png used on input line 53.
+Package pdftex.def Info: NavMenu.png used on input line 61.
 (pdftex.def)             Requested size: 276.00105pt x 145.20082pt.
- [3 <./LineBreaker.png>] (./WebSiteAnalysis.bbl [4 <./NavMenu.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
+ [3 <./LineBreaker.png>]
+! Undefined control sequence.
+l.68     \printbibliography
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-(./WebSiteAnalysis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
+[4 <./NavMenu.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
+ (./WebSiteAnalysis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `WebSiteAnalysis.out' has not changed.
 (rerunfilecheck)             Checksum: 09F61C02CDDB04A55AC74762B5AB9CA0;476.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 5894 strings out of 493013
- 85627 string characters out of 6136992
- 183552 words of memory out of 5000000
- 9383 multiletter control sequences out of 15000+600000
- 6738 words of font info for 25 fonts, out of 8000000 for 9000
+ 5614 strings out of 493013
+ 82411 string characters out of 6136992
+ 175942 words of memory out of 5000000
+ 9111 multiletter control sequences out of 15000+600000
+ 6532 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,6n,32p,1996b,380s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/201
-6/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmtcsc10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmtt10.pfb>
-Output written on WebSiteAnalysis.pdf (6 pages, 1656633 bytes).
+ 29i,6n,28p,1281b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2016/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmtcsc10.pfb>
+Output written on WebSiteAnalysis.pdf (6 pages, 1636202 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 99 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
  72 words of extra memory for PDF output out of 10000 (max. 10000000)
 

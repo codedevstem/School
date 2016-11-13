@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[nopar]{lipsum} % for dummy text
+\usepackage[american]{babel}
+\usepackage[babel]{csquotes}
+\usepackage[notes,natbib,isbn=false,backend=biber]{biblatex-chicago}  
+\begin{filecontents}{\jobname.bib}
+@book{Saussure1995,
+    Author = {Ferdinand de Saussure},
+    Origyear = {1916},
+    Publisher = {Payot},
+    Title = {Cours de Linguistique G{\'e}n{\'e}rale},
+    Year = {1995}}
+
+@book{Labov1972,
+    Address = {Philadelphia},
+    Author = {William Labov},
+    Publisher = {University of Pennsylvania Press},
+    Title = {Sociolinguistic Patterns},
+    Year = {1972}}
+
+\end{filecontents}
+\addbibresource{\jobname.bib}
+\begin{document}
+
+
+\lipsum[1]\autocite{Saussure1995}
+
+\lipsum[2]\autocite{Labov1972}
+
+
+\end{document}

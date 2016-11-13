@@ -44,19 +44,21 @@
   <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>WebSiteAnalysis.bcf</file>
+      <file>Analysis.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>WebSiteAnalysis.bbl</file>
+      <file>Analysis.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
-      <file>alphabetic.bbx</file>
-      <file>standard.bbx</file>
-      <file>authoryear.cbx</file>
+      <file>blx-natbib.def</file>
+      <file>chicago-notes.bbx</file>
+      <file>chicago-notes.cbx</file>
       <file>biblatex.cfg</file>
+      <file>cms-american.lbx</file>
+      <file>american.lbx</file>
       <file>english.lbx</file>
     </requires>
   </internal>
@@ -64,22 +66,22 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>WebSiteAnalysis</infile>
+      <infile>Analysis</infile>
     </cmdline>
     <input>
-      <file>WebSiteAnalysis.bcf</file>
+      <file>Analysis.bcf</file>
     </input>
     <output>
-      <file>WebSiteAnalysis.bbl</file>
+      <file>Analysis.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>WebSiteAnalysis.bbl</file>
+      <file>Analysis.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>WebSiteAnalysis.bcf</file>
+      <file>Analysis.bcf</file>
     </requires>
     <requires type="editable">
-      <file>BookReferences</file>
+      <file>References.bib</file>
     </requires>
   </external>
 </requests>
