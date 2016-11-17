@@ -11,7 +11,6 @@ public class Bibliotek {
     static ArrayList<Utlaan> loanedBooks = new ArrayList<>();
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
-
         int valg = -1;
         System.out.println("Welcome to the library!");
         while (valg != 0){
@@ -59,6 +58,7 @@ public class Bibliotek {
     }
 
     private static void PrintAllBooks() {
+        // Simple lambda expressions introduced in java 8. Just a fancy quick loop function
         Collections.sort(books, (o1, o2) -> o1.compareTo(o2));
         books.forEach(bok -> System.out.println(bok.toString()));
     }
