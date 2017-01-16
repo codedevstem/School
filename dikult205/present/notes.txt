@@ -1,0 +1,105 @@
+Visual aspect for RETHORIC:
+ -parthos 
+    - The emotions and feelings the audience experience
+ -ethos (MAIN FOCUS!)
+    - The person that speaks
+        - Virtue
+        - Goodness
+        - Experience
+        // Authority, credibility and character
+ -logos
+    - The matter/case/argument
+    
+Use charts in a logical and meaningful way.
+
+Can be used effective in documents through heading, fonts, color
+    and other visual elements.
+
+Three stages: oral -> text -> visual
+
+Starts with approaching the visual era.
+
+Use the classics (Aristotle, Cicero and Quintilian) and their
+    arguments for discussing visual document design (WWW).
+
+Use it for pushing the visually-embedded documents to becomming 
+    more successful and accessible through the classical retoric
+    arguments.
+
+(OWN OBSERVATIONS) -> The visuals are not just added with haste
+    at the end, but rather path of the foundation in good rethorical
+    documents.
+
+(PURPOSE OF THESIS) -> Discover ways that classical ethos is enacted
+    in the visual text design of Web sites.
+
+    Analyzes two Web sites for their successful use of ethos in design.
+
+    -SHAZAM, Inc (financial network)
+
+    -Flyway: A journal of Writing and Environment(Non profit liteary journal)
+
+    Both sites rely on elements to represent the organization to the public
+
+
+    Chapter two explores the classical rhetorical models for ethos,
+        pluss some modern interpretations and divergences.
+        The authors.
+            -CLassics :(Aristotle, Cicero and Quintilian)
+
+            -Modern : utilize classical terminology in uniqye and imaginative ways.
+
+        Ethos : Both positive and negative 
+
+    Chapter three: Demonstrate the power of classical rhetoric in analyzing
+        and creating visual document designs.
+
+        The retorical analysis will determine the extend to which ethos
+        has been utilized successfully.
+
+        Front page and about page. (conveying the authors)
+            The most rethorical, best to study.
+
+
+    Chapter 4: Summerize.
+        Are the visual documents created with the same principles
+        that oral speeches and written texts are?
+
+
+CHAPTER TWO:
+    Ethos:
+        Classical: 
+            credibility and character.
+        Aristotle:
+            Focus oral communication
+            Rethoric: an ability, in each particular case,
+                to see the available means of persuation
+            Believe fair minded people in many cases and especially
+                where there are room for doubt
+            Practical visdom: [phronēsis]
+                "I have 20 years experience in the field"
+            Virtue: [aretē]
+                "Morale character and honor"
+            Good Will: [eunoia]
+                "disposition toward the audience"
+            All must be fulfilled if not everything falls apart.
+        SELF:
+            Can ethos be created? And therefore be established 
+                in the website as a building block when 
+                conveying information.
+            Convey VS convince.
+    Cicero:
+        Three parts:
+            Proving contentions.
+            Winning over our audience.
+            inducing their minds to feel any emotion the case may demand.
+        Orator(Speaker)
+            new view: Speakers actions over character.
+            People's minds are won over by a man's prestige, his accomplishments
+            and the reputation he has acquired by his way of life.
+            MOS MAIORUM (family reputation)
+        For Aristotle ethos has nothing to do with emotions,
+            while for Cicero, he argues that to be won over one must be 
+            infused with the required emotions. (Humility and gentleness).
+
+        15!
