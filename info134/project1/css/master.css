@@ -3,19 +3,20 @@ html {
     height: 100%;
 }
 body {
-    width: 90%;
+    width: 80%;
     height: 100%;
     display: flex;
-    flex-direction: columns;
+    flex-direction: column;
     margin-left: 10%;
+    clear: both;
+    margin-right: 10%;
 
 }
 header {
     display: flex;
-    flex-direction: columns;
-    display: block;
+    flex-direction: column;
     width: 100%;
-
+    padding-bottom: 1em;
 }
 #navBar {
     display: flex;
@@ -23,4 +24,42 @@ header {
     justify-content: space-between; 
     width: 100%;
 }
+header h1{
+    align-self: center;
+}
 
+a {
+    margin: 1em;
+    text-decoration: none;
+
+}
+main {
+    display: flex;
+    margin-left: 5%;
+    flex-direction: column;
+}
+.movieSection {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 50%;
+}
+.movie {
+    display: flex;
+    flex-direction: column;
+    
+}
+.about {
+    display: flex;
+    flex-direction: row;
+
+}
+.description {
+    margin-left: 1em;
+    max-width: 300px;
+}
+
+
+img {
+    height: 300px;
+}
