@@ -143,3 +143,4 @@ CHAPTER TWO:
         David Hutto: on scientific graphics < Gives the ethos of a scientist.
         If, as a scientist you do not know how to convey some data,
             noone will be interested since noone will know.
+        
