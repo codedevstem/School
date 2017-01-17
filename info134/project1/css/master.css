@@ -1,0 +1,26 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: columns;
+    margin-left: 10%;
+
+}
+header {
+    display: flex;
+    flex-direction: columns;
+    display: block;
+    width: 100%;
+
+}
+#navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 100%;
+}
+
