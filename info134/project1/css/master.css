@@ -28,20 +28,12 @@ header {
     box-shadow: 5px 2px 5px #666;
     max-height: 15em;
 }
+
 header h1{
     align-self: center;
     font-size: 250%;
 }
-#login form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    
-}
-fieldset {
-    border: 0;
-    align-self: flex-end;
-}
+
 #navabout {
     display: flex;
     flex-direction: column;
@@ -49,14 +41,25 @@ fieldset {
 }
 
 header a {
-    margin: 0.5em;
     text-decoration: none;
     font-size: 120%;
     font-weight: bold;
     color: black;
+    padding: 0.5em;
 }
+
 header a:hover {
     background: whitesmoke;
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+fieldset {
+    border: 0;
+    align-self: flex-end;
 }
 main {
     display: flex;
@@ -76,7 +79,8 @@ main {
     justify-content: center;
 }
 #search > * {
-    
+    height: 2em;
+    align-self: flex-end;
 }
 #movieSection {
     background: linear-gradient(darkgrey, grey);
