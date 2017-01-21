@@ -8,36 +8,41 @@
         <header>
             <h1>WebFlix</h1>
             <nav id="navBar">
-                <nav id="navBack">
-                    <a href="index.html">Here</a>
-                </nav>
                 <nav id="navContent">
                     <a href="content/movies.html">Movies</a>
-                    <a href="content/series.html">Series</a>
                 </nav>
                 <nav id="navAbout">
                     <a href="about/about.html">About Us</a>
                     <a href="about/contant.html">Contant Us</a>
                 </nav>
+                <nav id="search">
+                    <form action="POST">
+                        <input name="movieSearch" type="search" placeholder="Search for a movie">
+                        <button type="submit">Search</button>
+                    </form>
+                </nav>
             </nav>
         </header>
         <main>
+            <h2>Movies for rent</h2>
             <section id="movieSection">
-                <h2>Movies Available</h2>
                 <section class="movie">
-                    <h3>Taken</h3>
-                    <h4>(2008)</h4>
+                    <h3>Intouchables<span class="yearOfRelease">(2008)</span></h3>
+                    
                     <section class="about">
-                        <img src="images/movies/taken.jpeg" alt="Image of taken poster">
-                        <p class="description">A retired CIA agent travels across Europe and
-                            relies on his old skills to save his estranged daughter, 
-                            who has been kidnapped while on a trip to Paris. </p>
+                        <img src="movies/intouchables/cover.jpg" alt="Image of taken poster">
+                        <section class="description">
+                            <p>A retired CIA agent travels across Europe and
+                                relies on his old skills to save his estranged daughter, 
+                                who has been kidnapped while on a trip to Paris. </p>
+                            <p>2011 (112 minutter)</p>
+                        </section>
                     </section>
 
                 </section>
                 <section class="movie">
-                    <h3>Harry Potter and the Sorcerer's Stone</h3>
-                    <h4>(2001)</h4>
+                    <h3>Harry Potter and the Sorcerer's Stone <span class="yearOfRelease">(2001)</span></h3>
+                    <h4></h4>
                     <section class="about">
                         <img src="images/movies/harryPotter1.jpg" alt="Image of Harry Potter 1 poster">
                         <p class="description">Rescued from the outrageous neglect of his aunt and uncle, a young 
