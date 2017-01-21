@@ -3,70 +3,63 @@
         <meta charset='UTF-8'>
         <title>Movie index page</title>
         <link rel='stylesheet' href='css/master.css'>
+        <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
     </head>
     <body>
         <header>
+            <nav id="navAbout">
+                <a href="about/about.html">About</a>
+                <a href="about/contant.html">Contant</a>
+            </nav><!-- end of site navigation -->
             <h1>WebFlix</h1>
-            <nav id="navBar">
-                <nav id="navContent">
-                    <a href="content/movies.html">Movies</a>
-                </nav>
-                <nav id="navAbout">
-                    <a href="about/about.html">About Us</a>
-                    <a href="about/contant.html">Contant Us</a>
-                </nav>
-                <nav id="search">
-                    <form action="POST">
-                        <input name="movieSearch" type="search" placeholder="Search for a movie">
-                        <button type="submit">Search</button>
-                    </form>
-                </nav>
-            </nav>
+            <form action="" method="POST" id="logInForm">
+                <fieldset id="username">
+                    <label for="userNameField">Username</label>
+                    <input type="text" id="userNameField">
+                </fieldset>
+                <fieldset id="password">
+                    <label for="passwordField">Password </label>
+                    <input type="password" id="passwordField">
+                </fieldset>
+                <fieldset id="submit">
+                    <button type="submit">Log In</button>
+                </fieldset>
+            </form>
         </header>
         <main>
-            <h2>Tilgjengelige filmer</h2>
+            <section id="mainTop">
+                <h2>Tilgjengelige filmer</h2>
+                <form action="" method="POST" id="search">
+                    <input name="movieSearch" type="search" placeholder="Search for a movie">
+                    <button type="submit">Search</button>
+                </form>
+            </section>
             <section id="movieSection">
                 <section class="movie">
-                    <h3>Intouchables<span class="yearOfRelease">(2008)</span></h3>
-                    <h4>Norsk tittel: De urørlige</h4>
-                    
+                    <h3>Intouchables <span class="yearOfRelease">(2008)</span></h3>
                     <section class="about">
-                        <img src="movies/intouchables/cover.jpg" alt="Image of taken poster">
+                        <a href="movies/intouchables/intouchables.html"><img src="movies/intouchables/cover.jpg" alt="Image of intouchables poster"></a>
                         <section class="description">
                             <p>De Urørlige er basert på en utrolig, men sann historie. 
                                 Filmen, som er sett av 20 millioner franskmenn, har blitt et internasjonalt fenomen 
                                 og er den mest inntjenende ikke-engelskspråklige filmen i historien. (Cover) </p>
-                            <p>2011 (112 minutter)</p>
-                        </section>
-                    </section>
-
-                </section>
+                            <p>François Cluzet, Omar Sy, Anne Le Ny, Audrey Fleurot</p>
+                            <p>FRA 2011 (112 minutter)</p>
+                        </section><!-- end of description -->
+                    </section><!-- end of about -->
+                </section><!-- end of movie -->
                 <section class="movie">
-                    <h3>Harry Potter and the Sorcerer's Stone <span class="yearOfRelease">(2001)</span></h3>
-                    <h4></h4>
+                    <h3>Valkyrie <span class="yearOfRelease">(2008)</span></h3>
                     <section class="about">
-                        <img src="images/movies/harryPotter1.jpg" alt="Image of Harry Potter 1 poster">
-                        <p class="description">Rescued from the outrageous neglect of his aunt and uncle, a young 
-                            boy with a great destiny proves his worth while attending 
-                            Hogwarts School of Witchcraft and Wizardry. </p>
-                    </section>
-                </section>
-            </section>
-            <section id="seriesSection">
-                <h2>Series Available</h2>
-                <section class="serie">
-                    <h3>Friends</h3>
-                    <h4>(1994-2004)</h4>
-                    <section class="about">
-                        <img src="images/series/friends.jpg" alt="Image of Friends poster">
-                        <p class="description">Follows the personal and professional lives of six
-                             20 to 30-something-year-old friends living in Manhattan. </p>
-                    </section>
-                </section>
-            </section>
+                        <a href="movies/valkyrie/valkyrie.html"><img src="movies/valkyrie/cover.jpg" alt="Image of valkyrie poster"></a>
+                        <section class="description">
+                             <p> Den medrivende thrilleren forteller om en dristig operasjon som ble satt i gang for å ta livet av en av tidenes ondeste diktatorer. (Cover) </p>
+                             <p>Tom Cruise, Bill Nighy, Kenneth Branagh, Stephen Fry, Tom Wilkinson, Carice Van Houten</p>
+                             <p>USA 2008 (115 minutter)</p>
+                        </section><!-- end of description -->
+                    </section><!-- end of about -->
+                </section><!-- end of movie -->
+            </section> <!--end of MovieSection -->
         </main>
-        <footer>
-            
-        </footer>
     </body>
 </html>
