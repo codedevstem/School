@@ -64,7 +64,9 @@ main {
     justify-content: space-between;
 }
 
-
+h4 {
+    margin-top: 0;
+}
 img {
     height: 300px;
 }
