@@ -3,35 +3,30 @@
 }
 html {
     width: 100%;
-    height: 100%;
 }
 body {
     width: 80%;
-    height: inherit;
+    min-height: 100%;
+    margin-right: 10%;
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
     clear: both;
-    margin-right: 10%;
     background: grey;
     background: linear-gradient(grey, whitesmoke);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 header {
+    min-width: 100%;
+    min-height: 7em;
+    max-height: 7.5em;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    min-width: 100%;
+    justify-content: space-between;
     background: grey;
     background: linear-gradient(darkgrey, grey);
     box-shadow: 5px 2px 5px #666;
-    max-height: 15em;
-}
-
-header h1{
-    align-self: center;
-    font-size: 250%;
 }
 
 #navabout {
@@ -41,87 +36,115 @@ header h1{
 }
 
 header a {
-    text-decoration: none;
+    padding: 0.5em;
     font-size: 120%;
     font-weight: bold;
+    text-decoration: none;
     color: black;
-    padding: 0.5em;
 }
 
 header a:hover {
     background: whitesmoke;
 }
 
-#login form {
+header h1{
+    margin-left: 1em;
+    font-size: 250%;
+}
+
+#logInForm {
+    margin-top: 1em;
+    margin-right: 1em;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
 }
-fieldset {
-    border: 0;
+
+#logInForm > * {
     align-self: flex-end;
 }
+
 main {
-    display: flex;
+    min-width: 100%;
     margin-left: 5%;
-    margin-right: 13%;
+    margin-right: 5%;
+    display: flex;
     flex-direction: column;
 }
+
 #mainTop {
-    z-index: 10;
-    display: flex;
     min-height: 4em;
+    display: flex;
     justify-content: space-between;
     margin-left: 5%;
 }
+
 #search {
     display: flex;
     justify-content: center;
 }
+
 #search > * {
     height: 2em;
     align-self: flex-end;
 }
+
 #movieSection {
-    background: linear-gradient(darkgrey, grey);
-    padding-left: 5em;
-    margin-right: 5em;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    justify-content: center;
     flex-wrap: wrap;
-    box-shadow: 5px 2px 5px #666;
+    background: linear-gradient(darkgrey, grey);
+    box-shadow: 5px 4px 5px #666;
 }
+
 .movie {
+    max-height: 400px;
+    max-width: 490px;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+    padding-left: 0.5em;
     display: flex;
     flex-direction: column;
-    margin-bottom: 3em;
-    box-sizing: border-box;
+    box-shadow: 5px 4px 5px #666;
+    background: linear-gradient(darkgrey, grey);
 }
+
+.movie a {
+    text-decoration: none;
+    color: black;
+}
+
 .about {
     display: flex;
     flex-direction: row;
-
 }
+
 .description {
-    margin-left: 1em;
     max-width: 300px;
+    margin-left: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-h4 {
-    margin-top: 0;
-}
 img {
     height: 300px;
 }
-@media screen and (max-width: 1650px) {
+
+@media screen and (max-width: 1470px) {
     main {
+        min-height: 100%;
     }
    #movieSection {
-       justify-content: center;
-       min-height: 90%;
+   }
+}
+
+@media screen and (max-width: 680px) {
+   img {
+       display: none;
    }
 }
