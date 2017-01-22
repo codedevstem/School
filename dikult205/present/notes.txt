@@ -1,146 +1,85 @@
-Visual aspect for RETHORIC:
- -parthos 
-    - The emotions and feelings the audience experience
- -ethos (MAIN FOCUS!)
-    - The person that speaks
-        - Virtue
-        - Goodness
-        - Experience
-        // Authority, credibility and character
- -logos
-    - The matter/case/argument
-    
-Use charts in a logical and meaningful way.
+1: 
+    Hello!
+        My name Kristian Os and talk about Breanna Lee Byers
+        Rhetorical analysis of visual Web design.
 
-Can be used effective in documents through heading, fonts, color
-    and other visual elements.
-
-Three stages: oral -> text -> visual
-
-Starts with approaching the visual era.
-
-Use the classics (Aristotle, Cicero and Quintilian) and their
-    arguments for discussing visual document design (WWW).
-
-Use it for pushing the visually-embedded documents to becomming 
-    more successful and accessible through the classical retoric
-    arguments.
-
-(OWN OBSERVATIONS) -> The visuals are not just added with haste
-    at the end, but rather path of the foundation in good rethorical
-    documents.
-
-(PURPOSE OF THESIS) -> Discover ways that classical ethos is enacted
-    in the visual text design of Web sites.
-
-    Analyzes two Web sites for their successful use of ethos in design.
-
-    -SHAZAM, Inc (financial network)
-
-    -Flyway: A journal of Writing and Environment(Non profit liteary journal)
-
-    Both sites rely on elements to represent the organization to the public
-
-
-    Chapter two explores the classical rhetorical models for ethos,
-        pluss some modern interpretations and divergences.
-        The authors.
-            -CLassics :(Aristotle, Cicero and Quintilian)
-
-            -Modern : utilize classical terminology in uniqye and imaginative ways.
-
-        Ethos : Both positive and negative 
-
-    Chapter three: Demonstrate the power of classical rhetoric in analyzing
-        and creating visual document designs.
-
-        The retorical analysis will determine the extend to which ethos
-        has been utilized successfully.
-
-        Front page and about page. (conveying the authors)
-            The most rethorical, best to study.
-
-
-    Chapter 4: Summerize.
-        Are the visual documents created with the same principles
-        that oral speeches and written texts are?
-
-
-CHAPTER TWO:
-    Ethos:
-        Classical: 
-            credibility and character.
-        Aristotle:
-            Focus oral communication
-            Rethoric: an ability, in each particular case,
-                to see the available means of persuation
-            Believe fair minded people in many cases and especially
-                where there are room for doubt
-            Practical visdom: [phronēsis]
-                "I have 20 years experience in the field"
-            Virtue: [aretē]
-                "Morale character and honor"
-            Good Will: [eunoia]
-                "disposition toward the audience"
-            All must be fulfilled if not everything falls apart.
-        SELF:
-            Can ethos be created? And therefore be established 
-                in the website as a building block when 
-                conveying information.
-            Convey VS convince.
-    Cicero:
-        Three parts:
-            Proving contentions.
-            Winning over our audience.
-            inducing their minds to feel any emotion the case may demand.
-        Orator(Speaker)
-            new view: Speakers actions over character.
-            People's minds are won over by a man's prestige, his accomplishments
-            and the reputation he has acquired by his way of life.
-            MOS MAIORUM (family reputation)
-        For Aristotle ethos has nothing to do with emotions,
-            while for Cicero, he argues that to be won over one must be 
-            infused with the required emotions. (Humility and gentleness).
-    Together(SUMMARY):
-        1.	 Ethos conveys a rhetor’s trustworthiness (Aristotle) and goodwill (Aristotle, Cicero,
-            Quintilian) to an audience.
-        2.	 Ethos can inspire a positive, persuasive emotional reaction through an understated
-            tone and a sense of goodness on the rhetor’s part (Cicero, Quintilian).
-        3.	 Ethos can assist in overcoming prior perceptions (Aristotle), but may also rely upon
-            previous reputation to persuade an audience (Cicero, Quintilian).
-    Modern: 
-        Classisist>Lacking roots>Missing elements of the past.
-            No ethos in its classical form or meaning.
-        POINTS: would you rather visit a Web site that screams in your face,
-            or would you be taken in by its warm welcome and subtleness.
-        Postmodern thinking> focus on aspects of chaos and fragmentation.
-        LaGrandeur claims> Digital media> Integrative, intertetual and complex
-        >provide us with excellent, codified ways to think about the persuasive
-            efficiacy of images and words as interdependent and interactive things.
-        Aristotle asserts that rhetoric is the art of discovering "the means   
-            of persuation"
-                Here means gives way to including digital and visual content 
-                    as our age demands.
-                This content also relies upon the three artistic proofs of 
-                    logos, pathos and ethos.
-        Shapes, colors and materials things that rhetorics analyzes meaning to.
-        Technological reasoning, character and emotion >> logos, ethos, and pathos.
-        Together with Ehses < Macbeth >
-            combination of semiotics and classical rhetoric.
-            Rhetoric no loger have negative connotations associated with persuasion,
-                but rather association with choice and reason.
-            This gives Rhetoric potention utility in other areas where persuasion is significant
-                in modes other than oral and written > such as design.
-            Tratidional canon model of rhetoric:
-                inventio, dispositio, elocutio, memoria and pronunciatio.
-    SHORT >> LaGrandeur, Buchanan and Ehses give visual analysis and creation 
-        a definite role with rhetorics.
-    AGAIN FOCUS ON: Ethos.
-    
-    The place of ethos in visual creation and analysis.
-        Can mean many things: 
-            heading, white space, font choices, photographs, charts and graphs >> Visual elements.
-        David Hutto: on scientific graphics < Gives the ethos of a scientist.
-        If, as a scientist you do not know how to convey some data,
-            noone will be interested since noone will know.
-        
+2: 
+    Two sites
+        SHAZAM Inc.
+           SHAZAM Inc is a Big corporation and an electronic funds transfer(EFT) 
+           A network that serves financial institutions. 
+           Provide information to interested customers and want to engage with them to 
+           make them use the services that SHAZAM can provide.
+           Also establish trust.
+        The second site is Flyway: A journal of Writing and Environment
+            It is a non profit organisation that strives to inspire visitors on environmentalism
+            and also give them a place for litterature on the subject
+3:
+    Her analysis is focused on ethos. So phronesis(practical knowledge), arete(Virtue) and eunoia(Goodwill)
+    She has in the thesis defined this and is going to use the classical definitions of Aristotle,
+    Cicero and Quintilian. 
+    She has analysed only the welcome and about pages
+4: 
+    Starting with the conditions that ethos should 
+    -establish
+    -inspire
+    -assist
+    Kostelnick and Roberts interpretation of tone is used here with the classical definitions.
+5:
+    Read off the presentation.
+6,7:
+    Convey what the picture show
+        welcome page
+        About page
+8: 
+    Professionalism over all things.
+    stability!
+9:
+    No nonsence
+    section with different typefont (Sloppy work)
+    Boldness, not to scream, but to show smaller parts.
+    Seems a bit unprofessional.
+10:
+    Headings (How they look, not placed)
+    bullets
+    Where are they?
+    Structure is important to convey continuety.
+11:
+    Pictures
+    Relate
+    What does the pictures convey and what does the logos convey.
+12:
+    The links
+    Colour and variations
+13:
+    Flyway, no pictures of about page I think
+14:
+    Professionalism and environmentalism
+    read the points and elaborate (DO IT!)
+15:
+    Serif: Academic and liteerature
+    Sans serif: for text easy to read and skim.
+16:
+    Structure 
+        nice for some and ruins it for others. Logic is different for everyone
+    bullets
+17:
+    Us nature, but not much. Tacky.
+    Go urban already saved the grass.
+    A cage for nature and the writers.
+    Contact with the designers said that the logo was ugly, but the founder 
+    will not change it. Unknown reason
+18:
+    Links nice, but is not obvious
+    Lacking credibility (Kostelnick and Roberts KEY)
+    No animations (Outdated now) (A bit old in our days) (The web has come far)
+    Strong with colours and identity.
+19:
+    AMAZON
+        Welcome page
+            gives us the option to sign up, no forcing(goodwill, virtue)
+            Already known (Credibility) Just the logo conveys credibility
+            Inspires shopping through real people and real products.
+            Links to whatever you might 
+        About:
+            Al gore, Real people ethnicity, examples, Funfact, 
