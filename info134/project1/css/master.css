@@ -23,7 +23,7 @@ header {
     max-height: 7.5em;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     background: grey;
     background: linear-gradient(darkgrey, grey);
     box-shadow: 5px 2px 5px #666;
@@ -64,7 +64,7 @@ header h1{
 }
 
 main {
-    min-width: 100%;
+    min-width: 80%;
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
@@ -87,66 +87,152 @@ main {
     height: 2em;
     align-self: flex-end;
 }
+
 #mainContent {
     width: 100%;
     display: flex;
-    flex-direction: row;  
+    flex-direction: column;  
     justify-content: space-between;
 }
+
 #movieSection {
-    width: 50%;
+    width: 100%;
+    min-height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: linear-gradient(darkgrey, grey);
     box-shadow: 5px 4px 5px #666;
+    margin-bottom: 1em;
 }
-#movieSection > * {
-    align-self: center;
+
+#movieSection h2 {
+    align-self: flex-start;
+    margin-left: 2em;
 }
+
+#availableMovies {
+    align-self: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    max-width: 100%;
+    margin-left: 3em;
+}
+
 .movie {
-    max-height: 400px;
-    max-width: 490px;
+    min-width: 110px;
+    max-width: 180px;
     box-sizing: border-box;
-    margin-bottom: 2em;
-    margin-right: 1em;
-    margin-top: 1em;
-    margin-left: 1em;
-    padding-left: 0.5em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    margin-right: 0.2em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
     box-shadow: 5px 4px 5px #666;
     background: linear-gradient(darkgrey, grey);
 }
+
 .movie:hover {
     background: whitesmoke;
     box-shadow: none;
 }
+
 .movie a {
     text-decoration: none;
     color: black;
 }
 
-.about {
-    display: flex;
-    flex-direction: row;
+a img {
+    height: 160px;
+    align-self: center;
 }
 
-.description {
-    max-width: 300px;
-    margin-left: 1em;
+#additionalInfoSection {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 40%;
+}
+
+#rateMovie {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    width: 25%;
+    box-shadow: 5px 4px 5px #666;
+    background: linear-gradient(darkgrey, grey);
+    margin-right: 1em;
+    padding: 1em;
+    padding-top: 0;
 }
-.about img {
-    height: 300px;
+
+#theMovieToRate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 4px 5px #666;
+    background: linear-gradient(darkgrey, grey);
+}
+
+#theMovieToRateInfo {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    justify-content: flex-start;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    
+}
+
+#theMovieToRateInfo:hover {
+    background: white;
+}
+
+#theMovieToRateInfo img {
+    height: 160px;
+    margin-right: 1em;
+    align-self: flex-start;
+}
+
+#ratingSystem {
+    align-self: center;
+}
+
+fieldset { 
+    border: none;
+}
+
+.rating > input { 
+    display: none; 
+} 
+
+.rating > label:before { 
+    font-size: 3em;
+    content: '\2605';
+}
+
+.rating > label {  
+    float: right; 
+}
+
+
+.rating > input:checked ~ label, /* uses Tilde to select all siblings*/
+.rating:not(:checked) > label:hover, /* puts hover on previous siblings */
+.rating:not(:checked) > label:hover ~ label { /* uses tilde to hover previous star labels */
+    color: #FFC20F;  
+} /* This was hard to get right */
+button {
+    margin: 0;
 }
 #borrowedItems {
     box-shadow: 5px 4px 5px #666;
     background: linear-gradient(darkgrey, grey);
     width: 20%;
     padding-left: 1em;
+    padding-right: 1em;
 }
 #borrowedItems > * {
     align-self: center;
@@ -167,8 +253,7 @@ main {
     justify-content: space-around;
     width: 100%;
     text-decoration: none;
-    color: black;
-    
+    color: black; 
 }
 .borrowedItem a p {
     height: 2em;
@@ -183,16 +268,7 @@ main {
 }
 
 @media screen and (max-width: 1470px) {
-    main {
-        min-height: 100%;
-    }
-   #movieSection {
-
-   }
 }
 
 @media screen and (max-width: 680px) {
-   img {
-       display: none;
-   }
 }
