@@ -267,8 +267,40 @@ button {
     height: 100px;
 }
 
-@media screen and (max-width: 1470px) {
+@media screen and (max-width: 1450px) {
+    #additionalInfoSection {
+        justify-content: space-around;
+    }
+    #additionalInfoSection > * {
+        width: 40%;
+        max-width: 40%;
+    }
+    
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1180px) {
+    #additionalInfoSection > * {
+        width: 50%;
+        min-width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 970px) {
+    #additionalInfoSection {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 10%;
+        margin-right: 10%;
+        min-width: 80%;
+        max-width: 80%;
+    }
+    #additionalInfoSection > * {
+        min-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        align-self: center;
+        
+    }
+
 }
