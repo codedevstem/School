@@ -185,28 +185,28 @@ a img {
     margin-bottom: 1em;
 }
 #infoAndSuggestions > *{
-    min-width: 49%;
     box-shadow: 5px 4px 5px #666;
     background: linear-gradient(darkgrey, grey);
     padding: 1em;
     box-sizing: border-box;
 }
 #infoSection {
+    width: 49%;
 }
 #infoSection p {
     font-size: 140%;
     padding-left: 2em;
+    max-width: 60%;
 }
 #suggestionSection {
     display: flex;
     flex-direction: column;
+    width: 49%;
 }
 #suggestedItems {
     display: flex;
     flex-direction: row;
 }
-
-
 #additionalInfoSection {
     display: flex;
     flex-direction: row;
