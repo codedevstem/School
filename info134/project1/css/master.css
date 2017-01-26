@@ -367,6 +367,6 @@ button {
         box-sizing: border-box;
     }
     #logInForm input {
-    width: 100px;
+        width: 100px;
     }
 }
