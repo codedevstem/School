@@ -17,6 +17,7 @@ html {
     width: 100%;
     min-width: 500px;
 }
+/* main containing element, flexbox with column layout */ 
 body {
     width: 95%;
     height: 130%;
@@ -26,14 +27,16 @@ body {
     display: flex;
     flex-direction: column;
     clear: both;
-    background: linear-gradient(lightskyblue, #ade1ff);
+    background: linear-gradient(whitesmoke, #ade1ff);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+/* styling all the direct elements of body */ 
 body > * {
     margin-left: auto;
     margin-right: auto;
 }
+/* Header element with flex layout and gradient background */ 
 header {
     min-width: 100%;
     min-height: 7.5em;
@@ -41,21 +44,18 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: grey;
-    background: linear-gradient(whitesmoke, lightskyblue);
-    box-shadow: 5px 2px 5px #666;
+    background: linear-gradient(whitesmoke, lightskyblue); /* gradient background */ 
+    box-shadow: 5px 2px 5px #222;
 }
 header > * {
     min-width: 25%;
     box-sizing: border-box;
 }
-
 #navabout {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 header a {
     padding: 0.5em;
     font-size: 120%;
@@ -63,18 +63,15 @@ header a {
     text-decoration: none;
     color: black;
 }
-
 header a:hover {
     background: whitesmoke;
 }
-
 header h1{
     font-size: 300%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-
 #logInForm {
     margin-top: 1em;
     margin-right: 1em;
@@ -84,35 +81,29 @@ header h1{
 #logInForm input {
     width: 200px;
 }
-
 #logInForm > * {
     align-self: flex-end;
 }
-
 main {
     min-width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
-
 #mainTop {
     min-height: 4em;
     display: flex;
     justify-content: flex-start;
     margin-left: 3%;
 }
-
 #search {
     display: flex;
     justify-content: flex-start;
 }
-
 #search > * {
     height: 2em;
     align-self: flex-end;
 }
-
 #mainContent {
     width: 100%;
     height: 100%;
@@ -120,7 +111,6 @@ main {
     flex-direction: column;  
     justify-content: space-between;
 }
-
 #newMoviesSection {
     width: 100%;
     max-height: 45%;
@@ -130,14 +120,12 @@ main {
     flex-direction: column;
     justify-content: center;
     background: lightskyblue;
-    box-shadow: 5px 4px 5px #666;
+    box-shadow: 5px 4px 5px #222;
     margin-bottom: 1em;
 }
-
 #newMoviesSection h2 {
     align-self: flex-start;
 }
-
 #availableMovies {
     align-self: flex-start;
     display: flex;
@@ -145,7 +133,6 @@ main {
     overflow-x: auto;
     margin-left: 3em;
 }
-
 .movie {
     min-width: 110px;
     max-width: 180px;
@@ -157,19 +144,17 @@ main {
     flex-direction: column;
     justify-content: center;
     align-self: flex-start;
-    box-shadow: 5px 4px 5px #666;
-background: lightskyblue;}
-
+    box-shadow: 5px 4px 5px #222;
+    background: lightskyblue;
+}
 .movie:hover {
     background: whitesmoke;
     box-shadow: none;
 }
-
 .movie a {
     text-decoration: none;
     color: black;
 }
-
 a img {
     height: 160px;
     align-self: center;
@@ -183,7 +168,7 @@ a img {
     margin-bottom: 1em;
 }
 #infoAndSuggestions > *{
-    box-shadow: 5px 4px 5px #666;
+    box-shadow: 5px 4px 5px #222;
     background: lightskyblue;
     padding: 1em;
     box-sizing: border-box;
@@ -199,11 +184,16 @@ a img {
 #suggestionSection {
     display: flex;
     flex-direction: column;
-    width: 49%;
+    width: 50%;
 }
 #suggestedItems {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;   
+}
+.suggestedItem {
+    box-shadow: 5px 4px 5px #222;
+    padding: 1em;
+    margin-bottom: 0.2em;
 }
 #additionalInfoSection {
     display: flex;
@@ -213,27 +203,24 @@ a img {
     height: 35%;
     margin-bottom: 6em;
 }
-
 #ratingSection {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 25%;
-    box-shadow: 5px 4px 5px #666;
+    box-shadow: 5px 4px 5px #222;
     background: lightskyblue;
     margin-right: 1em;
     padding: 1em;
     padding-top: 0;
 }
-
 #theMovieToRate {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 5px 4px 5px #666;
+    box-shadow: 5px 4px 5px #222;
     background: lightskyblue;
 }
-
 #theMovieToRateInfo {
     display: flex;
     flex-direction: row;
@@ -241,42 +228,32 @@ a img {
     justify-content: flex-start;
     height: 100%;
     text-decoration: none;
-    color: black;
-    
+    color: black;   
 }
-
 #theMovieToRateInfo:hover {
     background: white;
 }
-
 #theMovieToRateInfo img {
     height: 160px;
     margin-right: 1em;
     align-self: flex-start;
 }
-
 #ratingSystem {
     align-self: center;
 }
-
 fieldset { 
     border: none;
 }
-
 .rating > input { 
     display: none; 
 } 
-
 .rating > label:before { 
     font-size: 3em;
     content: '\2605';
 }
-
 .rating > label {  
     float: right; 
 }
-
-
 .rating > input:checked ~ label, /* uses Tilde to select all siblings*/
 .rating:not(:checked) > label:hover, /* puts hover on previous siblings */
 .rating:not(:checked) > label:hover ~ label { /* uses tilde to hover previous star labels */
@@ -286,24 +263,22 @@ button {
     margin: 0;
 }
 #borrowedSection {
-    box-shadow: 5px 4px 5px #666;
+    box-shadow: 5px 4px 5px #222;
     background: lightskyblue;
     width: 75%;
 }
-
 #borrowedSection > * {
     align-self: center;
 }
 #borrowedItems {
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;   
 }
 .borrowedItem {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    box-shadow: 5px 4px 5px #666;
+    box-shadow: 5px 4px 5px #222;
     padding: 1em;
     margin-bottom: 0.2em;
     text-decoration: none;
@@ -323,11 +298,6 @@ button {
 .borrowedItem img {
     height: 200px;
 }
-
-@media screen and (max-width: 1450px) {
-    
-}
-
 @media screen and (max-width: 1180px) {
     #borrowedSection {
         width: 60%;
@@ -336,7 +306,6 @@ button {
         width: 40%;
     }
 }
-
 @media screen and (max-width: 800px) {
     #mainContent > section {
         width: 100%;
@@ -366,6 +335,38 @@ button {
         box-sizing: border-box;
     }
     #logInForm input {
-    width: 100px;
+        width: 100px;
+    }
 }
+@media screen and (max-height: 800px) {
+    #mainContent > section {
+        width: 100%;
+        min-width: 100%;
+        flex-direction: column;
+        height: auto;
+        min-height: auto;
+    }
+    #additionalInfoSection, #infoAndSuggestions {
+        margin-bottom: 0;
+    }
+    #newMoviesSection {
+        margin-bottom: 1em;
+    }
+    section {
+        width: 100%;
+        min-width: 100%;
+        margin-bottom: 1em;
+    }
+    #theMovieToRateInfo {
+        padding: 0;
+    }
+    #ratingSection {
+        margin-right: 0;
+        padding: 0;
+        padding-left: 2em;
+        box-sizing: border-box;
+    }
+    #logInForm input {
+    width: 100px;
+    }
 }
