@@ -72,39 +72,3 @@ header h1{
 #logInForm > * {
     align-self: flex-end;
 }
-main {
-    width: 100%;
-}
-#mainInfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background: lightskyblue;
-    margin-top: 2em;
-    box-shadow: 5px 4px 5px #222;
-    margin-bottom: 1em;
-
-}
-#mainInfo > * {
-    width: 40%;
-    box-sizing: border-box;
-}
-#mainInfo p {
-
-}
-#aboutInfo {
-    
-}
-#screenShots {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 4em;
-}
-#screenShots img {
-    max-width: 75%;
-    margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
-
-}
