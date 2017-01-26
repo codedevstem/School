@@ -1,3 +1,6 @@
+* {
+    font-family: 'Alegreya', serif;
+}
 html {
     width: 100%;
     min-width: 500px;
@@ -98,4 +101,17 @@ main {
 #searchResults a img {
     height: 200px;
     margin-right: 1em;
+}
+@media screen and (max-width: 950px){
+    #searchResults {
+        flex-direction: column;
+    }
+    #searchResults a{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    #logInForm input {
+        width: 100px;
+    }
 }
