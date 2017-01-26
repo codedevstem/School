@@ -110,3 +110,24 @@ main {
     margin-right: auto;
 
 }
+#ratingSystem {
+    width: 230px;
+}
+fieldset { 
+    border: none;
+}
+.rating > input { 
+    display: none; 
+} 
+.rating > label:before { 
+    font-size: 3em;
+    content: '\2605';
+}
+.rating > label {  
+    float: right; 
+}
+.rating > input:checked ~ label, /* uses Tilde to select all siblings*/
+.rating:not(:checked) > label:hover, /* puts hover on previous siblings */
+.rating:not(:checked) > label:hover ~ label { /* uses tilde to hover previous star labels */
+    color: #FFC20F;  
+} /* This was hard to get right */
