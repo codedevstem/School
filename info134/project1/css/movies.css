@@ -27,8 +27,8 @@ body > * {
 /* Header element with flex layout and gradient background */ 
 header {
     min-width: 100%;
-    min-height: 7.5em;
-    max-height: 7.5em;
+    min-height: 7em;
+    max-height: 7em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,7 +42,9 @@ header > * {
 #navabout {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-height: 100px;
 }
 header a {
     padding: 0.5em;
@@ -93,7 +95,7 @@ main {
 
 }
 #aboutInfo {
-    
+
 }
 #screenShots {
     display: flex;
