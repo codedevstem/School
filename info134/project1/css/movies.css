@@ -24,56 +24,6 @@ body > * {
     margin-left: auto;
     margin-right: auto;
 }
-/* Header element with flex layout and gradient background */ 
-header {
-    min-width: 100%;
-    min-height: 7em;
-    max-height: 7em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: linear-gradient(whitesmoke, lightskyblue); /* gradient background */ 
-    box-shadow: 5px 2px 5px #222;
-}
-header > * {
-    min-width: 25%;
-    box-sizing: border-box;
-}
-#navabout {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    max-height: 100px;
-}
-header a {
-    padding: 0.5em;
-    font-size: 120%;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-}
-header a:hover {
-    background: whitesmoke;
-}
-header h1{
-    font-size: 300%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-#logInForm {
-    margin-top: 1em;
-    margin-right: 1em;
-    display: flex;
-    flex-direction: column;
-}
-#logInForm input {
-    width: 200px;
-}
-#logInForm > * {
-    align-self: flex-end;
-}
 main {
     width: 100%;
 }

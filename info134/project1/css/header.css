@@ -1,0 +1,62 @@
+/* Header element with flex layout and gradient background */ 
+header {
+    min-width: 100%;
+    min-height: 7em;
+    max-height: 7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(whitesmoke, lightskyblue); /* gradient background */ 
+    box-shadow: 5px 2px 5px #222;
+}
+header > * {
+    min-width: 25%;
+    box-sizing: border-box;
+}
+#navabout {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-height: 250px;
+    max-width: 200px;
+}
+header a {
+    padding: 0.5em;
+    height: 1.2em;
+    font-size: 120%;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    box-shadow: 2px 1px 1px 0px #222;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0.2em;
+}
+header a:hover {
+    background: whitesmoke;
+}
+header h1{
+    font-size: 300%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#logInForm {
+    margin-top: 1em;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+}
+#logInForm input {
+    width: 200px;
+}
+#logInForm > * {
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 800px) {
+    #logInForm input {
+        width: 100px;
+    }
+}

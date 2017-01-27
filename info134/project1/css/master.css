@@ -36,76 +36,31 @@ body > * {
     margin-left: auto;
     margin-right: auto;
 }
-/* Header element with flex layout and gradient background */ 
-header {
-    min-width: 100%;
-    min-height: 7em;
-    max-height: 7em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: linear-gradient(whitesmoke, lightskyblue); /* gradient background */ 
-    box-shadow: 5px 2px 5px #222;
-}
-header > * {
-    min-width: 25%;
-    box-sizing: border-box;
-}
-#navabout {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    max-height: 100px;
-}
-header a {
-    padding: 0.5em;
-    font-size: 120%;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-}
-header a:hover {
-    background: whitesmoke;
-}
-header h1{
-    font-size: 300%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-#logInForm {
-    margin-top: 1em;
-    margin-right: 1em;
-    display: flex;
-    flex-direction: column;
-}
-#logInForm input {
-    width: 200px;
-}
-#logInForm > * {
-    align-self: flex-end;
-}
+/* More flexbox */ 
 main {
     min-width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
+/* Top section containing searchbox and space for future items */ 
 #mainTop {
     min-height: 4em;
     display: flex;
     justify-content: flex-start;
     margin-left: 3%;
 }
+/* Search container form */ 
 #search {
     display: flex;
     justify-content: flex-start;
 }
+/* Styling the input forms in the search  */ 
 #search > * {
     height: 2em;
     align-self: flex-end;
 }
+
 #mainContent {
     width: 100%;
     height: 100%;
@@ -196,6 +151,10 @@ a img {
     box-shadow: 5px 4px 5px #222;
     padding: 1em;
     margin-bottom: 0.2em;
+    margin-left: 0.2em;
+}
+.suggestedItem:hover {
+    background: whitesmoke;
 }
 #additionalInfoSection {
     display: flex;
