@@ -75,59 +75,45 @@ header h1{
     align-self: flex-end;
 }
 main {
-    width: 100%;
-}
-#mainInfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background: lightskyblue;
-    margin-top: 2em;
-    box-shadow: 5px 4px 5px #222;
-    margin-bottom: 1em;
-
-}
-#mainInfo > * {
-    width: 40%;
-    box-sizing: border-box;
-}
-#mainInfo p {
-
-}
-#aboutInfo {
-
-}
-#screenShots {
+    min-width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-bottom: 4em;
 }
-#screenShots img {
-    max-width: 75%;
-    margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
-
+#searchResults {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-#ratingSystem {
-    width: 230px;
+#searchResults a {
+    box-sizing: border-box;
+    width: 49%;
+    display: flex;
+    box-shadow: 5px 4px 5px #222;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    background: lightskyblue;
+    text-decoration: none;
+    color: black;
 }
-fieldset { 
-    border: none;
+#searchResults a:hover {
+    background: whitesmoke;
 }
-.rating > input { 
-    display: none; 
-} 
-.rating > label:before { 
-    font-size: 3em;
-    content: '\2605';
+#searchResults a img {
+    height: 200px;
+    margin-right: 1em;
 }
-.rating > label {  
-    float: right; 
+@media screen and (max-width: 950px){
+    #searchResults {
+        flex-direction: column;
+    }
+    #searchResults a{
+        width: 100%;
+    }
 }
-.rating > input:checked ~ label, /* uses Tilde to select all siblings*/
-.rating:not(:checked) > label:hover, /* puts hover on previous siblings */
-.rating:not(:checked) > label:hover ~ label { /* uses tilde to hover previous star labels */
-    color: #FFC20F;  
-} /* This was hard to get right */
+@media screen and (max-width: 600px){
+    #logInForm input {
+        width: 100px;
+    }
+}
