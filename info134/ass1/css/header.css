@@ -2,23 +2,34 @@ header {
  display: flex;
  flex-direction: column;
  justify-content: center;
- text-align: center;
  background: #436B7F;
  width: 100%;
  padding-right: 0;
  margin-right: 0;
 }
-header > h1 {
+header > h1 {  
+ align-self: center;
  padding-top: .4em;
  padding-bottom: .2em;
  margin-top: 0;
  margin-bottom: 0;
+}
+header > nav {
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+ width: 100%;
+ max-width: 20em;
+
 }
 header > nav > li {
  list-style: none;
  padding-bottom: 3px;
  border-bottom: 1px solid black;
  font-size: 120%;
+}
+header > nav > li:hover {
+ background: whitesmoke;
 }
 header > nav > li > a {
  text-decoration: none;
@@ -27,9 +38,12 @@ header > nav > li > a {
 input[type=checkbox]{
     display: none;
 }
-form{
+li > form{
     display: none;
 }
 input[type=checkbox]:checked ~ form {
     display: block
+}
+li > label {
+    display: block;
 }

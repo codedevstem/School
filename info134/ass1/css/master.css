@@ -3,42 +3,106 @@ html, body {
  margin: 0;
  padding: 0;
  background: whitesmoke;
+
 }
 main {
  padding-top: 0;
  margin-top: 0;
+  box-sizing: border-box;
 }
-#newMoviesSection{
- margin-top: 0;
- padding-top: 0;
- background: #C1C8CC;
 
+main > section{
+ margin-top: 0;
+ margin-bottom: 0;
+ padding-top: 0;
+ padding-bottom: 0;
+ background: #C1C8CC;
+ border-bottom: 1px solid black;
 }
-#newMoviesSection h2 {
+main > section > h2 {
  margin: 0;
  padding: 0;
  text-align: center;
 }
-#newMovies {
+#newMoviesSection > ul, 
+#recentMoviesSection > ul, 
+#suggestionSection > ul {
  display: flex;
  flex-direction: row;
  flex-wrap: nowrap;
+ justify-content: flex-start;
  padding: 0.2em;
  padding-top: 0;
  margin-top: 0;
- width: 100%;
+
+ overflow: hidden;
  overflow-x: auto;
  scroll-snap-type: mandatory;
  scroll-snap-points-x: repeat(100%);
 }
-#newMovies > a > li {
+#newMoviesSection > ul > a > li, 
+#recentMoviesSection > ul > a > li, 
+#suggestionSection > ul > a > li {
  list-style: none;
  padding: 0.3em;
 }
-#newMovies > a > li > img {
- height: 150px;
+#newMoviesSection > ul > a > li > img,
+#recentMoviesSection > ul > a > li > img,
+#suggestionSection > ul > a > li > img {
+ height: 120px;
 }
-#newMovies > a > li:hover {
+#newMoviesSection > ul > a > li:hover,
+#recentMoviesSection > ul > a > li:hover,
+#suggestionSection > ul > a > li:hover {
  background: whitesmoke;
 }
+#ratingSection {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin-left: auto;
+ margin-right: auto;
+}
+#ratingSection > ul > a > li {
+ list-style: none;
+}
+#ratingSection > ul > a > li > img {
+ height: 150px;
+}
+#rateMovie {
+ display: flex;
+ justify-content: center;
+}
+#rateMovie > ul {
+ padding-left: 0;
+ margin-left: 0;
+ list-style-type: none;
+}
+#rateMovie > ul > p {
+ padding-left: 1em;
+ font-size: 125%;
+}
+fieldset { 
+    border: none;
+}
+.rating > input { 
+    display: none; 
+} 
+.rating > label:before { 
+    font-size: 2.5em;
+    content: '\2605';
+}
+.rating > label {  
+    float: right; 
+}
+.rating > input:checked ~ label, /* uses Tilde to select all siblings*/
+.rating:not(:checked) > label:hover, /* puts hover on previous siblings */
+.rating:not(:checked) > label:hover ~ label { /* uses tilde to hover previous star labels */
+    color: #FFC20F;  
+} /* This was hard to get right */
 
+@media screen and (max-width:350px) {
+ .rating > label:before {
+  font-size: 2em;
+ }
+}

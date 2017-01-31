@@ -10,13 +10,16 @@
  <body>
   <header>
    <h1>MoviesNow!</h1>
+   <!-- Main nav element --> 
    <nav>
     <li><a href="">Hjem</a></li>
     <li><a href="">Profil/Login</a></li>
     <li><a href="">Instruksjon</a></li>
     <li>
+     <!-- Simulated dropdown menu with search field --> 
      <input type="checkbox" id="checkbox_toggle">
-     <label for="checkbox_toggle">Søk</label>
+     <label for="checkbox_toggle">Søk</label> 
+     <!-- Hidden form that is triggered with checkbox and shown in css --> 
      <form>
         <label for="searchInput">Søk: </label>
         <input type="text" id="searchInput">
@@ -26,21 +29,57 @@
    </nav>
   </header>
   <main>
+   <!-- Section for viewing new movies --> 
    <section id="newMoviesSection">
     <h2>Nye filmer</h2>
+    <!-- The list of new movies, no titles becaus space --> 
     <ul id="newMovies">
+     <a href=""><li><img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables"></li></a>
      <a href=""><li><img src="images/intouchables/cover.jpg" alt="Cover of Intouchables"></li></a>
-     <a href=""><li><img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables"></li></a>
-     <a href=""><li><img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables"></li></a>
-     <a href=""><li><img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables"></li></a>
-     <a href=""><li><img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables"></li></a>
+     <a href=""><li><img src="images/intouchables/cover.jpg" alt="Cover of Intouchables"></li></a>
     </ul>
    </section>
+   <!-- Section for viewing recent movies --> 
    <section id="recentMoviesSection">
     <h2>Dine siste filmer</h2>
+    <!-- The list of recent movies, no titles becaus space --> 
     <ul id="recentMovies">
      <a href=""><li><img src="images/intouchables/cover.jpg" alt="Cover of Intouchables"></li></a>
      <a href=""><li><img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables"></li></a>
+    </ul>
+   </section>
+   <!-- Section for viewing suggested movies --> 
+   <section id="suggestionSection">
+    <h2>Forslag til filmer</h2>
+    <!-- The list of suggested movies, no titles becaus space --> 
+    <ul id="suggestedMovies">
+     <a href=""><li><img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables"></li></a>
+     <a href=""><li><img src="images/intouchables/cover.jpg" alt="Cover of Intouchables"></li></a>
+    </ul>
+   </section>
+   <!-- Section for rating movies. N --> 
+   <section id="ratingSection">
+    <h2>Gi terningkast</h2>
+    <ul id="rateMovie">
+     <a href=""><li><img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables"></li></a>
+     <ul>
+      <p>Valkyrie (2008)</p>
+      <!-- Form to hold rading stars and system --> 
+      <form action="" id="ratingSystem">
+       <fieldset class="rating">
+        <input type="radio" id="star5" name="rating" value="5" />
+        <label class = "star" for="star5" title="Superb"></label>
+        <input type="radio" id="star4" name="rating" value="4" />
+        <label class = "star" for="star4" title="Good"></label>
+        <input type="radio" id="star3" name="rating" value="3" />
+        <label class = "star" for="star3" title="Average"></label>
+        <input type="radio" id="star2" name="rating" value="2" />
+        <label class = "star" for="star2" title="Dissapointing"></label>
+        <input type="radio" id="star1" name="rating" value="1" />
+        <label class = "star" for="star1" title="Bad"></label>
+       </fieldset>
+      </form>
+     </ul>
     </ul>
    </section>
   </main>
