@@ -1,0 +1,35 @@
+header {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+ background: #436B7F;
+ width: 100%;
+ padding-right: 0;
+ margin-right: 0;
+}
+header > h1 {
+ padding-top: .4em;
+ padding-bottom: .2em;
+ margin-top: 0;
+ margin-bottom: 0;
+}
+header > nav > li {
+ list-style: none;
+ padding-bottom: 3px;
+ border-bottom: 1px solid black;
+ font-size: 120%;
+}
+header > nav > li > a {
+ text-decoration: none;
+ color: black;
+}
+input[type=checkbox]{
+    display: none;
+}
+form{
+    display: none;
+}
+input[type=checkbox]:checked ~ form {
+    display: block
+}

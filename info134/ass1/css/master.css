@@ -1,0 +1,44 @@
+html, body {
+ width: 100%;
+ margin: 0;
+ padding: 0;
+ background: whitesmoke;
+}
+main {
+ padding-top: 0;
+ margin-top: 0;
+}
+#newMoviesSection{
+ margin-top: 0;
+ padding-top: 0;
+ background: #C1C8CC;
+
+}
+#newMoviesSection h2 {
+ margin: 0;
+ padding: 0;
+ text-align: center;
+}
+#newMovies {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ padding: 0.2em;
+ padding-top: 0;
+ margin-top: 0;
+ width: 100%;
+ overflow-x: auto;
+ scroll-snap-type: mandatory;
+ scroll-snap-points-x: repeat(100%);
+}
+#newMovies > a > li {
+ list-style: none;
+ padding: 0.3em;
+}
+#newMovies > a > li > img {
+ height: 150px;
+}
+#newMovies > a > li:hover {
+ background: whitesmoke;
+}
+
