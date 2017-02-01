@@ -52,6 +52,7 @@ header > nav > li > ul > a,
 header > nav > li > ul > li > p {
  text-decoration: none;
  font-size: 0.9em;
+ color: black;
 }
 header > nav > li > ul > li > p {
  margin: 0.2em;
