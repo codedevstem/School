@@ -1,120 +1,152 @@
-html, body {
- width: 100%;
- margin: 0;
- padding: 0;
- background: whitesmoke;
-}
-body {
- margin-left: auto;
- margin-right: auto;
-}
-main {
- padding-top: 0;
- margin-top: 0;
- box-sizing: border-box;
-}
-main > section{
- margin-top: 0;
- margin-bottom: 0;
- margin-left: auto;
- margin-right: auto;
- padding-top: 0;
- padding-bottom: 0;
- background: #C1C8CC;
- border-bottom: 1px solid black;
-}
-main > section > h2 {
- margin: 0;
- padding: 0;
- text-align: center;
-}
-#newMoviesSection > ul, 
-#recentMoviesSection > ul, 
-#suggestionSection > ul {
- display: flex;
- flex-direction: row;
- flex-wrap: nowrap;
- justify-content: flex-start;
- padding: 0.2em;
- padding-top: 0;
- margin-top: 0;
+/* CSS for index site */
 
- overflow: hidden;
- overflow-x: auto;
- scroll-snap-type: mandatory;
- scroll-snap-points-x: repeat(100%);
+
+/* Author Kristian Os */
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
 }
-#newMoviesSection > ul > a > li, 
-#recentMoviesSection > ul > a > li, 
-#suggestionSection > ul > a > li {
- list-style: none;
- padding: 0.3em;
+
+body {
+    margin-left: auto;
+    margin-right: auto;
 }
-#newMoviesSection > ul > a > li > img,
-#recentMoviesSection > ul > a > li > img,
-#suggestionSection > ul > a > li > img {
- height: 120px;
+
+main {
+    padding-top: 0;
+    margin-top: 0;
+    box-sizing: border-box;
 }
-#newMoviesSection > ul > a > li:hover,
-#recentMoviesSection > ul > a > li:hover,
-#suggestionSection > ul > a > li:hover {
- background: whitesmoke;
+
+main>section {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #C1C8CC;
+    border-bottom: 1px solid black;
 }
+
+main>section>h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* For each unordered list that is a direct child of a section */
+#newMoviesSection>ul,
+#recentMoviesSection>ul,
+#suggestionSection>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0.2em;
+    padding-top: 0;
+    margin-top: 0;
+    overflow: hidden;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-x: repeat(100%);
+}
+
+#newMoviesSection>ul>a>li,
+#recentMoviesSection>ul>a>li,
+#suggestionSection>ul>a>li {
+    list-style: none;
+    padding: 0.3em;
+}
+
+#newMoviesSection>ul>a>li>img,
+#recentMoviesSection>ul>a>li>img,
+#suggestionSection>ul>a>li>img {
+    height: 120px;
+}
+
+#newMoviesSection>ul>a>li:hover,
+#recentMoviesSection>ul>a>li:hover,
+#suggestionSection>ul>a>li:hover {
+    background: whitesmoke;
+}
+
 #ratingSection {
- display: flex;
- flex-direction: column;
- justify-content: center;
- margin-left: auto;
- margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-#ratingSection > ul > a > li {
- list-style: none;
+
+#ratingSection>ul>a>li {
+    list-style: none;
 }
-#ratingSection > ul > a > li > img {
- height: 150px;
+
+#ratingSection>ul>a>li>img {
+    height: 150px;
 }
+
 #rateMovie {
- display: flex;
- justify-content: center;
+    display: flex;
+    justify-content: center;
 }
-#rateMovie > ul {
- padding-left: 0;
- margin-left: 0;
- list-style-type: none;
+
+#rateMovie>ul {
+    padding-left: 0;
+    margin-left: 0;
+    list-style-type: none;
 }
-#rateMovie > ul > p {
- padding-left: 1em;
- font-size: 125%;
+
+#rateMovie>ul>p {
+    padding-left: 1em;
+    font-size: 125%;
 }
-fieldset { 
+
+fieldset {
     border: none;
 }
-.rating > input { 
-    display: none; 
-} 
-.rating > label:before { 
+
+.rating>input {
+    display: none;
+}
+
+.rating>label:before {
     font-size: 2.5em;
     content: '\2605';
 }
-.rating > label {  
-    float: right; 
+
+.rating>label {
+    float: right;
 }
 
-.rating > input:checked ~ label, /* uses Tilde to select all siblings*/
-.rating:not(:checked) > label:hover, /* puts hover on previous siblings */
-.rating:not(:checked) > label:hover ~ label { /* uses tilde to hover previous star labels */
-    color: #FFC20F;  
-} /* This was hard to get right */
+/* uses Tilde to select all siblings*/
+.rating>input:checked~label,
+/* puts hover on previous siblings */
+.rating:not(:checked)>label:hover,
+/* uses tilde to hover previous star labels */
+.rating:not(:checked)>label:hover~label {
+    color: #FFC20F;
+}
+
+/* This was hard to get right */
 #ratingSystem input[type="submit"] {
- text-align: center;
+    text-align: center;
 }
+
+/* Special rule for extra small screens to make the star rating fit */
 @media screen and (max-width:350px) {
- .rating > label:before {
-  font-size: 2em;
- }
+    .rating>label:before {
+        font-size: 2em;
+    }
 }
+/* Make the big screens slightly smaller so there are not as much empty space */
 @media screen and (min-width:800px) {
- main > section {
-  width: 75%;
- }
+    main>section {
+        width: 75%;
+    }
 }
