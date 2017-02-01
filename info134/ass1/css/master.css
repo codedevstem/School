@@ -3,17 +3,21 @@ html, body {
  margin: 0;
  padding: 0;
  background: whitesmoke;
-
+}
+body {
+ margin-left: auto;
+ margin-right: auto;
 }
 main {
  padding-top: 0;
  margin-top: 0;
-  box-sizing: border-box;
+ box-sizing: border-box;
 }
-
 main > section{
  margin-top: 0;
  margin-bottom: 0;
+ margin-left: auto;
+ margin-right: auto;
  padding-top: 0;
  padding-bottom: 0;
  background: #C1C8CC;
@@ -95,14 +99,22 @@ fieldset {
 .rating > label {  
     float: right; 
 }
+
 .rating > input:checked ~ label, /* uses Tilde to select all siblings*/
 .rating:not(:checked) > label:hover, /* puts hover on previous siblings */
 .rating:not(:checked) > label:hover ~ label { /* uses tilde to hover previous star labels */
     color: #FFC20F;  
 } /* This was hard to get right */
-
+#ratingSystem input[type="submit"] {
+ text-align: center;
+}
 @media screen and (max-width:350px) {
  .rating > label:before {
   font-size: 2em;
+ }
+}
+@media screen and (min-width:800px) {
+ main > section {
+  width: 75%;
  }
 }

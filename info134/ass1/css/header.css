@@ -6,6 +6,8 @@ header {
  width: 100%;
  padding-right: 0;
  margin-right: 0;
+ margin-left: auto;
+ margin-right: auto;
 }
 header > h1 {  
  align-self: center;
@@ -20,30 +22,56 @@ header > nav {
  text-align: center;
  width: 100%;
  max-width: 20em;
-
 }
 header > nav > li {
  list-style: none;
  padding-bottom: 3px;
- border-bottom: 1px solid black;
- font-size: 120%;
+ border-bottom: 2px solid black;
+ font-size: 140%;
+ color: whitesmoke;
 }
+header > nav > li:last-of-type {
+ border-bottom: none;
+
+}
+
 header > nav > li:hover {
  background: whitesmoke;
+ color: black;
 }
 header > nav > li > a {
  text-decoration: none;
- color: black;
+ color: whitesmoke;
+}
+header > nav > li > ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+header > nav > li > ul > a,
+header > nav > li > ul > li > p {
+ text-decoration: none;
+ font-size: 0.9em;
+}
+header > nav > li > ul > li > p {
+ margin: 0.2em;
 }
 input[type=checkbox]{
-    display: none;
+ display: none;
 }
+li > ul,
 li > form{
-    display: none;
+ display: none;
 }
-input[type=checkbox]:checked ~ form {
-    display: block
+input[type=checkbox]:checked ~ form,
+input[type=checkbox]:checked ~ ul {
+ display: block
 }
 li > label {
-    display: block;
+ display: block;
+}
+@media screen and (min-width:900px) {
+ header {
+  width: 75%;
+ }
 }

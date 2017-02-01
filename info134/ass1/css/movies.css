@@ -1,0 +1,169 @@
+html, body {
+ width: 100%;
+ margin: 0;
+ padding: 0;
+ background: whitesmoke;
+}
+body {
+ margin-left: auto;
+ margin-right: auto;
+
+}
+main {
+ padding-top: 0;
+ margin-top: 0;
+ box-sizing: border-box;
+}
+main > section{
+ margin-top: 0;
+ margin-bottom: 0;
+ margin-left: auto;
+ margin-right: auto;
+ padding-top: 0;
+ padding-bottom: 0;
+ background: #C1C8CC;
+}
+#ratingSystem {
+  max-width: 13em;
+  margin-bottom: 2em;
+}
+fieldset { 
+    border: none;
+    margin-right: auto;
+}
+.rating > input { 
+    display: none; 
+} 
+.rating > label:before { 
+    font-size: 2.5em;
+    content: '\2605';
+}
+.rating > label {  
+    float: right; 
+}
+
+.rating > input:checked ~ label, /* uses Tilde to select all siblings*/
+.rating:not(:checked) > label:hover, /* puts hover on previous siblings */
+.rating:not(:checked) > label:hover ~ label { /* uses tilde to hover previous star labels */
+    color: #FFC20F;  
+} /* This was hard to get right */
+#submitRating {
+  float: right;
+}
+#infoSection {
+  margin-left: auto;
+  margin-right: auto;
+}
+#infoSection > * {
+ padding-left: 1.5em;
+}
+#infoSection > h2 {
+ margin-top: 0;
+ padding-top: 1em;
+ padding-left: 0.5em;
+}
+.infoHeader {
+ font-size: 145%;
+ margin-bottom: 0.1em;
+}
+.explanation {
+ margin-bottom: 0.5em;
+}
+#infoSection ul {
+ padding-left: 2.5em;
+ list-style-type: none;
+}
+#infoSection a {
+  text-decoration: none;
+  color: black;
+}
+input[type=checkbox]{
+ display: none;
+}
+#moreInfo{
+ display: none;
+}
+input[type=checkbox]:checked ~ #moreInfo {
+ display: block
+}
+#infoSection > label {
+ font-size: 120%;
+ font-weight: bold;
+ display: block;
+}
+#moreInfo {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#moreInfo li:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#media {
+ padding-top: 3em;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+}
+#media h2 {
+  margin-left: 0.5em;
+}
+#images {
+ margin-left: auto;
+ margin-right: auto;
+ display: flex;
+ max-width: 90%;
+ max-height: 600px;
+ overflow-x: auto;
+ overflow-y: hidden;
+ margin: 1em;
+ align-self: center;
+}
+#images img {
+ height: 100%; 
+ width: 100%; 
+ max-height: 400px;
+ margin-right: 0.5em;
+}
+#trailer {
+ width: 90%;
+ margin-left: auto;
+ margin-right: auto;
+ height: auto;
+ display: flex;
+}
+#trailer iframe {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  max-width: 700px;
+  text-align: center;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width:900px) {
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+  }
+ main > section {
+   margin-left: auto;
+   margin-right: auto;
+ }
+ #images {
+   max-width: 50%;
+   flex-direction: column;
+   margin-bottom: 0.5em;
+   overflow-x: hidden;
+   overflow-y: auto;
+ }
+ #infoSection * {
+   margin-left: 2%;
+ }
+ #infoSection > ul > li {
+   max-width: 60%;
+ }
+
+}
