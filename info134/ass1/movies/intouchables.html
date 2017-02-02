@@ -17,12 +17,13 @@
      <!-- Simulated dropdown menu for profile and patterns for loans --> 
      <input type="checkbox" id="checkboxToggleProfile">
      <label for="checkboxToggleProfile">Profile</label> 
-     <ul>
-      <a href="../pages/howto.html">Din Profil</a>
+     <ul id="profileOptions">
+      <a href="">Min Profil</a>
+      <a href="">Log Ut</a>
      </ul>
     </li>
     <!-- Describing to the user how to loan films --> 
-    <li><a href="">Hvordan leier jeg</a></li>
+    <li><a href="../pages/howto.html">Hvordan leier jeg</a></li>
     <li>
      <!-- Simulated dropdown menu with search field --> 
      <input type="checkbox" id="checkboxToggleSearch">
@@ -46,39 +47,44 @@
      <li class="explanation">112 minutter</li>
      <li class="infoHeader">Skuespillere</li>
      <li class="explanation">
-      <a href="http://www.imdb.com/name/nm2031248/">Alba Gaïa Kraghede Bellugi</a>,
-      <a href="http://www.imdb.com/name/nm0494504/?ref_=fn_al_nm_1">Anne Le Ny</a>, 
-      <a href="http://www.imdb.com/name/nm1109153/?ref_=fn_al_nm_1">Audrey Fleurot</a>, 
-      <a href="http://www.imdb.com/name/nm0597042/?ref_=fn_al_nm_1">Clotilde Mollet</a>, 
-      <a href="http://www.imdb.com/name/nm0167388/?ref_=fn_al_nm_1">Francois Cluzet</a>, 
+      <a href="http://www.imdb.com/name/nm2031248/">Alba Gaïa Kraghede Bellugi,</a>
+      <a href="http://www.imdb.com/name/nm0494504/?ref_=fn_al_nm_1">Anne Le Ny,</a> 
+      <a href="http://www.imdb.com/name/nm1109153/?ref_=fn_al_nm_1">Audrey Fleurot,</a> 
+      <a href="http://www.imdb.com/name/nm0597042/?ref_=fn_al_nm_1">Clotilde Mollet,</a> 
+      <a href="http://www.imdb.com/name/nm0167388/?ref_=fn_al_nm_1">Francois Cluzet,</a> 
       <a href="http://www.imdb.com/name/nm1082477/?ref_=fn_al_nm_1">Omar Sy</a>
      </li>
     </ul>
-    <form action="" id="ratingSystem">
-     <h3>Hva synest du om denne filmen?</h3>
-     <fieldset class="rating">
-      <input type="radio" id="star5" name="rating" value="5" />
-      <label class = "star" for="star5" title="Superb"></label>
-      <input type="radio" id="star4" name="rating" value="4" />
-      <label class = "star" for="star4" title="Good"></label>
-      <input type="radio" id="star3" name="rating" value="3" />
-      <label class = "star" for="star3" title="Average"></label>
-      <input type="radio" id="star2" name="rating" value="2" />
-      <label class = "star" for="star2" title="Dissapointing"></label>
-      <input type="radio" id="star1" name="rating" value="1" />
-      <label class = "star" for="star1" title="Bad"></label>
-     </fieldset>
-     <input type="submit" value="Gi rating" id="submitRating">
-    </form>
-    <!-- Simulated dropdown menu with search field --> 
-    <input type="checkbox" id="toggleMoreInfo">
-    <label for="toggleMoreInfo">Trykk for mer informasjon</label> 
-    <ul id="moreInfo">
-     <li class="infoHeader">Produsert</li>
-     <li class="explanation">FRA 2011</li>
-     <li class="infoHeader">Regissører</li>
-     <li class="explanation">Olivier Nakache / Eric Toledano</li>
-    </ul>
+    <section id="ratingSection">
+     <h3>Andre har gitt denne filmen: 3.8 stjerner</h3>
+     <form action="" id="ratingSystem">
+      <h3>Hva synest du om denne filmen?</h3>
+      <fieldset class="rating">
+       <input type="radio" id="star5" name="rating" value="5" />
+       <label class = "star" for="star5" title="Superb"></label>
+       <input type="radio" id="star4" name="rating" value="4" />
+       <label class = "star" for="star4" title="Good"></label>
+       <input type="radio" id="star3" name="rating" value="3" />
+       <label class = "star" for="star3" title="Average"></label>
+       <input type="radio" id="star2" name="rating" value="2" />
+       <label class = "star" for="star2" title="Dissapointing"></label>
+       <input type="radio" id="star1" name="rating" value="1" checked/>
+       <label class = "star" for="star1" title="Bad"></label>
+      </fieldset>
+      <input type="submit" value="Gi rating" id="submitRating">
+     </form>
+    </section>
+    <section id="moreInfoSection">
+     <!-- Simulated dropdown menu with search field --> 
+     <input type="checkbox" id="toggleMoreInfo">
+     <label for="toggleMoreInfo">Trykk for mer informasjon</label> 
+     <ul id="moreInfo">
+      <li class="infoHeader">Produsert</li>
+      <li class="explanation">FRA 2011</li>
+      <li class="infoHeader">Regissører</li>
+      <li class="explanation">Olivier Nakache / Eric Toledano</li>
+     </ul>
+    </section>
    </section>
    <section id="media">
     <section id="trailer">

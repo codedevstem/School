@@ -17,8 +17,9 @@
      <!-- Simulated dropdown menu for profile and patterns for loans --> 
      <input type="checkbox" id="checkboxToggleProfile">
      <label for="checkboxToggleProfile">Profile</label> 
-     <ul>
-      <a href="">Din Profil</a>
+     <ul id="profileOptions">
+      <a href="">Min Profil</a>
+      <a href="">Log Ut</a>
      </ul>
     </li>
     <!-- Describing to the user how to loan films --> 
@@ -81,7 +82,7 @@
         <label class = "star" for="star3" title="Average"></label>
         <input type="radio" id="star2" name="rating" value="2" />
         <label class = "star" for="star2" title="Dissapointing"></label>
-        <input type="radio" id="star1" name="rating" value="1" />
+        <input type="radio" id="star1" name="rating" value="1" checked/>
         <label class = "star" for="star1" title="Bad"></label>
        </fieldset>
        <input type="submit" value="Neste">

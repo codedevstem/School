@@ -133,7 +133,6 @@ fieldset {
     color: #FFC20F;
 }
 
-/* This was hard to get right */
 #ratingSystem input[type="submit"] {
     text-align: center;
 }

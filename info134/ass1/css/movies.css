@@ -76,6 +76,7 @@ fieldset {
 #infoSection a {
   text-decoration: none;
   color: black;
+  display: block;
 }
 input[type=checkbox]{
  display: none;
@@ -162,6 +163,7 @@ input[type=checkbox]:checked ~ #moreInfo {
  #infoSection * {
    margin-left: 2%;
  }
+
  #infoSection > ul > li {
    max-width: 60%;
  }
