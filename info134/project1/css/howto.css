@@ -1,0 +1,26 @@
+* {
+    font-family: 'Alegreya', serif;
+}
+html {
+    width: 100%;
+    min-width: 500px;
+}
+/* main containing element, flexbox with column layout */ 
+body {
+    width: 95%;
+    height: 130%;
+    min-height: 130%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    clear: both;
+    background: linear-gradient(whitesmoke, #ade1ff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* styling all the direct elements of body */ 
+body > * {
+    margin-left: auto;
+    margin-right: auto;
+}
