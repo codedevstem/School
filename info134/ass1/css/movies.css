@@ -24,7 +24,7 @@ main > section{
  background: #C1C8CC;
 }
 #ratingSystem {
-  max-width: 13em;
+  max-width: 15em;
   margin-bottom: 2em;
 }
 fieldset { 
@@ -77,6 +77,10 @@ fieldset {
   text-decoration: none;
   color: black;
   display: block;
+}
+#toggleMoreInfo ~ label {
+  font-size: 125%;
+  font-weight: bold;
 }
 input[type=checkbox]{
  display: none;
