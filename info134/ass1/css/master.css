@@ -39,7 +39,9 @@ main>section>h2 {
     text-align: center;
 }
 
+
 /* For each unordered list that is a direct child of a section */
+
 #newMoviesSection>ul,
 #recentMoviesSection>ul,
 #suggestionSection>ul {
@@ -124,19 +126,26 @@ fieldset {
     float: right;
 }
 
+
 /* uses Tilde to select all siblings*/
+
 .rating>input:checked~label,
+
 /* puts hover on previous siblings */
+
 .rating:not(:checked)>label:hover,
+
 /* uses tilde to hover previous star labels */
+
 .rating:not(:checked)>label:hover~label {
     color: #FFC20F;
 }
 
-#ratingSystem > input[type="submit"] {
+#ratingSystem>input[type="submit"] {
     margin-left: 11em;
     margin-right: 1em;
 }
+
 #loanRules p {
     margin-left: auto;
     margin-right: auto;
@@ -145,12 +154,16 @@ fieldset {
 
 
 /* Special rule for extra small screens to make the star rating fit */
+
 @media screen and (max-width:350px) {
     .rating>label:before {
         font-size: 2em;
     }
 }
+
+
 /* Make the big screens slightly smaller so there are not as much empty space */
+
 @media screen and (min-width:800px) {
     main>section {
         width: 75%;
