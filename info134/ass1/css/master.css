@@ -133,9 +133,16 @@ fieldset {
     color: #FFC20F;
 }
 
-#ratingSystem input[type="submit"] {
-    text-align: center;
+#ratingSystem > input[type="submit"] {
+    margin-left: 11em;
+    margin-right: 1em;
 }
+#loanRules p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
 
 /* Special rule for extra small screens to make the star rating fit */
 @media screen and (max-width:350px) {
