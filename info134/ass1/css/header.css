@@ -1,86 +1,99 @@
 /* CSS for header since all sites have the same header*/
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
 header {
- display: flex;
- flex-direction: column;
- justify-content: center;
- background: #436B7F;
- width: 100%;
- padding-right: 0;
- margin-right: 0;
- margin-left: auto;
- margin-right: auto;
-}
-header > h1 {  
- align-self: center;
- margin-top: 0;
- margin-bottom: 0;
- padding-top: .4em;
- padding-bottom: .2em;
- color: whitesmoke;
-}
-header > nav {
- text-align: center;
- width: 100%;
- max-width: 20em;
- margin-left: auto;
- margin-right: auto;
-}
-header > nav > li {
- list-style: none;
- padding-bottom: 3px;
- border-bottom: 2px solid black;
- font-size: 140%;
- color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #436B7F;
+    width: 100%;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-header > nav > li:last-of-type {
- border-bottom: none;
+header>h1 {
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: .4em;
+    padding-bottom: .2em;
+    color: whitesmoke;
 }
 
-header > nav > li:hover {
- background: whitesmoke;
- color: black;
+header>nav {
+    text-align: center;
+    width: 100%;
+    max-width: 20em;
+    margin-left: auto;
+    margin-right: auto;
 }
-header > nav > li > a {
- text-decoration: none;
- color: whitesmoke;
+
+header>nav>li {
+    list-style: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid black;
+    font-size: 140%;
+    color: whitesmoke;
 }
-#profileOptions {
- 
+
+header>nav>li:last-of-type {
+    border-bottom: none;
 }
-header > nav > li > ul {
- list-style: none;
- padding: 0;
- margin: 0;
+
+header>nav>li:hover {
+    background: whitesmoke;
+    color: black;
 }
-header > nav > li > ul > a,
-header > nav > li > ul > li > p {
- text-decoration: none;
- font-size: 0.9em;
- color: black;
+
+header>nav>li>a {
+    text-decoration: none;
+    color: whitesmoke;
 }
-header > nav > li > ul > li > p {
- margin: 0.2em;
+
+header>nav>li>ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-input[type=checkbox]{
- display: none;
+
+header>nav>li>ul>a,
+header>nav>li>ul>li>p {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: black;
 }
-li > ul,
-li > form{
- display: none;
+
+header>nav>li>ul>li>p {
+    margin: 0.2em;
 }
-input[type=checkbox]:checked ~ form{
- display: block
+
+input[type=checkbox] {
+    display: none;
 }
-input[type=checkbox]:checked ~ #profileOptions {
- display: flex;
- flex-direction: column;
+
+li>ul,
+li>form {
+    display: none;
 }
-li > label {
- display: block;
+
+input[type=checkbox]:checked~form {
+    display: block
 }
+
+input[type=checkbox]:checked~#profileOptions {
+    display: flex;
+    flex-direction: column;
+}
+
+li>label {
+    display: block;
+}
+
 @media screen and (min-width:900px) {
- header {
-  width: 75%;
- }
+    header {
+        width: 75%;
+    }
 }

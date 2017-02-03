@@ -2,7 +2,9 @@
 
 
 /* Author Kristian Os */
-
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
 html,
 body {
     width: 100%;
@@ -109,37 +111,6 @@ main>section>h2 {
     font-size: 125%;
 }
 
-fieldset {
-    border: none;
-}
-
-.rating>input {
-    display: none;
-}
-
-.rating>label:before {
-    font-size: 2.5em;
-    content: '\2605';
-}
-
-.rating>label {
-    float: right;
-}
-
-
-/* uses Tilde to select all siblings*/
-
-.rating>input:checked~label,
-
-/* puts hover on previous siblings */
-
-.rating:not(:checked)>label:hover,
-
-/* uses tilde to hover previous star labels */
-
-.rating:not(:checked)>label:hover~label {
-    color: #FFC20F;
-}
 
 #ratingSystem>input[type="submit"] {
     margin-left: 11em;
