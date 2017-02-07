@@ -40,7 +40,8 @@ header>nav>li:last-of-type {
     border-bottom: none;
 }
 
-header>nav>li:hover{
+header>nav>li:hover,
+header>nav>li:hover>a{
     background: whitesmoke;
     color: black;
 }

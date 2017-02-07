@@ -1,0 +1,36 @@
+main>h2 {
+ margin-top: 0;
+ margin-bottom: 0;
+ padding-left: 0.5em;
+ padding-top: 0.5em;
+ padding-bottom: 0.5em;
+ background: #C1C8CC;
+}
+
+#contentSection>h3 {
+ margin-top: 0;
+ padding-top: 0.2em;
+ margin-left: 1em;
+ margin-bottom: 0.1em;
+}
+#contentSection>section>h3{
+ margin-top: 0;
+ padding-top: 0.5em;
+ margin-left: 1.5em;
+}
+#contentSection>section>ul>a>img {
+ height: 120px;
+}
+@media screen and (min-width:900px){
+ #contentSection {
+  display: flex;
+  justify-content: space-between;
+  background: whitesmoke;
+ }
+ #contentSection>section {
+  box-sizing: border-box;
+  width: 49.8%;
+  padding-left: 1em;
+  background: #C1C8CC;
+ }
+}
