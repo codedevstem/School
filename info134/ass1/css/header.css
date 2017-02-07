@@ -1,7 +1,4 @@
 /* CSS for header since all sites have the same header*/
-* {
-    font-family: 'Nunito Sans', sans-serif;
-}
 header {
     display: flex;
     flex-direction: column;
@@ -43,7 +40,7 @@ header>nav>li:last-of-type {
     border-bottom: none;
 }
 
-header>nav>li:hover {
+header>nav>li:hover{
     background: whitesmoke;
     color: black;
 }
@@ -66,6 +63,7 @@ header>nav>li>ul>li>p {
     color: black;
 }
 
+
 header>nav>li>ul>li>p {
     margin: 0.2em;
 }
@@ -87,7 +85,15 @@ input[type=checkbox]:checked~#profileOptions {
     display: flex;
     flex-direction: column;
 }
-
+/* Changes the color when the user is not hovering but the checkbox is checked for links */
+li:not(:hover)>input[type=checkbox]:checked~#profileOptions>a {
+    color: white;
+}
+/* Changes the color again when the user is hovering */
+#profileOptions>a:hover {
+    background: #222;
+    color: white;
+}
 li>label {
     display: block;
 }

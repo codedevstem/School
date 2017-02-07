@@ -1,40 +1,6 @@
 /* CSS for index site */
 
 
-/* Author Kristian Os */
-* {
-    font-family: 'Nunito Sans', sans-serif;
-}
-html,
-body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: whitesmoke;
-}
-
-body {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-main {
-    padding-top: 0;
-    margin-top: 0;
-    box-sizing: border-box;
-}
-
-main>section {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0;
-    padding-bottom: 0;
-    background: #C1C8CC;
-    border-bottom: 1px solid black;
-}
-
 main>section>h2 {
     margin: 0;
     padding: 0;
@@ -129,14 +95,5 @@ main>section>h2 {
 @media screen and (max-width:350px) {
     .rating>label:before {
         font-size: 2em;
-    }
-}
-
-
-/* Make the big screens slightly smaller so there are not as much empty space */
-
-@media screen and (min-width:800px) {
-    main>section {
-        width: 75%;
     }
 }
