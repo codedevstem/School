@@ -17,15 +17,16 @@
     <li>
      <!-- Simulated dropdown menu for profile and patterns for loans --> 
      <input type="checkbox" id="checkboxToggleProfile">
-     <label for="checkboxToggleProfile">Profile</label> 
+     <label for="checkboxToggleProfile">Profil</label> 
      <ul id="profileOptions">
       <!-- TODO: Future link to personal profile with additional info --> 
-      <a href="../pages/profil.html">Min Profil</a>
+      <a href="../pages/profile.html">Min Profil</a>
+      <a href="">Log Ut</a>
      </ul>
     </li>
     <li>
      <!-- Simulated dropdown menu with search field --> 
-     <input type="checkbox" id="checkboxToggleSearch" checked>
+     <input type="checkbox" id="checkboxToggleSearch">
      <label for="checkboxToggleSearch">Søk</label> 
      <!-- Hidden form that is triggered with checkbox and shown in css --> 
      <form action="search.html" method="POST">
@@ -35,5 +36,26 @@
     </li>
    </nav>
   </header>
+  <main>
+   <h2>Velkommen: Bob</h2>
+   <section id="contentSection">
+    <section id="haveLoanedSection">
+     <h3>Du har lånt:</h3>
+     <!-- The list of loaned movies --> 
+     <ul id="loanedMoves">
+      <a href="../movies/valkyrie.html"><img src="../images/valkyrie/cover.jpg" alt="Cover of Intouchables"></a>
+      <a href="../movies/intouchables.html"><img src="../images/intouchables/cover.jpg" alt="Cover of Intouchables"></a>
+     </ul>
+    </section>
+    <section id="wantLoanedSection">
+     <h3>Ønskeliste</h3>
+     <!-- The list of movies the user wants to loan --> 
+     <ul id="wantMovies">
+      <a href="../movies/valkyrie.html"><img src="../images/valkyrie/cover.jpg" alt="Cover of Intouchables"></a>
+      <a href="../movies/intouchables.html"><img src="../images/intouchables/cover.jpg" alt="Cover of Intouchables"></a>
+     </ul>
+    </section>
+   </section>
+  </main>
  </body>
 </html>
