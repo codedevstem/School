@@ -24,6 +24,7 @@ main>section>h2 {
     overflow-x: auto;
     scroll-snap-type: mandatory;
     scroll-snap-points-x: repeat(100%);
+    
 }
 
 #newMoviesSection>ul>a>li,

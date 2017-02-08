@@ -11,8 +11,9 @@
 #infoSection {
     margin-left: auto;
     margin-right: auto;
+    padding-right: 1em;
 }
-
+/* Targets all direct children of the section */
 #infoSection>* {
     padding-left: 1.5em;
 }
@@ -39,7 +40,7 @@
 
 #infoSection a {
     text-decoration: none;
-    color: black;
+    color: orangered;
     display: block;
 }
 

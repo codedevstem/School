@@ -1,9 +1,10 @@
 /* CSS for header since all sites have the same header*/
+
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #436B7F;
+    background: #2C5C7F;
     width: 100%;
     padding-right: 0;
     margin-right: 0;
@@ -41,7 +42,7 @@ header>nav>li:last-of-type {
 }
 
 header>nav>li:hover,
-header>nav>li:hover>a{
+header>nav>li:hover>a {
     background: whitesmoke;
     color: black;
 }
@@ -64,7 +65,6 @@ header>nav>li>ul>li>p {
     color: black;
 }
 
-
 header>nav>li>ul>li>p {
     margin: 0.2em;
 }
@@ -82,19 +82,29 @@ input[type=checkbox]:checked~form {
     display: block
 }
 
+
+/* Edits all siblings to a checkbox that is checked that has id "profileOptions" */
+
 input[type=checkbox]:checked~#profileOptions {
     display: flex;
     flex-direction: column;
 }
+
+
 /* Changes the color when the user is not hovering but the checkbox is checked for links */
+
 li:not(:hover)>input[type=checkbox]:checked~#profileOptions>a {
     color: white;
 }
+
+
 /* Changes the color again when the user is hovering */
+
 #profileOptions>a:hover {
-    background: #222;
+    background: #536C7F;
     color: white;
 }
+
 li>label {
     display: block;
 }
