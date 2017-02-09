@@ -17,76 +17,92 @@
   <h1>FilmNå!</h1>
   <!-- Main nav element -->
   <nav>
-   <li><a href="index.html">Hjem</a></li>
-   <li>
-    <!-- Simulated dropdown menu for profile and patterns for loans -->
-    <input type="checkbox" id="checkboxToggleProfile">
-    <label for="checkboxToggleProfile">Profil</label>
-    <ul id="profileOptions">
-     <a href="pages/profile.html">Min Profil</a>
-     <a href="">Log Ut</a>
-    </ul>
-   </li>
-   <li>
-    <!-- Simulated dropdown menu with search field -->
-    <input type="checkbox" id="checkboxToggleSearch">
-    <label for="checkboxToggleSearch">Søk</label>
-    <!-- Hidden form that is triggered with checkbox and shown in css -->
-    <form action="pages/search.html" method="POST">
-     <input type="text" id="searchInput">
-     <input type="submit" value="Søk">
-    </form>
-   </li>
+   <ul>
+    <li><a href="index.html">Hjem</a></li>
+    <li>
+     <!-- Simulated dropdown menu for profile and patterns for loans -->
+     <input type="checkbox" id="checkboxToggleProfile">
+     <label for="checkboxToggleProfile">Profil</label>
+     <ul id="profileOptions">
+      <li><a href="pages/profile.html">Min Profil</a></li>
+      <li><a href="">Log Ut</a></li>
+     </ul>
+    </li>
+    <li>
+     <!-- Simulated dropdown menu with search field -->
+     <input type="checkbox" id="checkboxToggleSearch">
+     <label for="checkboxToggleSearch">Søk</label>
+     <!-- Hidden form that is triggered with checkbox and shown in css -->
+     <form action="pages/search.html" method="POST">
+      <input type="text" id="searchInput">
+      <input type="submit" value="Søk">
+     </form>
+    </li>
+   </ul>
   </nav>
  </header>
  <main>
   <!-- Section for viewing new movies -->
   <section id="newMoviesSection">
    <h2>Nye filmer</h2>
-   <!-- The list of new movies, no titles becaus space -->
+   <!-- The list of new movies, no titles becaus space Have to create 
+   workaround in js because of spec in css that makes visible and hidden visible auto...
+   so no handling when the bar fills up. -->
    <ul id="newMovies">
-    <a href="movies/valkyrie.html">
-     <li><img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables"></li>
-    </a>
-    <a href="movies/intouchables.html">
-     <li><img src="images/intouchables/cover.jpg" alt="Cover of Intouchables"></li>
-    </a>
+    <li>
+     <a href="movies/valkyrie.html">
+      <img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables">
+     </a>
+    </li>
+    <li>
+     <a href="movies/intouchables.html">
+      <img src="images/intouchables/cover.jpg" alt="Cover of Intouchables">
+     </a>
+    </li>
    </ul>
   </section>
   <!-- Section for viewing recent movies -->
   <section id="recentMoviesSection">
-   <h2>Dine siste filmer</h2>
+   <h2>Siste sette</h2>
    <!-- The list of recent movies, no titles becaus space -->
    <ul id="recentMovies">
-    <a href="movies/intouchables.html">
-     <li><img src="images/intouchables/cover.jpg" alt="Cover of Intouchables"></li>
-    </a>
-    <a href="movies/valkyrie.html">
-     <li><img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables"></li>
-    </a>
+    <li>
+     <a href="movies/intouchables.html">
+      <img src="images/intouchables/cover.jpg" alt="Cover of Intouchables">
+     </a>
+    </li>
+    <li>
+     <a href="movies/valkyrie.html">
+      <img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables">
+     </a>
+    </li>
    </ul>
   </section>
   <!-- Section for viewing suggested movies -->
   <section id="suggestionSection">
-   <h2>Forslag til filmer</h2>
+   <h2>Forslag</h2>
    <!-- The list of suggested movies, no titles becaus space -->
    <ul id="suggestedMovies">
-    <a href="movies/valkyrie.html">
-     <li><img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables"></li>
-    </a>
-    <a href="movies/intouchables.html">
-     <li><img src="images/intouchables/cover.jpg" alt="Cover of Intouchables"></li>
-    </a>
+    <li>
+     <a href="movies/valkyrie.html">
+      <img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables">
+     </a>
+    </li>
+    <li>
+     <a href="movies/intouchables.html">
+      <img src="images/intouchables/cover.jpg" alt="Cover of Intouchables">
+     </a>
+    </li>
    </ul>
   </section>
   <!-- Section for rating movies. N -->
   <section id="ratingSection">
-   <h2>Gi terningkast</h2>
-   <ul id="rateMovie">
+   <h2>Din mening</h2>
+   <section id="rateMovie">
     <a href="movies/valkyrie.html">
      <li><img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables"></li>
     </a>
-    <ul>
+    <section id="ratingInfo">
      <p>Valkyrie (2008)</p>
      <!-- Form to hold rading stars and system -->
      <form action="" id="ratingSystem">
@@ -99,14 +115,16 @@
        <label class="star" for="star3" title="Average"></label>
        <input type="radio" id="star2" name="rating" value="2" />
        <label class="star" for="star2" title="Dissapointing"></label>
-       <input type="radio" id="star1" name="rating" value="1" checked/>
+       <input type="radio" id="star1" name="rating" value="1" />
        <label class="star" for="star1" title="Bad"></label>
       </fieldset>
+      <input type="reset" value="Reset">
       <input type="submit" value="Neste">
      </form>
-    </ul>
-   </ul>
+    </section>
+   </section>
   </section>
+  <!-- Section to hold the rules of how to loan --> 
   <section id="loanRules">
    <h2>Rutiner</h2>
    <p>1. Følgende kan låne: staben ved Institutt for informasjons- og medievitenskap, studenter ved instituttet, på grunnlag
@@ -114,7 +132,8 @@
    </p>
    <p>2. Bestilling vil bli effektuert hver arbeidsdag mellom klokken 14:00 og 15:00.</p>
    <p>3. Ansatte ved instituttet får filmen lagt i posthyllen, studenter og andre får tilbakemelding om hvor og når filmen kan
-    hentes.</p>
+    hentes.
+   </p>
    <p>4. For alt utlån gjelder en generell regel om lånetid på 1 uke, som kan forlengest med ytterlige en uke. Ønskes en film
     lånt over en lengre periode må dette begrunnes, og hver enkelt forespørsel vil bli vurdert.</p>
    <p>5. Film skal leveres tilbake i posthyllen merket retur av film.</p>

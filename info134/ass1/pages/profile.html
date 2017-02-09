@@ -15,27 +15,29 @@
   <h1>FilmNå!</h1>
   <!-- Main nav element -->
   <nav>
-   <li><a href="../index.html">Hjem</a></li>
-   <li>
-    <!-- Simulated dropdown menu for profile and patterns for loans -->
-    <input type="checkbox" id="checkboxToggleProfile">
-    <label for="checkboxToggleProfile">Profil</label>
-    <ul id="profileOptions">
-     <!-- TODO: Future link to personal profile with additional info -->
-     <a href="../pages/profile.html">Min Profil</a>
-     <a href="">Log Ut</a>
-    </ul>
-   </li>
-   <li>
-    <!-- Simulated dropdown menu with search field -->
-    <input type="checkbox" id="checkboxToggleSearch">
-    <label for="checkboxToggleSearch">Søk</label>
-    <!-- Hidden form that is triggered with checkbox and shown in css -->
-    <form action="search.html" method="POST">
-     <input type="text" id="searchInput">
-     <input type="submit" value="Søk">
-    </form>
-   </li>
+   <ul>
+    <li><a href="../index.html">Hjem</a></li>
+    <li>
+     <!-- Simulated dropdown menu for profile and patterns for loans -->
+     <input type="checkbox" id="checkboxToggleProfile">
+     <label for="checkboxToggleProfile">Profil</label>
+     <ul id="profileOptions">
+      <!-- Link to personal profile with additional info -->
+      <li><a href="profile.html">Min Profil</a></li>
+      <li><a href="">Log Ut</a></li>
+     </ul>
+    </li>
+    <li>
+     <!-- Simulated dropdown menu with search field -->
+     <input type="checkbox" id="checkboxToggleSearch">
+     <label for="checkboxToggleSearch">Søk</label>
+     <!-- Hidden form that is triggered with checkbox and shown in css -->
+     <form action="search.html" method="POST">
+      <input type="text" id="searchInput">
+      <input type="submit" value="Søk">
+     </form>
+    </li>
+   </ul>
   </nav>
  </header>
  <main>
