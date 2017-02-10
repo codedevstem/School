@@ -13,6 +13,7 @@ body {
 body {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2em;
 }
 
 main {
@@ -30,6 +31,29 @@ main>section {
     padding-bottom: 0;
     background: #CFEAFF;
     border-bottom: 1px solid black;
+}
+.addToList, .addToWish {
+    min-height: 2.5em;
+    min-width: 6em;
+    color: white;
+    font-size: 110%;
+    border: none;
+    margin-top: 1em;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.addToList {
+    background: radial-gradient(#5cb85c, green);
+}
+.addToList:hover {
+    background: green;
+}
+.addToWish {
+    background: radial-gradient(#337ab7,#311ab7);
+}
+.addToWish:hover {
+    background: #311ab7;
 }
 @media screen and (min-width:900px) {
     main {

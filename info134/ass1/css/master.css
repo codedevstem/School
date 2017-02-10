@@ -1,6 +1,5 @@
 /* CSS for index site */
 
-
 main>section>h2 {
     margin: 0;
     padding: 0;
@@ -23,8 +22,8 @@ main>section>h2 {
     overflow-y: visible;
     margin-left: 5%;
     margin-right: 5%;
-
 }
+
 #newMoviesSection>ul>li,
 #recentMoviesSection>ul>li,
 #suggestionSection>ul>li {
@@ -36,28 +35,21 @@ main>section>h2 {
 #recentMoviesSection>ul>li>a>img,
 #suggestionSection>ul>li>a>img {
     height: 120px;
-    -webkit-transition: all 1s ease; /* Safari and Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -ms-transition: all 1s ease; /* IE 9 */
-    -o-transition: all 1s ease; /* Opera */
     transition: all 1s ease;
 }
+
+
+/* Makes the image pop out enlarged in all  */
 
 #newMoviesSection>ul>li>a>img:hover,
 #recentMoviesSection>ul>li>a>img:hover,
 #suggestionSection>ul>li>a>img:hover {
-    -webkit-transform:scale(1.6); /* Safari and Chrome */
-    -moz-transform:scale(1.6); /* Firefox */
-    -ms-transform:scale(1.6); /* IE 9 */
-    -o-transform:scale(1.6); /* Opera */
-     transform:scale(1.6);
-     z-index: 101;
-     margin-left: .8em;
-     margin-right: .8em;
-     overflow: visible;
+    transform: scale(1.6);
+    z-index: 101;
+    margin-left: .8em;
+    margin-right: .8em;
+    overflow: visible;
 }
-
-
 
 #ratingSection {
     display: flex;
@@ -68,24 +60,13 @@ main>section>h2 {
     border-bottom: 1px solid #000;
 }
 
-#ratingSection>section>a>li {
-    list-style: none;
-}
-
-#ratingSection>section>a>li>img {
+#ratingSection>section>a>img {
     height: 150px;
-    -webkit-transition: all 1s ease; /* Safari and Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -ms-transition: all 1s ease; /* IE 9 */
-    -o-transition: all 1s ease; /* Opera */
     transition: all 1s ease;
 }
-#ratingSection>section>a>li>img:hover {
-     -webkit-transform:scale(1.6); /* Safari and Chrome */
-    -moz-transform:scale(1.6); /* Firefox */
-    -ms-transform:scale(1.6); /* IE 9 */
-    -o-transform:scale(1.6); /* Opera */
-     transform:scale(1.6);
+
+#ratingSection>section>a>img:hover {
+    transform: scale(1.6);
 }
 
 #rateMovie {
@@ -109,19 +90,12 @@ main>section>h2 {
     margin-right: auto;
     max-width: 70%;
 }
-#ratingInfo p {
+
+#ratingInfo h4 {
     margin-left: 1em;
 }
+
 #ratingSystem>input {
     float: right;
     margin-right: 1em;
-}
-
-
-/* Special rule for extra small screens to make the star rating fit */
-
-@media screen and (max-width:350px) {
-    .rating>label:before {
-        font-size: 2em;
-    }
 }

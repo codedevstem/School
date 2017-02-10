@@ -17,6 +17,10 @@
 #infoSection>* {
     padding-left: 1.5em;
 }
+#infoSection>button {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 #infoSection>h2 {
     margin-top: 0;
@@ -40,10 +44,12 @@
 
 #infoSection a {
     text-decoration: none;
-    color: orangered;
+    color: black;
     display: block;
 }
-
+#infoSection a:hover {
+    color: orange;
+}
 #toggleMoreInfo~label {
     font-size: 125%;
     font-weight: bold;
@@ -146,7 +152,7 @@ input[type=checkbox]:checked~#moreInfo {
     #images img {
         max-height: none;
     }
-    #infoSection * {
+    #infoSection>* {
         margin-left: 2%;
     }
     #infoSection>ul>li {

@@ -28,7 +28,7 @@ main>section {
     margin-right: auto;
     padding-top: 1em;
     padding-bottom: 0;
-    background: #C1C8CC;
+    background: #CFEAFF;
 }
 
 #searchResultSection>h2 {
@@ -69,4 +69,14 @@ main>section {
 .extraInfo>p {
     color: black;
     font-size: 120%;
+}
+.addToList, .addToWish {
+    max-height: 2.5em;
+    margin-top: 0.5em;
+    margin-left: 1em;
+}
+.addButtonSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
