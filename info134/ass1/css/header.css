@@ -1,12 +1,10 @@
 /* CSS for header since all sites have the same header*/
-* {
-    font-family: 'Nunito Sans', sans-serif;
-}
+
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #436B7F;
+    background: #2C5C7F;
     width: 100%;
     padding-right: 0;
     margin-right: 0;
@@ -30,8 +28,13 @@ header>nav {
     margin-left: auto;
     margin-right: auto;
 }
+header>nav>ul {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+}
 
-header>nav>li {
+header>nav>ul>li {
     list-style: none;
     padding-bottom: 3px;
     border-bottom: 2px solid black;
@@ -39,34 +42,35 @@ header>nav>li {
     color: whitesmoke;
 }
 
-header>nav>li:last-of-type {
+header>nav>ul>li:last-of-type {
     border-bottom: none;
 }
 
-header>nav>li:hover {
+header>nav>ul>li:hover,
+header>nav>ul>li:hover>a {
     background: whitesmoke;
     color: black;
 }
 
-header>nav>li>a {
+header>nav>ul>li>a {
     text-decoration: none;
     color: whitesmoke;
 }
 
-header>nav>li>ul {
+header>nav>ul>li>ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-header>nav>li>ul>a,
-header>nav>li>ul>li>p {
+header>nav>ul>li>ul>li>a,
+header>nav>ul>li>ul>li>p {
     text-decoration: none;
     font-size: 0.9em;
     color: black;
 }
 
-header>nav>li>ul>li>p {
+header>nav>ul>li>ul>li>p {
     margin: 0.2em;
 }
 
@@ -83,9 +87,27 @@ input[type=checkbox]:checked~form {
     display: block
 }
 
+
+/* Edits all siblings to a checkbox that is checked that has id "profileOptions" */
+
 input[type=checkbox]:checked~#profileOptions {
     display: flex;
     flex-direction: column;
+}
+
+
+/* Changes the color when the user is not hovering but the checkbox is checked for links */
+
+li:not(:hover)>input[type=checkbox]:checked~#profileOptions>li>a {
+    color: white;
+}
+
+
+/* Changes the color again when the user is hovering */
+
+#profileOptions>li>a:hover {
+    background: #536C7F;
+    color: white;
 }
 
 li>label {

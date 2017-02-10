@@ -1,35 +1,3 @@
-* {
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-html,
-body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: whitesmoke;
-}
-
-body {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-main {
-    padding-top: 0;
-    margin-top: 0;
-    box-sizing: border-box;
-}
-
-main>section {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0;
-    padding-bottom: 0;
-    background: #C1C8CC;
-}
 
 #ratingSystem {
     max-width: 15em;
@@ -43,8 +11,9 @@ main>section {
 #infoSection {
     margin-left: auto;
     margin-right: auto;
+    padding-right: 1em;
 }
-
+/* Targets all direct children of the section */
 #infoSection>* {
     padding-left: 1.5em;
 }
@@ -71,7 +40,7 @@ main>section {
 
 #infoSection a {
     text-decoration: none;
-    color: black;
+    color: orangered;
     display: block;
 }
 
@@ -173,6 +142,9 @@ input[type=checkbox]:checked~#moreInfo {
         margin-bottom: 0.5em;
         overflow-x: hidden;
         overflow-y: auto;
+    }
+    #images img {
+        max-height: none;
     }
     #infoSection * {
         margin-left: 2%;

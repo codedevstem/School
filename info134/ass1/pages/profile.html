@@ -1,11 +1,10 @@
-<!DOCTYPE HTML>
 <html>
 
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Page for intouchables</title>
- <link rel="stylesheet" href="../css/search.css">
+ <title>Profile page</title>
+ <link rel="stylesheet" href="../css/profile.css">
  <link rel="stylesheet" href="../css/header.css">
  <link rel="stylesheet" href="../css/common.css">
  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
@@ -23,14 +22,14 @@
      <input type="checkbox" id="checkboxToggleProfile">
      <label for="checkboxToggleProfile">Profil</label>
      <ul id="profileOptions">
-      <!-- TODO: Future link to personal profile with additional info -->
+      <!-- Link to personal profile with additional info -->
       <li><a href="profile.html">Min Profil</a></li>
       <li><a href="">Log Ut</a></li>
      </ul>
     </li>
     <li>
      <!-- Simulated dropdown menu with search field -->
-     <input type="checkbox" id="checkboxToggleSearch" checked>
+     <input type="checkbox" id="checkboxToggleSearch">
      <label for="checkboxToggleSearch">Søk</label>
      <!-- Hidden form that is triggered with checkbox and shown in css -->
      <form action="search.html" method="POST">
@@ -42,24 +41,24 @@
   </nav>
  </header>
  <main>
-  <section id="searchResultSection">
-   <h2>Søkeresultater:</h2>
-   <ul id="searchResults">
-    <a href="../movies/intouchables.html">
-     <img src="../images/intouchables/cover.jpg" alt="Intouchables sitt cover">
-     <section class="extraInfo">
-      <p>Intouchables</p>
-      <p>Stjerner: 3.8</p>
-     </section>
-    </a>
-    <a href="../movies/valkyrie.html">
-     <img src="../images/valkyrie/cover.jpg" alt="Valkyrie sitt cover">
-     <section class="extraInfo">
-      <p>Valkyrie</p>
-      <p>Stjerner: 4.3</p>
-     </section>
-    </a>
-   </ul>
+  <h2>Velkommen: Bob</h2>
+  <section id="contentSection">
+   <section id="haveLoanedSection">
+    <h3>Du har lånt:</h3>
+    <!-- The list of loaned movies -->
+    <ul id="loanedMoves">
+     <a href="../movies/valkyrie.html"><img src="../images/valkyrie/cover.jpg" alt="Cover of Intouchables"></a>
+     <a href="../movies/intouchables.html"><img src="../images/intouchables/cover.jpg" alt="Cover of Intouchables"></a>
+    </ul>
+   </section>
+   <section id="wantLoanedSection">
+    <h3>Ønskeliste</h3>
+    <!-- The list of movies the user wants to loan -->
+    <ul id="wantMovies">
+     <a href="../movies/valkyrie.html"><img src="../images/valkyrie/cover.jpg" alt="Cover of Intouchables"></a>
+     <a href="../movies/intouchables.html"><img src="../images/intouchables/cover.jpg" alt="Cover of Intouchables"></a>
+    </ul>
+   </section>
   </section>
  </main>
 </body>

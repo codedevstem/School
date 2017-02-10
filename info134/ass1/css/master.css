@@ -1,40 +1,6 @@
 /* CSS for index site */
 
 
-/* Author Kristian Os */
-* {
-    font-family: 'Nunito Sans', sans-serif;
-}
-html,
-body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: whitesmoke;
-}
-
-body {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-main {
-    padding-top: 0;
-    margin-top: 0;
-    box-sizing: border-box;
-}
-
-main>section {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0;
-    padding-bottom: 0;
-    background: #C1C8CC;
-    border-bottom: 1px solid black;
-}
-
 main>section>h2 {
     margin: 0;
     padding: 0;
@@ -54,30 +20,44 @@ main>section>h2 {
     padding: 0.2em;
     padding-top: 0;
     margin-top: 0;
-    overflow: hidden;
-    overflow-x: auto;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-x: repeat(100%);
-}
+    overflow-y: visible;
+    margin-left: 5%;
+    margin-right: 5%;
 
-#newMoviesSection>ul>a>li,
-#recentMoviesSection>ul>a>li,
-#suggestionSection>ul>a>li {
+}
+#newMoviesSection>ul>li,
+#recentMoviesSection>ul>li,
+#suggestionSection>ul>li {
     list-style: none;
     padding: 0.3em;
 }
 
-#newMoviesSection>ul>a>li>img,
-#recentMoviesSection>ul>a>li>img,
-#suggestionSection>ul>a>li>img {
+#newMoviesSection>ul>li>a>img,
+#recentMoviesSection>ul>li>a>img,
+#suggestionSection>ul>li>a>img {
     height: 120px;
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
 }
 
-#newMoviesSection>ul>a>li:hover,
-#recentMoviesSection>ul>a>li:hover,
-#suggestionSection>ul>a>li:hover {
-    background: whitesmoke;
+#newMoviesSection>ul>li>a>img:hover,
+#recentMoviesSection>ul>li>a>img:hover,
+#suggestionSection>ul>li>a>img:hover {
+    -webkit-transform:scale(1.6); /* Safari and Chrome */
+    -moz-transform:scale(1.6); /* Firefox */
+    -ms-transform:scale(1.6); /* IE 9 */
+    -o-transform:scale(1.6); /* Opera */
+     transform:scale(1.6);
+     z-index: 101;
+     margin-left: .8em;
+     margin-right: .8em;
+     overflow: visible;
 }
+
+
 
 #ratingSection {
     display: flex;
@@ -85,14 +65,27 @@ main>section>h2 {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    border-bottom: 1px solid #000;
 }
 
-#ratingSection>ul>a>li {
+#ratingSection>section>a>li {
     list-style: none;
 }
 
-#ratingSection>ul>a>li>img {
+#ratingSection>section>a>li>img {
     height: 150px;
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+#ratingSection>section>a>li>img:hover {
+     -webkit-transform:scale(1.6); /* Safari and Chrome */
+    -moz-transform:scale(1.6); /* Firefox */
+    -ms-transform:scale(1.6); /* IE 9 */
+    -o-transform:scale(1.6); /* Opera */
+     transform:scale(1.6);
 }
 
 #rateMovie {
@@ -111,16 +104,17 @@ main>section>h2 {
     font-size: 125%;
 }
 
-
-#ratingSystem>input[type="submit"] {
-    margin-left: 11em;
-    margin-right: 1em;
-}
-
 #loanRules p {
     margin-left: auto;
     margin-right: auto;
     max-width: 70%;
+}
+#ratingInfo p {
+    margin-left: 1em;
+}
+#ratingSystem>input {
+    float: right;
+    margin-right: 1em;
 }
 
 
@@ -129,14 +123,5 @@ main>section>h2 {
 @media screen and (max-width:350px) {
     .rating>label:before {
         font-size: 2em;
-    }
-}
-
-
-/* Make the big screens slightly smaller so there are not as much empty space */
-
-@media screen and (min-width:800px) {
-    main>section {
-        width: 75%;
     }
 }
