@@ -1,4 +1,4 @@
-/* CSS for index site */
+/* Styling for index page */
 
 main>section>h2 {
     margin: 0;
@@ -45,7 +45,6 @@ main>section>h2 {
 #recentMoviesSection>ul>li>a>img:hover,
 #suggestionSection>ul>li>a>img:hover {
     transform: scale(1.6);
-    z-index: 101;
     margin-left: .8em;
     margin-right: .8em;
     overflow: visible;
@@ -60,12 +59,12 @@ main>section>h2 {
     border-bottom: 1px solid #000;
 }
 
-#ratingSection>section>a>img {
+#ratingSection>div>a>img {
     height: 150px;
     transition: all 1s ease;
 }
 
-#ratingSection>section>a>img:hover {
+#ratingSection>div>a>img:hover {
     transform: scale(1.6);
 }
 

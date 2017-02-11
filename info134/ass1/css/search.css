@@ -1,7 +1,4 @@
-* {
-    font-family: 'Nunito Sans', sans-serif;
-}
-
+/* Styling for the search page */
 html,
 body {
     width: 100%;
@@ -40,27 +37,33 @@ main>section {
     display: flex;
     flex-direction: column;
     width: 75%;
+    list-style: none;
 }
 
-#searchResults>a {
-    border-bottom: 1px solid black;
+#searchResults>li {
+    border-bottom: 2px solid black;
     margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+#searchResults>li>a {
     display: flex;
     flex-direction: row;
     text-decoration: none;
     padding-bottom: 0.5em;
 }
 
-#searchResults>a:last-of-type {
+#searchResults>li>a:last-of-type {
     border-bottom: none;
 }
 
-#searchResults>a>img {
+#searchResults>li>a>img {
     height: 150px;
     margin-right: 0.5em;
 }
 
-#searchResults>a>section {
+#searchResults>li>div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -70,11 +73,14 @@ main>section {
     color: black;
     font-size: 120%;
 }
-.addToList, .addToWish {
+
+.addToList,
+.addToWish {
     max-height: 2.5em;
     margin-top: 0.5em;
     margin-left: 1em;
 }
+
 .addButtonSection {
     display: flex;
     flex-direction: column;

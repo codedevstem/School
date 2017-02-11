@@ -1,7 +1,10 @@
 /* Author Kristian Os */
+/* Styling for elements that all or nearly all pages have together. Low priority */
+
 * {
     font-family: 'Nunito Sans', sans-serif;
 }
+
 html,
 body {
     width: 100%;
@@ -32,7 +35,9 @@ main>section {
     background: #CFEAFF;
     border-bottom: 1px solid black;
 }
-.addToList, .addToWish {
+
+.addToList,
+.addToWish {
     min-height: 2.5em;
     min-width: 6em;
     color: white;
@@ -46,15 +51,19 @@ main>section {
 .addToList {
     background: radial-gradient(#5cb85c, green);
 }
+
 .addToList:hover {
     background: green;
 }
+
 .addToWish {
-    background: radial-gradient(#337ab7,#311ab7);
+    background: radial-gradient(#337ab7, #311ab7);
 }
+
 .addToWish:hover {
     background: #311ab7;
 }
+
 @media screen and (min-width:900px) {
     main {
         margin-left: auto;

@@ -1,4 +1,4 @@
-
+/* Styling for the movie pages since these have the same layout */
 #ratingSystem {
     max-width: 15em;
     margin-bottom: 2em;
@@ -13,10 +13,14 @@
     margin-right: auto;
     padding-right: 1em;
 }
+
+
 /* Targets all direct children of the section */
+
 #infoSection>* {
     padding-left: 1.5em;
 }
+
 #infoSection>button {
     padding-left: 0;
     padding-right: 0;
@@ -47,9 +51,11 @@
     color: black;
     display: block;
 }
+
 #infoSection a:hover {
     color: orange;
 }
+
 #toggleMoreInfo~label {
     font-size: 125%;
     font-weight: bold;
@@ -63,8 +69,25 @@ input[type=checkbox] {
     display: none;
 }
 
+
+/* Show info when someone clicks the label */
+
 input[type=checkbox]:checked~#moreInfo {
-    display: block
+    display: block;
+}
+
+
+/* Input symbol before when checkbox is unchecked */
+
+input[type=checkbox]:not(:checked)~label:before {
+    content: "▶ ";
+}
+
+
+/* Input symbol before when checkbox is checked */
+
+input[type=checkbox]:checked~label:before {
+    content: "▼ ";
 }
 
 #infoSection>label {
@@ -90,8 +113,9 @@ input[type=checkbox]:checked~#moreInfo {
     flex-direction: column;
 }
 
-#media h2 {
-    margin-left: 0.5em;
+#media h3 {
+    text-align: center;
+    font-size: 150%;
 }
 
 #images {
@@ -131,6 +155,9 @@ input[type=checkbox]:checked~#moreInfo {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/* Media query for big screens */
 
 @media screen and (min-width:900px) {
     main {
