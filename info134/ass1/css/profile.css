@@ -18,9 +18,11 @@ main>h2 {
  margin-left: 1em;
  margin-bottom: 0.1em;
 }
+
 #contentSection>section {
-   background: #CFEAFF;
+ background: #CFEAFF;
 }
+
 #contentSection>section>h3 {
  margin-top: 0;
  padding-top: 0.5em;
@@ -42,6 +44,9 @@ main>h2 {
  height: 180px;
 }
 
+
+/* Media query for big screens */
+
 @media screen and (min-width:900px) {
  #contentSection {
   display: flex;
@@ -52,7 +57,6 @@ main>h2 {
   box-sizing: border-box;
   width: 49.8%;
   padding-left: 1em;
-
   ;
  }
 }
