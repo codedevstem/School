@@ -52,7 +52,7 @@ main>section>h2 {
     margin-right: .8em;
     overflow: visible;
 }
-
+/* -- Section where the rating is controlled -- */
 #ratingSection {
     display: flex;
     flex-direction: column;

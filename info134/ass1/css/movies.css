@@ -58,7 +58,7 @@
 }
 
 #infoSection a:hover {
-    color: orange;
+    color: #FFC20F;
 }
 
 #toggleMoreInfo~label {
@@ -93,6 +93,9 @@ input[type=checkbox]:not(:checked)~label:before {
 
 input[type=checkbox]:checked~label:before {
     content: "▼ ";
+}
+#toggleMoreInfo~label:hover {
+    color: #FFC20F;
 }
 
 #infoSection>label {
