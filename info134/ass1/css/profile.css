@@ -39,14 +39,7 @@ main>h2 {
 }
 
 #contentSection>section>ul>li>a>img {
- height: 140px;
- transition: all 1s ease;
-}
-
-#contentSection>section>ul>li>a>img:hover {
- transform: scale(1.3);
- margin-left: 1em;
- margin-right: 1em;
+ height: 180px;
 }
 
 @media screen and (min-width:900px) {
