@@ -194,3 +194,16 @@ input[type=checkbox]:checked~label:before {
         max-width: 60%;
     }
 }
+@media screen and (min-width:1400px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+    main>section {
+        max-width: 49%;
+        box-sizing: border-box;
+    }
+    #images {
+        max-width: 80%;
+    }
+}
