@@ -1,4 +1,4 @@
---1. Single table queries (25%)
+--1. 
 
 --a) Done 
 	SELECT COUNT(Codon_id)
@@ -26,9 +26,9 @@
 	GROUP BY Amino_acid_id
 	HAVING COUNT(Codon_sequence) = 1
 
---2. Creating tables and modifying tables (25%)
+--2. 
 
---a) 
+--a) Done
 CREATE TABLE Amino_acid_nomenclature (
     Amino_id VARCHAR(3) NOT NULL,
     Symbol CHAR(1),
@@ -39,7 +39,7 @@ CREATE TABLE Amino_acid_nomenclature (
         REFERENCES Amino_acid_properties (Name)
 );
 
---b) 
+--b) Done
 insert into Amino_acid_nomenclature values ('a1', 'A', 'Alanine', 'Ala');
 insert into Amino_acid_nomenclature values ('a2', 'C', 'Cysteine', 'Cys');
 insert into Amino_acid_nomenclature values ('a3', 'D', 'Aspartic acid', 'Asp');
@@ -65,25 +65,25 @@ insert into Amino_acid_nomenclature values ('a22', null, null, 'Stop');
 insert into Amino_acid_nomenclature values ('a23', null, null, 'Stop');
 
 
---c)
---i) 
+--c) 
+--i) Done
 	ALTER TABLE Amino_acid_properties
 	ADD CONSTRAINT ck_molecular_mass
 	CHECK (Molecular_mass > 70 AND Molecular_mass < 210)
---ii) 
+--ii) Done
 ALTER TABLE Amino_acid_properties
 	ADD CONSTRAINT ck_charge_rule
 	CHECK (Charge IN ('uncharged', 'positive', 'negative'))
 
---d) 
+--d) Done
 ALTER TABLE Codons
 	ADD CONSTRAINT amino_acid_id_fk
 		FOREIGN KEY (Amino_acid_id)
 		REFERENCES Amino_acid_nomenclature (Amino_id)
 
---3. Multiple table queries (25%)
+--3.
 
---a) 
+--a) Done
 SELECT 
     *
 FROM
@@ -93,12 +93,12 @@ WHERE
     C.Amino_acid_id = A.Amino_id
         AND A.Code = 'stop'
 
---b) 
+--b) Done
 	SELECT Codon_sequence
 	FROM Codons AS C
 	WHERE C.Codon_sequence LIKE 'G%'
 
---c)
+--c) Done
 SELECT 
     C.Codon_sequence
 FROM
@@ -110,7 +110,7 @@ WHERE
         AND C.Amino_acid_id = AN.Amino_id
 ORDER BY AP.Molecular_mass ASC
 
---d) 
+--d) Done
 SELECT 
     COUNT(*)
 FROM
@@ -123,7 +123,7 @@ WHERE
         AND C.Position3 = 'A'
         AND AP.Charge = 'uncharged'
 
---e) 
+--e) Done
 SELECT 
     C.Codon_sequence, AP.name
 FROM
@@ -137,16 +137,16 @@ WHERE
         AND AP.molecular_mass < 150
         AND AP.Charge = 'uncharged'
 	
---4. Advanced queries (25%)
+--4.
 
---a) 
+--a) Done
 SELECT 
     SUM(type = 'purine') AS CaseOfPurines,
     SUM(type = 'pyrimidine') AS CaseOfPyrimidines
 FROM
     Nucleotides
 
---b) 
+--b) Done
 SELECT 
     AN.Symbol
 FROM
@@ -158,7 +158,7 @@ WHERE
         AND C.Position2 = C.Position3
 ORDER BY AN.Name ASC
 
---c) 
+--c) Done
 SELECT 
     C.Codon_sequence
 FROM
@@ -170,23 +170,20 @@ WHERE
         OR C.Position1 = 'G'
         AND AN.Name LIKE '%ine'
 
---d) 
-Select polarity, count(*)
+--d) Done
+SELECT 
+    polarity, COUNT(*)
+FROM
+    ((Codons AS C
+    INNER JOIN Amino_acid_nomenclature AS AN ON C.Amino_acid_id = AN.Amino_id)
+    INNER JOIN Amino_acid_properties AS AP ON AN.Name = AP.Name)
+GROUP BY Polarity
 
-from ((Codons as C inner Join Amino_acid_nomenclature as AN on
-
-C.Amino_acid_id = AN.Amino_id)
-
-inner join Amino_acid_properties as AP on AN.Name = AP.Name)
-
-group by Polarity
---e) 
-Select Charge, Polarity, Count(*)
-
-from ((Codons as C inner Join Amino_acid_nomenclature as AN on
-
-C.Amino_acid_id = AN.Amino_id)
-
-inner join Amino_acid_properties as AP on AN.Name = AP.Name)
-
-group by Polarity, Charge
+--e) Done
+SELECT 
+    Charge, Polarity, COUNT(*)
+FROM
+    ((Codons AS C
+    INNER JOIN Amino_acid_nomenclature AS AN ON C.Amino_acid_id = AN.Amino_id)
+    INNER JOIN Amino_acid_properties AS AP ON AN.Name = AP.Name)
+GROUP BY Polarity , Charge
