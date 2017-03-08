@@ -1,0 +1,68 @@
+/* Author Kristian Os */
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+main {
+    padding-top: 0;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+main>section {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #CFEAFF;
+    border-bottom: 1px solid black;
+}
+.addToList, .addToWish {
+    min-height: 2.5em;
+    min-width: 6em;
+    color: white;
+    font-size: 110%;
+    border: none;
+    margin-top: 1em;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.addToList {
+    background: radial-gradient(#5cb85c, green);
+}
+.addToList:hover {
+    background: green;
+}
+.addToWish {
+    background: radial-gradient(#337ab7,#311ab7);
+}
+.addToWish:hover {
+    background: #311ab7;
+}
+@media screen and (min-width:900px) {
+    main {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 75%;
+    }
+    main>section {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

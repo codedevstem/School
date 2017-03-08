@@ -1,0 +1,101 @@
+/* CSS for index site */
+
+main>section>h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* For each unordered list that is a direct child of a section */
+
+#newMoviesSection>ul,
+#recentMoviesSection>ul,
+#suggestionSection>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0.2em;
+    padding-top: 0;
+    margin-top: 0;
+    overflow-y: visible;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#newMoviesSection>ul>li,
+#recentMoviesSection>ul>li,
+#suggestionSection>ul>li {
+    list-style: none;
+    padding: 0.3em;
+}
+
+#newMoviesSection>ul>li>a>img,
+#recentMoviesSection>ul>li>a>img,
+#suggestionSection>ul>li>a>img {
+    height: 120px;
+    transition: all 1s ease;
+}
+
+
+/* Makes the image pop out enlarged in all  */
+
+#newMoviesSection>ul>li>a>img:hover,
+#recentMoviesSection>ul>li>a>img:hover,
+#suggestionSection>ul>li>a>img:hover {
+    transform: scale(1.6);
+    z-index: 101;
+    margin-left: .8em;
+    margin-right: .8em;
+    overflow: visible;
+}
+
+#ratingSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #000;
+}
+
+#ratingSection>section>a>img {
+    height: 150px;
+    transition: all 1s ease;
+}
+
+#ratingSection>section>a>img:hover {
+    transform: scale(1.6);
+}
+
+#rateMovie {
+    display: flex;
+    justify-content: center;
+}
+
+#rateMovie>ul {
+    padding-left: 0;
+    margin-left: 0;
+    list-style-type: none;
+}
+
+#rateMovie>ul>p {
+    padding-left: 1em;
+    font-size: 125%;
+}
+
+#loanRules p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+#ratingInfo h4 {
+    margin-left: 1em;
+}
+
+#ratingSystem>input {
+    float: right;
+    margin-right: 1em;
+}

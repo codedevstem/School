@@ -1,0 +1,161 @@
+
+#ratingSystem {
+    max-width: 15em;
+    margin-bottom: 2em;
+}
+
+#submitRating {
+    float: right;
+}
+
+#infoSection {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1em;
+}
+/* Targets all direct children of the section */
+#infoSection>* {
+    padding-left: 1.5em;
+}
+#infoSection>button {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#infoSection>h2 {
+    margin-top: 0;
+    padding-top: 1em;
+    padding-left: 0.5em;
+}
+
+.infoHeader {
+    font-size: 145%;
+    margin-bottom: 0.1em;
+}
+
+.explanation {
+    margin-bottom: 0.5em;
+}
+
+#infoSection ul {
+    padding-left: 2.5em;
+    list-style-type: none;
+}
+
+#infoSection a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+#infoSection a:hover {
+    color: orange;
+}
+#toggleMoreInfo~label {
+    font-size: 125%;
+    font-weight: bold;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+#moreInfo {
+    display: none;
+}
+
+input[type=checkbox]:checked~#moreInfo {
+    display: block
+}
+
+#infoSection>label {
+    font-size: 120%;
+    font-weight: bold;
+    display: block;
+}
+
+#moreInfo {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#moreInfo li:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#media {
+    padding-top: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#media h2 {
+    margin-left: 0.5em;
+}
+
+#images {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-width: 90%;
+    max-height: 600px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 1em;
+    align-self: center;
+}
+
+#images img {
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    margin-right: 0.5em;
+}
+
+#trailer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: flex;
+}
+
+#trailer iframe {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    max-width: 700px;
+    text-align: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width:900px) {
+    main {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 75%;
+    }
+    main>section {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #images {
+        max-width: 50%;
+        flex-direction: column;
+        margin-bottom: 0.5em;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    #images img {
+        max-height: none;
+    }
+    #infoSection>* {
+        margin-left: 2%;
+    }
+    #infoSection>ul>li {
+        max-width: 60%;
+    }
+}
