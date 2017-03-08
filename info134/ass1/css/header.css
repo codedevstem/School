@@ -1,4 +1,7 @@
-/* CSS for header since all sites have the same header*/
+/* Author: Kos003 */
+
+
+/* Styling for header since all sites have the same header*/
 
 header {
     display: flex;
@@ -28,6 +31,7 @@ header>nav {
     margin-left: auto;
     margin-right: auto;
 }
+
 header>nav>ul {
     margin-right: auto;
     margin-left: auto;
@@ -95,11 +99,13 @@ input[type=checkbox]:checked~#profileOptions {
     flex-direction: column;
 }
 
+
 /* Changes the color when the user is not hovering but the checkbox is checked for links */
 
 li:not(:hover)>input[type=checkbox]:checked~#profileOptions>li>a {
     color: white;
 }
+
 
 /* Changes the color again when the user is hovering */
 
