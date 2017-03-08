@@ -8,6 +8,7 @@ function display_X() {
 }
 */
 function display(resultArray, objectToAppend) {
+	reviews = reviews_object;
 	resultArray.forEach(movie => {
 		
 		/*list item*/
@@ -20,22 +21,42 @@ function display(resultArray, objectToAppend) {
 		linkExtraSection = document.createElement("section");
 		linkExtraSection.classList.add("extraInfo");
 		
-		extraSectionTitle = document.createElement("p");
-		extraSectionTitle.appendChild(document.createTextNode(movie.otitle));
-		for(movie)
-		extraSectionRating = document.createElement("p");
-		extraSectionTitle.appendChild(document.createTextNode(movie))
 		linkImage = document.createElement("img");
 		linkImage.src = "https://nelson.uib.no/o/"+ parseInt(movie.id/1000) + "/" + movie.id + ".jpg";
 		linkImage.alt = "Cover image of " + movie.otitle;
+		
+		extraSectionTitle = document.createElement("p");
+		extraSectionTitle.appendChild(document.createTextNode(movie.otitle));
+		linkExtraSection.appendChild(extraSectionTitle);
+		let totalRating = 0;
+		let numberOfRating = 0;
+		for(review in reviews){
+			if(review == movie.id){
+				console.log(movie.otitle + ' ' + movie.otitle);
+				for( user in reviews[review]) {
+					totalRating += reviews[review][user].rating;
+					numberOfRating++;
+				}
+				console.log(totalRating/numberOfRating);
+			}
+		}
+		extraSectionRating = document.createElement("p");
+		if(numberOfRating > 0){
+			let avgRating = totalRating/numberOfRating;
+			extraSectionRating.appendChild(document.createTextNode(`Stars: ${avgRating.toFixed(1)}`));
+		} else {
+			extraSectionRating.appendChild(document.createTextNode(`This movie is not rated`));
+		}
+		linkExtraSection.appendChild(extraSectionRating);
 	
-		listLink.appendChild(linkExtraSection);
 		listLink.appendChild(linkImage);
+		listLink.appendChild(linkExtraSection);
 	
 		listItem.appendChild(listLink);
 
 		objectToAppend.appendChild(listItem);
-	})
+	});
+
 	/*Example entery for a movie returned from search
 			<a href="../movies/intouchables.html">
 				<img src="../images/intouchables/cover.jpg" alt="Intouchables sitt cover">
