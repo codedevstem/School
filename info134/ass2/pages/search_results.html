@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Page for intouchables</title>
+ <link rel="stylesheet" href="../css/common.css">
+ <link rel="stylesheet" href="../css/header.css">
+ <link rel="stylesheet" href="../css/search.css">
+ <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <script src="../script/query_params.js" type="text/javascript"></script>
+	<script src="../script/search_results.js" type="text/javascript"></script>
+	<script src="../script/object.json" type="text/javascript"></script>
+</head>
+
+<body>
+ <header>
+  <h1>FilmNå!</h1>
+  <!-- Main nav element -->
+  <nav>
+   <ul>
+    <li><a href="../index.html">Hjem</a></li>
+    <li>
+     <!-- Simulated dropdown menu for profile and patterns for loans -->
+     <input type="checkbox" id="checkboxToggleProfile">
+     <label for="checkboxToggleProfile">Profil</label>
+     <ul id="profileOptions">
+      <!-- TODO: Future link to personal profile with additional info -->
+      <li><a href="profile.html">Min Profil</a></li>
+      <li><a href="">Log Ut</a></li>
+     </ul>
+    </li>
+    <li>
+     <!-- Simulated dropdown menu with search field -->
+     <input type="checkbox" id="checkboxToggleSearch" checked>
+     <label for="checkboxToggleSearch">Søk</label>
+     <!-- Hidden form that is triggered with checkbox and shown in css -->
+     <form action="search.html" method="POST">
+      <input type="text" id="searchInput">
+      <input type="submit" value="Søk">
+     </form>
+    </li>
+   </ul>
+  </nav>
+ </header>
+ <main>
+	 
+  <section id="searchResultSection">
+		<h2>Søkeresultater:</h2>
+		<div id="film_title"></div>
+		<div id="actor"></div>
+		<div id="director"></div>
+		<div id="genre"></div>
+		<div id="country"></div>
+		<!-- Returnere resultatene som en (ordered <ol>) liste -->
+		<ol id="res_list"></ol>
+		<!-- Example entery for a movie returned from search
+			<a href="../movies/intouchables.html">
+			<img src="../images/intouchables/cover.jpg" alt="Intouchables sitt cover">
+			<section class="extraInfo">
+				<p>Intouchables</p>
+				<p>Stjerner: 5.0</p>
+			</section>
+			<section class="addButtonsSection">
+				<button class="addToList" type="submit">Lei Film</button>
+				<button class="addToWish" type="submit">Ønsker</button>
+			</section>
+			</a>
+		 -->
+  </section>
+ </main>
+</body>
+
+</html>
