@@ -32,12 +32,10 @@ function display(resultArray, objectToAppend) {
 		let numberOfRating = 0;
 		for(review in reviews){
 			if(review == movie.id){
-				console.log(movie.otitle + ' ' + movie.otitle);
 				for( user in reviews[review]) {
 					totalRating += reviews[review][user].rating;
 					numberOfRating++;
 				}
-				console.log(totalRating/numberOfRating);
 			}
 		}
 		extraSectionRating = document.createElement("p");
@@ -72,27 +70,27 @@ function display(resultArray, objectToAppend) {
 		 */
 }
 function searchForTitle(search_results, query_params) {
-	const resultArray = [];
-	for(movie_id in search_results){
-		let movie = search_results[movie_id];
-		if(movie.otitle.toLowerCase().includes(query_params.toLowerCase())){
-			resultArray.push(movie);
+	for(let i = search_results.length-1; i>=0; i--){
+		let movie = search_results[i];
+		if(!(movie.otitle.toLowerCase().includes(query_params.toLowerCase()))){
+			search_results.splice(search_results.indexOf(movie), 1);
 		}
 	}
-	return resultArray;
+	return search_results;
 }
 
 
 window.onload = function() {
 	query_params = get_query_string_parameters();
 	const resultList = document.querySelector('#res_list');
-	search_results = movies_object;
+	search_results = movieArray;
 	let filteredList;
 	
 	if (query_params.film_title) {
-        film_title = document.getElementById("film_title");
+  film_title = document.getElementById("film_title");
+		film_title = query_params.innerHTML;
 		filteredList = searchForTitle(search_results, query_params.film_title);
-		
+
     }
 	
 	if (query_params.actor) {
