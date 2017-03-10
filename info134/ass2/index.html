@@ -11,11 +11,13 @@
  <link rel="stylesheet" href="css/common.css">
  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
  <script src="script/object.json"></script>
+ <script src="script/reviews.json"></script>
+
  <script src="script/generateArray.js"></script>
  <script src="script/generateIndex.js"></script>
 </head>
 
-<body>
+<body onresize="changeWindowValues()">
  <header>
   <h1>FilmNå!</h1>
   <!-- Main nav element -->
@@ -50,38 +52,48 @@
    <h2>Nye filmer</h2>
    <!-- The list of new movies, no titles becaus space.
    list of the movies with the most recent regDate -->
-   <ul id="newMovies">
-    
-   </ul>
+   <div class="movieLists">
+    <p class="arrow" id="newBack">❬</p>
+    <ul id="newMovies">
+      
+    </ul> 
+    <p class="arrow" id="newForward">❭</p> 
+   </div>
   </section>
   <!-- Section for viewing recent movies -->
   <section id="recentMoviesSection">
-   <h2>Siste sette</h2>
+   <h2>Siste lånte</h2>
    <!-- The list of recent movies, no titles because space 
    For now just random movies since we do not have a user yet-->
-   <ul id="recentMovies">
-   
-   </ul>
+  <div class="movieLists">
+    <p class="arrow" id="recentBack">❬</p>
+    <ul  id="recentMovies">
+      
+    </ul> 
+    <p class="arrow" id="recentForward">❭</p> 
+   </div>
   </section>
   <!-- Section for viewing suggested movies -->
   <section id="suggestionSection">
    <h2>Forslag</h2>
    <!-- The list of suggested movies, no titles becaus space -->
-   <ul id="suggestedMovies">
-    
-   </ul>
+  <div class="movieLists">
+    <p class="arrow" id="suggestedBack">❬</p>
+    <ul id="suggestedMovies">
+      
+    </ul> 
+    <p class="arrow" id="suggestedForward">❭</p> 
+   </div>
   </section>
   <!-- Section for rating movies. N -->
   <section id="ratingSection">
    <h2>Din mening</h2>
    <section id="rateMovie">
-    <a href="movies/valkyrie.html">
-     <img src="images/valkyrie/cover.jpg" alt="Cover of Intouchables">
-    </a>
+    <a></a>
     <section id="ratingInfo">
-     <h4>Valkyrie (2008)</h4>
+     <h4></h4>
      <!-- Form to hold rading stars and system -->
-     <form action="#" id="ratingSystem">
+     <form action="" id="ratingSystem">
       <fieldset class="rating">
        <input type="radio" id="star5" name="rating" value="5" />
        <label class="star" for="star5" title="Superb"></label>
@@ -94,8 +106,8 @@
        <input type="radio" id="star1" name="rating" value="1" />
        <label class="star" for="star1" title="Bad"></label>
       </fieldset>
-      <input type="submit" value="Neste">
-      <input type="reset" value="Reset">
+      <input type="button" id="submitRating" value="Neste">
+      <input type="reset"  value="Reset">
      </form>
     </section>
    </section>

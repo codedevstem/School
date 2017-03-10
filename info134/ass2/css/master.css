@@ -9,9 +9,9 @@ main>section>h2 {
 
 /* For each unordered list that is a direct child of a section */
 
-#newMoviesSection>ul,
-#recentMoviesSection>ul,
-#suggestionSection>ul {
+#newMovies,
+#recentMovies,
+#suggestedMovies {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -24,33 +24,48 @@ main>section>h2 {
     margin-right: 5%;
 }
 
-#newMoviesSection>ul>li,
-#recentMoviesSection>ul>li,
-#suggestionSection>ul>li {
+#newMovies>li,
+#recentMovies>li,
+#suggestedMovies>li {
     list-style: none;
     padding: 0.3em;
 }
 
-#newMoviesSection>ul>li>a>img,
-#recentMoviesSection>ul>li>a>img,
-#suggestionSection>ul>li>a>img {
+#newMovies>li>a>img,
+#recentMovies>li>a>img,
+#suggestedMovies>li>a>img {
     height: 120px;
+    min-height: 120px;
+    max-width: 80px;
+    overflow: hidden;
     transition: all 1s ease;
 }
 
 
-/* Makes the image pop out enlarged in all  */
+/* Makes the image pop out enlarged in all sections */
 
-#newMoviesSection>ul>li>a>img:hover,
-#recentMoviesSection>ul>li>a>img:hover,
-#suggestionSection>ul>li>a>img:hover {
+#newMovies>li>a>img:hover,
+#recentMovies>li>a>img:hover,
+#suggestedMovies>li>a>img:hover {
     transform: scale(1.6);
     z-index: 101;
     margin-left: .8em;
     margin-right: .8em;
     overflow: visible;
 }
-
+.movieLists {
+    display: flex;
+    min-width: 100%;
+    justify-content: space-between
+}
+.movieLists>p {
+    font-size: 400%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.arrow:hover {
+    cursor: hand; cursor: pointer;
+}
 #ratingSection {
     display: flex;
     flex-direction: column;
@@ -62,11 +77,12 @@ main>section>h2 {
 
 #ratingSection>section>a>img {
     height: 150px;
+    max-width: 100px;
     transition: all 1s ease;
 }
 
 #ratingSection>section>a>img:hover {
-    transform: scale(1.6);
+    transform: scale(1.1);
 }
 
 #rateMovie {
