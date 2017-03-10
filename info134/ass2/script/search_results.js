@@ -88,7 +88,7 @@ window.onload = function() {
 	
 	if (query_params.film_title) {
   film_title = document.getElementById("film_title");
-		film_title = query_params.innerHTML;
+		film_title.placeholder = 'last search: ' + query_params.film_title;
 		filteredList = searchForTitle(search_results, query_params.film_title);
 
     }
