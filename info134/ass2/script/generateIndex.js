@@ -1,18 +1,24 @@
-let reviews = reviews_object;
+let reviews;
 let numberOfMovies;
+let windowWidth;
+
 let newMoviesIndex = 0;
 let recentMoviesIndex = 0;
 let suggestionMoviesIndex = 0;
+
 let newMoviesArray = [];
 let recentMoviesArray = [];
 let suggestionMoviesArray = [];
 
+let movieRatingArray = [];
 makeArray();
 pushToArray(newMoviesArray);
 pushToArray(recentMoviesArray);
 pushToArray(suggestionMoviesArray);
 
 window.onload = function() {
+reviews = reviews_object;
+calculateAvgRatingAll();
 windowWidth = document.body.clientWidth;
 chooseNumberOfMovies();
 bindArrowClicks();
@@ -44,10 +50,16 @@ recentMoviesArray = shuffle(recentMoviesArray);
 
 //Sorting the movies so they are in sorted in order of rating
 suggestionMoviesArray.sort(function(a,b){
-	let aRating = getRatingOfMovie(a);
-	let bRating = getRatingOfMovie(b);
-	return bRating - aRating
+	let aRating;
+	let bRating;
+	movieRatingArray.forEach(pair => {
+		if(pair["movieId"] == a.id) aRating = pair["rating"]; 
+		if(pair["movieId"] == b.id) bRating = pair["rating"]; 
+	});
+	
+	return bRating - aRating;
 }); 
+
 
 // Removing all the other element than the seven first in the list
 // Filling in movies in the sections
@@ -75,7 +87,10 @@ function fillInRatingSection(){
 	let ratingInfo = document.getElementById("ratingInfo");
 	ratingInfo.replaceChild(rateMovieTitle, document.querySelector('h4'));
 }
-
+function getRatingOfMovie(movie){
+	
+	return 0;
+}
 // Shuffle an array
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
@@ -97,19 +112,37 @@ function shuffle(array) {
 function randomPick(array) {
 	return array[Math.floor(Math.random() * array.length)];
 }
-function getRatingOfMovie(movie){
-		let totalRating = 0;
-			let numberOfRating = 0;
-			for(review in reviews){
-			if(review == movie.id){
-				for(user in reviews[review]) {
+function calculateAvgRatingAll(){
+	var movieratingPairs;
+	let totalRating = 0;
+	let numberOfRating = 0;
+	let isFound;
+	movieArray.forEach(movie =>{
+		movieratingPairs = {};	
+		isFound = false;
+		for(let review in reviews){
+			if(movie.id == review){
+				isFound = true;
+				for(let user in reviews[review]) {
 					totalRating += reviews[review][user].rating;
 					numberOfRating++;
 				}
+				break;
 			}
 		}
-		return totalRating/numberOfRating;
-	}
+		if(!isFound){
+			movieratingPairs["movieId"] = movie.id;
+			movieratingPairs["rating"] = 0;
+		}else{
+			movieratingPairs["movieId"] = movie.id;
+			movieratingPairs["rating"] = (totalRating / numberOfRating);
+		}
+		totalRating = 0;
+		numberOfRating = 0;
+		movieRatingArray.push(movieratingPairs); 
+	});
+}
+		
 //Fills in a section on the index page based on numbers
 function fillInSection(array, listName, fromIndex, numberOfElements){
 	let list = document.getElementById(listName);
@@ -123,6 +156,7 @@ function fillInSection(array, listName, fromIndex, numberOfElements){
 			linkImage.alt = "Cover image of " + array[i].otitle;
 			// needed because not all movies have picture and CORS is not enabled so i can't check the url... Please fix...
 			linkImage.onerror = function() {
+
 			}
 			itemLink.appendChild(linkImage);
 			listItem.appendChild(itemLink);
@@ -136,9 +170,9 @@ function pushToArray(array){
 	});
 }
 function filterMovies(array){
-for(let i = array.length-1; i>=0; i--){
+	for(let i = array.length-1; i>=0; i--){
 		let movie = array[i];
-		let image = "https://nelson.uib.no/o/"+ parseInt(movie.id/1000) + "/" + movie.id + ".jpg"; 
+		let image = new Image("https://nelson.uib.no/o/"+ parseInt(movie.id/1000) + "/" + movie.id + ".jpg"); 
 		image.onerror = function() {
 			array.splice(array.indexOf(movie), 1);
 		}
@@ -188,19 +222,21 @@ function increaseIndex(indexCounter, array, idName){
 
 function decrease(id) {
 	if(id == "newMovies"){
-			decreaseIndex(newMoviesIndex, newMoviesArray, 'newMovies');
+		newMoviesIndex =	decreaseIndex(newMoviesIndex, newMoviesArray, 'newMovies');
 	}else if(id== "recentMovies"){
-			decreaseIndex(recentMoviesIndex, recentMoviesArray, 'recentMovies');
+		recentMoviesIndex =	decreaseIndex(recentMoviesIndex, recentMoviesArray, 'recentMovies');
 	}else if(id == "suggestedMovies"){
-				decreaseIndex(suggestionMoviesIndex, suggestionMoviesArray, 'suggestedMovies');
+			suggestionMoviesIndex =	decreaseIndex(suggestionMoviesIndex, suggestionMoviesArray, 'suggestedMovies');
 	}
 }
 
 function decreaseIndex(indexCounter, array, idName){
 	indexCounter -= numberOfMovies;
 	if(indexCounter < 0) indexCounter = 0;		
+	console.log(indexCounter);
 	document.getElementById(idName).innerHTML = '';
-	fillInSection(array, idName, indexCounter, numberOfMovies)
+	fillInSection(array, idName, indexCounter, numberOfMovies);
+	return indexCounter;
 }
 
 function bindArrowClicks() {
