@@ -49,8 +49,24 @@ function display(resultArray, objectToAppend) {
 	
 		listLink.appendChild(linkImage);
 		listLink.appendChild(linkExtraSection);
+
+		//Create Button section for each card.
+		let buttonSection = document.createElement("section");
+		buttonSection.classList.add("buttonSection");
+		let addToListButton = document.createElement("button");
+		addToListButton.classList.add("addToList");
+		addToListButton.type = "submit";
+		addToListButton.innerHTML = "Add to cart";
+		let addToWishButton = document.createElement("button");
+		addToWishButton.classList.add("addToWish");
+		addToWishButton.type = "submit";
+		addToWishButton.innerHTML = "Add to list";
+
+		buttonSection.appendChild(addToListButton);
+		buttonSection.appendChild(addToWishButton);
 	
 		listItem.appendChild(listLink);
+		listItem.appendChild(buttonSection);
 
 		objectToAppend.appendChild(listItem);
 	});
@@ -69,29 +85,30 @@ function display(resultArray, objectToAppend) {
 			</a>
 		 */
 }
-function searchForTitle(search_results, query_params) {
-	for(let i = search_results.length-1; i>=0; i--){
-		let movie = search_results[i];
+function searchForTitle(allMovies, query_params) {
+	for(let i = allMovies.length-1; i>=0; i--){
+		let movie = allMovies[i];
 		if(!(movie.otitle.toLowerCase().includes(query_params.toLowerCase()))){
-			search_results.splice(search_results.indexOf(movie), 1);
+			allMovies.splice(allMovies.indexOf(movie), 1);
 		}
 	}
-	return search_results;
+	return allMovies;
 }
 
 
 window.onload = function() {
 	query_params = get_query_string_parameters();
 	const resultList = document.querySelector('#res_list');
-	search_results = movieArray;
-	let filteredList;
+	makeArray();
+	let filteredList = [];
 	
 	if (query_params.film_title) {
-  film_title = document.getElementById("film_title");
-		film_title.placeholder = 'last search: ' + query_params.film_title;
-		filteredList = searchForTitle(search_results, query_params.film_title);
-
-    }
+  seachTitle = document.getElementById("titleSearch");
+		seachTitle.placeholder = 'Siste søk: ' + query_params.film_title;
+		searchTermTitle = document.getElementById("film_title");
+		searchTermTitle.innerHTML = 'For tittel: ' + query_params.film_title;
+		filteredList = searchForTitle(movieArray, query_params.film_title);
+ }
 	
 	if (query_params.actor) {
         actor = document.getElementById("actor");
@@ -105,7 +122,7 @@ window.onload = function() {
 	
 	if (query_params.genre) {
         genre = document.getElementById("genre");
-		genre.innerHTML = query_params.genre;
+								genre.innerHTML = query_params.genre;
     }
 	
 	if (query_params.country) {

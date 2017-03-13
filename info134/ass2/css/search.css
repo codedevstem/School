@@ -47,7 +47,10 @@ main>section {
     margin-bottom: 0.2em;
     padding-top: 1em;
     padding-left: 1em;
-    background: #4c7;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#DDD));
+    background-image: -webkit-linear-gradient(top, #EEE, #DDD);
+    background-image: -moz-linear-gradient(top, #EEE, #DDD);
+    background-image: linear-gradient(to bottom, #EEE, #DDD);
 }
 #res_list>li>a {
     border-bottom: 1px solid black;
@@ -64,6 +67,8 @@ main>section {
 
 #res_list>li>a>img {
     height: 160px;
+    min-height: 160px;
+    max-width: 110px;
     width: auto;
     margin-right: 0.5em;
 }
@@ -87,10 +92,14 @@ main>section {
 .addToList, .addToWish {
     max-height: 2.5em;
     margin-top: 0.5em;
-    margin-left: 1em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
 }
-.addButtonSection {
+.buttonSection {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-left: 0;
+    padding-left: 0;
+    flex: 1;
+    flex-direction: row;
+    
 }
