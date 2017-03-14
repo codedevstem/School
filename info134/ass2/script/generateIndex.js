@@ -11,7 +11,7 @@ let recentMoviesArray = [];
 let suggestionMoviesArray = [];
 
 let movieRatingArray = [];
-makeArray();
+makeMovieArray();
 pushToArray(newMoviesArray);
 pushToArray(recentMoviesArray);
 pushToArray(suggestionMoviesArray);

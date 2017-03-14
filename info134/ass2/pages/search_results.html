@@ -11,6 +11,7 @@
  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
 	<script src="../script/object.json" type="text/javascript"></script>
 	<script src="../script/reviews.json" type="text/javascript"></script>
+	<script src="../script/genres.json" type="text/javascript"></script>
   <script src="../script/query_params.js" type="text/javascript"></script>
   <script src="../script/generateArray.js" type="text/javascript"></script>
 	<script src="../script/search_results.js" type="text/javascript"></script>
@@ -35,7 +36,7 @@
     </li>
     <li>
      <!-- Simulated dropdown menu with search field -->
-     <input type="checkbox" id="checkboxToggleSearch" checked>
+     <input type="checkbox" id="checkboxToggleSearch">
      <label for="checkboxToggleSearch">Søk</label>
      <!-- Hidden form that is triggered with checkbox and shown in css -->
      <form id="search" action="search_results.html" method="get">
@@ -47,7 +48,29 @@
   </nav>
  </header>
  <main>
-	 
+	 <form id="advancedSearch" action="" method="get">
+			<div class="searchItem">
+				<label for="film_title">Film tittel</label>
+				<input id="film_title" name="film_title" type="text" placeholder="e.g. King Kong" >
+			</div>
+			<div class="searchItem">
+				<label for="actor">Skuespiller</label>
+				<input id="actor" name="actor" type="text" placeholder="e.g. Tom Hanks" >
+			</div>
+			<div class="searchItem">
+				<label for="director">Regissør</label>
+				<input id="director" name="director" type="text" placeholder="e.g. Tom Hanks" >
+			</div>
+			<div class="searchItem">
+				<label for="genre">Sjanger</label>
+				<input id="genre" name="genre" type="text" placeholder="Drama">
+			</div>
+			<div class="searchItem">
+				<label for="country">Land</label>
+				<input id="country" name="country" type="text" placeholder="Frankrike">
+			</div>	
+		<input type="submit" id="submit_search" value="Søk">
+	</form>
   <section id="searchResultSection">
 		<h2>Søkeresultater:</h2>
 		<div id="film_title"></div>
