@@ -151,14 +151,16 @@ function calculateAvgRatingAll(){
 	});
 }
 /**
+	*	@description Fills in <ul> list in the document with movies
 	* 
 	* @param {Array} array | list of filtered movies 
 	* @param {String} listName | name of tag that the list shall be inserted into
 	* @param {Int} fromIndex | starting index of movies to append
 	* @param {Int} numberOfElements | number of elements to append to listName
+	*
+	* Comment | all movies have picture and CORS is not enabled so i can't check the url.
+	*
 	*/		
-//Fills in a section on the index page based on numbers
-//Not all movies have picture and CORS is not enabled so i can't check the url... Please fix...
 function fillInSection(array, listName, fromIndex, numberOfElements){
 	let list = document.getElementById(listName);
 	for(let i = fromIndex; i < fromIndex+numberOfElements; i++){
