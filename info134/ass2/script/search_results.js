@@ -16,7 +16,7 @@ function display(resultArray, objectToAppend) {
 		listItem.classList.add("movieInstance");
 
 		listLink = document.createElement("a");
-		listLink.href = "show_movie.html?id=" + movie.id;
+		listLink.href = "movieDetails.html?id=" + movie.id;
 
 		linkExtraSection = document.createElement("section");
 		linkExtraSection.classList.add("extraInfo");
@@ -41,9 +41,9 @@ function display(resultArray, objectToAppend) {
 		extraSectionRating = document.createElement("p");
 		if (numberOfRating > 0) {
 			let avgRating = totalRating / numberOfRating;
-			extraSectionRating.appendChild(document.createTextNode(`Stars: ${avgRating.toFixed(1)}`));
+			extraSectionRating.appendChild(document.createTextNode(`Stjerner: ${avgRating.toFixed(1)}`));
 		} else {
-			extraSectionRating.appendChild(document.createTextNode(`This movie is not rated`));
+			extraSectionRating.appendChild(document.createTextNode(`Denne filmen er ikke ratet enda`));
 		}
 		linkExtraSection.appendChild(extraSectionRating);
 
@@ -70,20 +70,6 @@ function display(resultArray, objectToAppend) {
 
 		objectToAppend.appendChild(listItem);
 	});
-
-	/*Example entery for a movie returned from search
-			<a href="../movies/intouchables.html">
-				<img src="../images/intouchables/cover.jpg" alt="Intouchables sitt cover">
-				<section class="extraInfo">
-					<p>Intouchables</p>
-					<p>Stjerner: 5.0</p>
-				</section>
-				<section class="addButtonsSection">
-					<button class="addToList" type="submit">Lei Film</button>
-					<button class="addToWish" type="submit">Ønsker</button>
-			</section>
-			</a>
-		 */
 }
 
 
@@ -98,33 +84,33 @@ window.onload = function () {
 		seachTitle = document.getElementById("titleSearch");
 		seachTitle.placeholder = 'Siste søk: ' + query_params.film_title;
 		searchTermTitle = document.getElementById("film_title");
-		searchTermTitle.innerHTML = 'For tittel: ' + query_params.film_title;
+		searchTermTitle.value = query_params.film_title;
 		filteredList = filterTitle(filteredList, query_params.film_title);
 	}
 
 	if (query_params.actor) {
 		actor = document.getElementById("actor");
-		actor.innerHTML = query_params.actor;
+		actor.value = query_params.actor;
 		filteredList = filterActor(filteredList, query_params.actor);
 	}
 
 	if (query_params.director) {
 		director = document.getElementById("director");
-		director.innerHTML = query_params.director;
+		director.value = query_params.director;
 		filteredList = filterDirector(filteredList, query_params.director);
 
 	}
 
 	if (query_params.genre) {
 		genre = document.getElementById("genre");
-		genre.innerHTML = query_params.genre;
+		genre.value = query_params.genre;
 		filteredList = filterGenre(filteredList, query_params.genre);
 
 	}
 
 	if (query_params.country) {
 		country = document.getElementById("country");
-		country.innerHTML = query_params.country;
+		country.value = query_params.country;
 		filteredList = filterCountry(filteredList, query_params.country);
 
 	}

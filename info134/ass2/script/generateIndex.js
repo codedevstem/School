@@ -73,7 +73,7 @@ function fillInRatingSection(){
 	const rateMovie = document.getElementById('rateMovie');
 
 	let itemLink = document.createElement("a");
-	itemLink.href = "pages/show_movie.html?id=" + movie.id;
+	itemLink.href = "pages/movieDetails.html?id=" + movie.id;
 	let linkImage = document.createElement("img");
 	linkImage.src = "https://nelson.uib.no/o/"+ parseInt(movie.id/1000) + "/" + movie.id + ".jpg";
 	linkImage.alt = "Cover image of " + movie.otitle;
@@ -167,7 +167,7 @@ function appendList(array, listName, fromIndex, numberOfElements){
 		if(array[i] != null){
 			let listItem = document.createElement("li");
 			let itemLink = document.createElement("a");
-			itemLink.href = "pages/show_movie.html?id=" + array[i].id;
+			itemLink.href = "pages/movieDetails.html?id=" + array[i].id;
 			let linkImage = document.createElement("img");
 			linkImage.src = "https://nelson.uib.no/o/"+ parseInt(array[i].id/1000) + "/" + array[i].id + ".jpg";
 			linkImage.alt = "Cover image of " + array[i].otitle;
