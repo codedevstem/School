@@ -1,17 +1,12 @@
-/* Her kan dere implementere en søkefunksjon. For eksempel:
-function search_for_X() {
-}
-*/
-
-/* Her kan dere implementere en display function som viser resulatetene av søket. For eksempel:
-function display_X() {
-}
-*/
+/**
+	* @description | Appends and displays filtered list of movies.
+	* @param {Array} resultArray | Filtered list of movies to display.
+	* @param {Node} objectToAppend | <ul> tag to append movie nodes to.
+	*/
 function display(resultArray, objectToAppend) {
 	reviews = reviews_object;
 	resultArray.forEach(movie => {
 
-		/*list item*/
 		listItem = document.createElement("li");
 		listItem.classList.add("movieInstance");
 
@@ -30,6 +25,7 @@ function display(resultArray, objectToAppend) {
 		linkExtraSection.appendChild(extraSectionTitle);
 		let totalRating = 0;
 		let numberOfRating = 0;
+		//Gets the rating if any for the current movie
 		for (review in reviews) {
 			if (review == movie.id) {
 				for (user in reviews[review]) {
