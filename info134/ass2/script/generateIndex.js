@@ -150,7 +150,13 @@ function calculateAvgRatingAll(){
 		movieRatingArray.push(movieratingPairs); 
 	});
 }
-		
+/**
+	* 
+	* @param {Array} array | list of filtered movies 
+	* @param {String} listName | name of tag that the list shall be inserted into
+	* @param {Int} fromIndex | starting index of movies to append
+	* @param {Int} numberOfElements | number of elements to append to listName
+	*/		
 //Fills in a section on the index page based on numbers
 //Not all movies have picture and CORS is not enabled so i can't check the url... Please fix...
 function fillInSection(array, listName, fromIndex, numberOfElements){
