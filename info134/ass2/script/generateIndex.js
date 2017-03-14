@@ -39,7 +39,7 @@ newMoviesArray.sort(function(a,b){
 });
 
 // Filling in new movies in the document
-fillInSection(newMoviesArray, 'newMovies', newMoviesIndex, numberOfMovies);
+appendList(newMoviesArray, 'newMovies', newMoviesIndex, numberOfMovies);
 // Filter out movies that are unlikely to have a picture... not sure how to fix this properly ((Todo?))
 filterMovies(recentMoviesArray);
 filterMovies(suggestionMoviesArray);
@@ -63,8 +63,8 @@ suggestionMoviesArray.sort(function(a,b){
 
 // Removing all the other element than the seven first in the list
 // Filling in movies in the sections
-fillInSection(recentMoviesArray, 'recentMovies', recentMoviesIndex, numberOfMovies)
-fillInSection(suggestionMoviesArray, 'suggestedMovies', suggestionMoviesIndex, numberOfMovies)
+appendList(recentMoviesArray, 'recentMovies', recentMoviesIndex, numberOfMovies)
+appendList(suggestionMoviesArray, 'suggestedMovies', suggestionMoviesIndex, numberOfMovies)
 fillInRatingSection();
 }
 
@@ -161,7 +161,7 @@ function calculateAvgRatingAll(){
 	* Comment | all movies have picture and CORS is not enabled so i can't check the url.
 	*
 	*/		
-function fillInSection(array, listName, fromIndex, numberOfElements){
+function appendList(array, listName, fromIndex, numberOfElements){
 	let list = document.getElementById(listName);
 	for(let i = fromIndex; i < fromIndex+numberOfElements; i++){
 		if(array[i] != null){
@@ -196,9 +196,9 @@ function changeWindowValues() {
 	windowWidth = document.body.clientWidth 
 	chooseNumberOfMovies();	
 	clearSections();
-	fillInSection(newMoviesArray, 'newMovies', newMoviesIndex, numberOfMovies);
-	fillInSection(recentMoviesArray, 'recentMovies', recentMoviesIndex, numberOfMovies)
-	fillInSection(suggestionMoviesArray, 'suggestedMovies', suggestionMoviesIndex, numberOfMovies)
+	appendList(newMoviesArray, 'newMovies', newMoviesIndex, numberOfMovies);
+	appendList(recentMoviesArray, 'recentMovies', recentMoviesIndex, numberOfMovies)
+	appendList(suggestionMoviesArray, 'suggestedMovies', suggestionMoviesIndex, numberOfMovies)
 }
 function chooseNumberOfMovies() {
 	if(windowWidth > 1410){
@@ -229,7 +229,7 @@ function increaseIndex(indexCounter, array, idName){
 	indexCounter = indexCounter + numberOfMovies;
 	if(indexCounter > array.length-1) indexCounter = array.length-numberOfMovies;	
 	document.getElementById(idName).innerHTML = '';
-	fillInSection(array, idName, indexCounter, numberOfMovies)
+	appendList(array, idName, indexCounter, numberOfMovies)
 	return indexCounter;
 }
 
@@ -248,7 +248,7 @@ function decreaseIndex(indexCounter, array, idName){
 	if(indexCounter < 0) indexCounter = 0;		
 	console.log(indexCounter);
 	document.getElementById(idName).innerHTML = '';
-	fillInSection(array, idName, indexCounter, numberOfMovies);
+	appendList(array, idName, indexCounter, numberOfMovies);
 	return indexCounter;
 }
 
