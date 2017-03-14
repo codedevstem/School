@@ -91,7 +91,11 @@ function getRatingOfMovie(movie){
 	
 	return 0;
 }
-// Shuffle an array
+/**
+	* 
+	* @param {Array} Array of movies 
+	*	@returns {Array} Shuffeled Array of movies
+	*/
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 		// go through the array.
@@ -109,11 +113,15 @@ function shuffle(array) {
 
   return array;
 }
+/**
+	* 
+	* @param {Array} array 
+	*/
 function randomPick(array) {
 	return array[Math.floor(Math.random() * array.length)];
 }
 function calculateAvgRatingAll(){
-	var movieratingPairs;
+	let movieratingPairs;
 	let totalRating = 0;
 	let numberOfRating = 0;
 	let isFound;
@@ -144,6 +152,7 @@ function calculateAvgRatingAll(){
 }
 		
 //Fills in a section on the index page based on numbers
+//Not all movies have picture and CORS is not enabled so i can't check the url... Please fix...
 function fillInSection(array, listName, fromIndex, numberOfElements){
 	let list = document.getElementById(listName);
 	for(let i = fromIndex; i < fromIndex+numberOfElements; i++){
@@ -154,10 +163,6 @@ function fillInSection(array, listName, fromIndex, numberOfElements){
 			let linkImage = document.createElement("img");
 			linkImage.src = "https://nelson.uib.no/o/"+ parseInt(array[i].id/1000) + "/" + array[i].id + ".jpg";
 			linkImage.alt = "Cover image of " + array[i].otitle;
-			// needed because not all movies have picture and CORS is not enabled so i can't check the url... Please fix...
-			linkImage.onerror = function() {
-
-			}
 			itemLink.appendChild(linkImage);
 			listItem.appendChild(itemLink);
 			list.appendChild(listItem);
