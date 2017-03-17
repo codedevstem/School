@@ -3,6 +3,7 @@ let movieGenres;
 let movieAvgRating;
 let descFlag;
 let query_params;
+let movieRatings = [];
 
 function panic(message) {
     // window.history.back();
@@ -25,7 +26,35 @@ window.onload = function() {
         if(movieAvgRating == null){
             getElemId("currentRating").innerHTML = "Denne filmen har ikke blitt ratet enda";
         }else{
-            getElemId("currentRating").innerHTML = "Andre har gitt denne filmen: " + movieAvgRating.toFixed(1);
+            getElemId("currentRating").innerHTML = "Andre har i gjennomsnitt gitt denne filmen: " + movieAvgRating.toFixed(1);
+        }
+        movieRatings.forEach(rating =>{
+            console.log(rating);
+        })
+        if(movieRatings.length > 0){
+            let otherRatings = document.createElement("section");
+            otherRatings.id = "individualRatings";
+            let otherRatingsHeader = document.createElement("h3");
+            otherRatingsHeader.innerHTML = "Kommentarer og stjerner";
+            otherRatings.appendChild(otherRatingsHeader);
+            movieRatings.forEach(rating => {
+                let individualRating = document.createElement("div");
+                let ratingHeader = document.createElement("div");
+                let ratingUser = document.createElement("p");
+                ratingUser.innerHTML = "Bruker: " + rating.username;
+                ratingHeader.appendChild(ratingUser);
+                let ratingRating = document.createElement("p");
+                ratingRating.innerHTML = "Stjerner: " + rating.rating;
+                ratingHeader.appendChild(ratingRating);   
+                individualRating.appendChild(ratingHeader);             
+                if(rating.comment != undefined){
+                    let ratingComment = document.createElement("p");
+                    ratingComment.innerHTML = "Kommentar: " + rating.comment;
+                    individualRating.appendChild(ratingComment);                
+                }
+                otherRatings.appendChild(individualRating);
+            });
+            getElemId("detailedInfo").appendChild(otherRatings);
         }
         getElemId("submitRating").addEventListener("click", function(){giveRatingToMovie()}, false);
         //Tests for movies with youtube link. 
@@ -93,6 +122,7 @@ function getMovieIdAndGenre() {
             for (let review in reviews_object) {
                 if (review == movie.id) {
                     for (let user in reviews_object[review]) {
+                        movieRatings.push(reviews_object[review][user]);
                         totalRating += reviews_object[review][user].rating;
                         numberOfRating++;
                     }

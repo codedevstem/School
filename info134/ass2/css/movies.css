@@ -55,6 +55,29 @@
     font-size: 125%;
     font-weight: bold;
 }
+#individualRatings>div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+#individualRatings>div>div{
+    display: flex;
+}
+
+#individualRatings>div>div>p{
+    font-size: 120%;
+}
+
+#individualRatings>div>p{
+    max-width: 70%;
+}
+
+
+#individualRatings>div>div>*:last-child{
+    margin-left: 5em;
+}
+
 
 input[type=checkbox] {
     display: none;
