@@ -4,7 +4,7 @@ let movieAvgRating;
 let descFlag;
 let query_params;
 let movieRatings = [];
-
+let commentFlag = false;
 function panic(message) {
     // window.history.back();
     alert(message);
@@ -28,34 +28,12 @@ window.onload = function() {
         }else{
             getElemId("currentRating").innerHTML = "Andre har i gjennomsnitt gitt denne filmen: " + movieAvgRating.toFixed(1);
         }
-        movieRatings.forEach(rating =>{
-            console.log(rating);
-        })
         if(movieRatings.length > 0){
             let otherRatings = document.createElement("section");
-            otherRatings.id = "individualRatings";
-            let otherRatingsHeader = document.createElement("h3");
-            otherRatingsHeader.innerHTML = "Kommentarer og stjerner";
-            otherRatings.appendChild(otherRatingsHeader);
-            movieRatings.forEach(rating => {
-                let individualRating = document.createElement("div");
-                let ratingHeader = document.createElement("div");
-                let ratingUser = document.createElement("p");
-                ratingUser.innerHTML = "Bruker: " + rating.username;
-                ratingHeader.appendChild(ratingUser);
-                let ratingRating = document.createElement("p");
-                ratingRating.innerHTML = "Stjerner: " + rating.rating;
-                ratingHeader.appendChild(ratingRating);   
-                individualRating.appendChild(ratingHeader);             
-                if(rating.comment != undefined){
-                    let ratingComment = document.createElement("p");
-                    ratingComment.innerHTML = "Kommentar: " + rating.comment;
-                    individualRating.appendChild(ratingComment);                
-                }
-                otherRatings.appendChild(individualRating);
-            });
-            getElemId("detailedInfo").appendChild(otherRatings);
+            getElemId("detailedInfo").appendChild(insertRatings(otherRatings));
         }
+        toggleShowComments();
+
         getElemId("submitRating").addEventListener("click", function(){giveRatingToMovie()}, false);
         //Tests for movies with youtube link. 
         if(movie.id == "3823" || movie.id == "3818" || movie.id == "1024" || movie.id == "3597" || movie.id == "2274" ||
@@ -73,6 +51,50 @@ window.onload = function() {
     }
     
 };
+/**
+ * @description | Creates the ratings and inserts them
+ */
+function insertRatings (parent) {
+    parent.addEventListener("click", function() {toggleShowComments()},false);
+    parent.id = "individualRatings";
+    let otherRatingsHeader = document.createElement("h3");
+    otherRatingsHeader.innerHTML = "Kommentarer og stjerner";
+    parent.appendChild(otherRatingsHeader);
+    movieRatings.forEach(rating => {
+        let individualRating = document.createElement("div");
+        let ratingHeader = document.createElement("div");
+        let ratingUser = document.createElement("p");
+        ratingUser.innerHTML = "Bruker: " + rating.username;
+        ratingHeader.appendChild(ratingUser);
+        let ratingRating = document.createElement("p");
+        ratingRating.innerHTML = "Stjerner: " + rating.rating;
+        ratingHeader.appendChild(ratingRating);   
+        individualRating.appendChild(ratingHeader);             
+        if(rating.comment != undefined){
+            let ratingComment = document.createElement("p");
+            ratingComment.innerHTML = "Kommentar: " + rating.comment;
+            individualRating.appendChild(ratingComment);                
+        }
+        parent.appendChild(individualRating);
+    });
+    return parent;         
+}
+function toggleShowComments() {
+    let ratingSection = getElemId("individualRatings")
+    ratingSection.innerHTML = "";
+    if(!commentFlag){
+        getElemId("detailedInfo").replaceChild(insertRatings(ratingSection),ratingSection);
+    } else {
+        let newSection = document.createElement("section");
+        newSection.addEventListener("click", function() {toggleShowComments()},false);
+        newSection.id = "individualRatings";
+        let emptyHeader = document.createElement("h3");
+        emptyHeader.innerHTML = "Kommentarer og stjerner";
+        newSection.appendChild(emptyHeader);
+        getElemId("detailedInfo").replaceChild(newSection, ratingSection);
+    }
+    commentFlag = !commentFlag;
+}
 /**
  * @description | inserts the movie title on top of document 
  */

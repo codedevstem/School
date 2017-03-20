@@ -114,7 +114,11 @@ window.onload = function () {
 	display(filteredList, resultList);
 	//Her kan dere for eksempel kalle en (display) funksjon som viser søkeresultater 
 }
-
+/**
+	* @description | filters out the movies not containing the 
+	* @param {Array} movies | MovieArray to be filtered
+	* @param {SearchTerm} params | Search terms extracted from the string
+	*/
 function filterTitle(movies, params) {
 	for (let i = movies.length - 1; i >= 0; i--) {
 		let movie = movies[i];

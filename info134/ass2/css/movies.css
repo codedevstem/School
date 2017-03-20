@@ -75,7 +75,8 @@
 
 
 #individualRatings>div>div>*:last-child{
-    margin-left: 5em;
+    margin-left: 4em;
+    margin-right: 4em;
 }
 
 
@@ -167,7 +168,7 @@ input[type=checkbox]:checked~#moreInfo {
         margin-right: auto;
     }
     #images {
-        max-width: 50%;
+        max-width: 80%;
         flex-direction: column;
         margin-bottom: 0.5em;
         overflow-x: hidden;
