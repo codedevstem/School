@@ -180,6 +180,11 @@ function filterGenre(movies, params) {
 	}
 	return movies;
 }
+/**
+	* @description
+	* @param {Array} movies | list of movies to be filtered.
+	* @param {String} params | String containing the search term to be filtered by country
+	*/
 function filterCountry(movies, params) {
 	for (let i = movies.length - 1; i >= 0; i--) {
 		let movie = movies[i];
