@@ -1,104 +1,37 @@
-/* ----- Global Styling ----- */ 
-.bolder {
- font-weight: bold;
-}
-
-ul {
- list-style-type: square;
-}
-/* ----- Html, Body styling ----- */
-
-html,
-body {
- height: 100%;
- width: 100%;
- min-height: 100%;
- min-width: 100%;
- margin: 0;
- padding: 0;
-}
-
-
-/* ----- Header Section ----- */
-
-header {
- max-width: 100%;
- min-width: 100%;
- box-sizing: border-box;
- background: #eee;
- border-bottom: 5px solid cornflowerblue;
- padding-top: 1em;
- padding-bottom: 1em;
- position: fixed;
-}
-
-header>h1 {
- margin-top: 0;
- margin-left: 10%;
-}
-
-header>h2 {
- margin-left: 25%;
-}
 
 
 /* ----- Main Section ----- */
-
-main {
- margin-top: 0;
- height: 100%;
- width: 100%;
- box-sizing: border-box;
- background-color: whitesmoke;
-}
-main>section:first-of-type{
- padding-top: 10em;
-}
-main>section {
- padding-top: 1em;
- background: #CFEAFF;
- width: 90%;
-
- margin-left: auto;
- margin-right: auto;
- padding-bottom: 1em;
- margin-bottom: 1em;
-}
-main>section:nth-of-type(odd){
- background-image: -webkit-gradient(linear, left, right, from(#CFEAFF), to(#BFE1FF));
- background-image: -webkit-linear-gradient(left, #CFEAFF, #BFE1FF);
- background-image: -moz-linear-gradient(left, #CFEAFF, #BFE1FF);
- background-image: linear-gradient(to right, #CFEAFF, #BFE1FF);
-}
-main>section:nth-of-type(even){
- background-image: -webkit-gradient(linear, right, left, from(#CFEAFF), to(#BFE1FF));
- background-image: -webkit-linear-gradient(right, #CFEAFF, #BFE1FF);
- background-image: -moz-linear-gradient(right, #CFEAFF, #BFE1FF);
- background-image: linear-gradient(to left,#CFEAFF, #BFE1FF );
+#mainContent {
+ flex: 8;
+ display: flex;
+ flex-direction: column;
+ margin-left: 0.5em;
 }
 
-main>section>h2 {
- margin-top: 0;
- padding-top: 1em;
-}
-
-.signSection {
+.signSection{
  display: flex;
  flex-direction: column;
  align-items: center;
+ margin-top: 0;
+ padding: 1em;
+ background:	#447DB2;
 }
 
 .signSection>h2 {
- 
+ margin-top: 0;
+ padding-top: 1em;
+ color: white;
 }
-
+.signSection>h3 {
+ margin-left: -2em;
+}
 #signInput {
  margin-left: 0.7em;
 }
 
 .important {
  font-size: 120%;
- color: #8A6111;
+ color: #F5FF87;
 }
 
 #signRequiredInfo {
@@ -128,12 +61,11 @@ textarea[name=comment] {
 
 .signSection input[type=submit] {
  margin-left: 1.1em;
- background-color: #5bc0de;
+ background-color: #EE3F3F;
  min-width: 6em;
  min-height: 4em;
  border: none;
  box-shadow: 2px 2px 1px 1px #3bb0ee;
- border-top: 1px solid #96d1f8;
  padding: 8px 16px;
  -webkit-border-radius: 6px;
  -moz-border-radius: 6px;
@@ -146,28 +78,52 @@ textarea[name=comment] {
  font-size: 15px;
  vertical-align: middle;
 }
-
+#commentsAndArticles {
+ display: flex;
+ margin-top: 0.5em;
+ flex: 4;
+ margin-bottom: 0.5em;
+}
+.testemonials {
+ flex: 3;
+ padding: 1em;
+ margin-left: 0.5em;
+ background:	#447DB2;
+ margin-right: 0.5em;
+ margin-bottom: 0.5em;
+}
+.testemonials *{
+ color: whitesmoke;
+}
+.testemonials>ul>li>h4{
+ margin-top: 0.2em;
+ color: black;
+}
+.testemonials>ul>li>p {
+ margin: 0.2em;
+}
+.testemonials>ul>li {
+ border-bottom: 1px solid black;
+ padding-bottom: 0.2em;
+}
 .relatedArticles {
+ background:	#447DB2; 
+ margin-left: 0.5em;
+ padding: 1em;
+ flex: 3;
+}
+#aboutMarijuana {
+ flex: 3;
+ padding: 1em;
+ background:	#447DB2;
 
 }
-.relatedArticles ul>li>a {
- color: black;
+
+#aboutMarijuana>.warning {
+ font-size: 120%;
+ text-align: center;
 }
-
-.testemonials {}
-
-.companiesAgainst {
-
+#aboutMarijuana>:last-child {
+ font-size: 140%;
+ color: #650605;
 }
-.companiesAgainst>ul>li>a {
- color: black;
-}
-.companiesAgainst>ul>li>* {
- display: inline;
- 
-}
-
-
-/* ----- Footer Section ----- */
-
-footer {}
