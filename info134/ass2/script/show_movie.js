@@ -30,9 +30,10 @@ window.onload = function() {
         }
         if(movieRatings.length > 0){
             let otherRatings = document.createElement("section");
-            getElemId("detailedInfo").appendChild(insertRatings(otherRatings));
+            let newRatingSection = insertRatings(otherRatings)
+            getElemId("detailedInfo").appendChild(newRatingSection);
+            toggleShowComments(newRatingSection);
         }
-        toggleShowComments();
 
         getElemId("submitRating").addEventListener("click", function(){giveRatingToMovie()}, false);
         //Tests for movies with youtube link. 
@@ -55,11 +56,12 @@ window.onload = function() {
  * @description | Creates the ratings and inserts them
  */
 function insertRatings (parent) {
-    parent.addEventListener("click", function() {toggleShowComments()},false);
-    parent.id = "individualRatings";
+    let individualRatings = document.createElement("section");
+    individualRatings.id = "individualRatings";
+    individualRatings.addEventListener("click", function() {toggleShowComments(individualRatings)},false);
     let otherRatingsHeader = document.createElement("h3");
-    otherRatingsHeader.innerHTML = "Kommentarer og stjerner";
-    parent.appendChild(otherRatingsHeader);
+    otherRatingsHeader.innerHTML = "Lukk Kommentarer og stjerner";
+    individualRatings.appendChild(otherRatingsHeader);
     movieRatings.forEach(rating => {
         let individualRating = document.createElement("div");
         let ratingHeader = document.createElement("div");
@@ -75,23 +77,23 @@ function insertRatings (parent) {
             ratingComment.innerHTML = "Kommentar: " + rating.comment;
             individualRating.appendChild(ratingComment);                
         }
-        parent.appendChild(individualRating);
+        individualRatings.appendChild(individualRating);
     });
-    return parent;         
+    return individualRatings;         
 }
-function toggleShowComments() {
-    let ratingSection = getElemId("individualRatings")
-    ratingSection.innerHTML = "";
-    if(!commentFlag){
-        getElemId("detailedInfo").replaceChild(insertRatings(ratingSection),ratingSection);
+function toggleShowComments(parent) {
+    parent.innerHTML = "";
+    toReplaceNode = parent;
+    if(commentFlag){
+        getElemId("detailedInfo").replaceChild(insertRatings(toReplaceNode),toReplaceNode);
     } else {
         let newSection = document.createElement("section");
-        newSection.addEventListener("click", function() {toggleShowComments()},false);
+        newSection.addEventListener("click", function() {toggleShowComments(newSection)},false);
         newSection.id = "individualRatings";
         let emptyHeader = document.createElement("h3");
-        emptyHeader.innerHTML = "Kommentarer og stjerner";
+        emptyHeader.innerHTML = "Se Kommentarer og stjerner";
         newSection.appendChild(emptyHeader);
-        getElemId("detailedInfo").replaceChild(newSection, ratingSection);
+        getElemId("detailedInfo").replaceChild(newSection, parent);
     }
     commentFlag = !commentFlag;
 }
@@ -99,12 +101,12 @@ function toggleShowComments() {
  * @description | inserts the movie title on top of document 
  */
 function createTitleHeaders() {
-    getElemId('oTitle').innerHTML = movie.otitle;
+    getElemId('oTitle').innerHTML = movie.otitle + " (" + movie.year + ")";
     if(movie.etitle != null && movie.etitle != movie.otitle){
-        getElemId('eTitle').innerHTML = movie.etitle;
+        getElemId('eTitle').innerHTML = movie.etitle + " (" + movie.year + ")";
     }
     if(movie.ntitle != null && movie.ntitle != movie.otitle){
-        getElemId('nTitle').innerHTML = movie.ntitle;
+        getElemId('nTitle').innerHTML = movie.ntitle + " (" + movie.year + ")";
     }
 }
 /**
@@ -214,7 +216,7 @@ function createDetailedInfoSection(parent) {
     // Splits the actors into items
     movie.folk.split(", ").forEach(actors => {
         let actorLink = document.createElement("a");
-        actorLink.href = "";
+        actorLink.href = "../pages/search_results.html?actor="+actors;
         // Removes trailing commas
         actorLink.innerHTML = actors.split(',', 1);
         actorList.appendChild(actorLink);
@@ -227,11 +229,19 @@ function createDetailedInfoSection(parent) {
     // Adding the eventListener.
     description.addEventListener("click", function(){toggleDescLength()}, false);
     parent.appendChild(description);
-    
     parent.appendChild(createInfoElem("infoHeader", "Produsert"));
     parent.appendChild(createInfoElem("explanation", movie.country));
+    let directorList = document.createElement("ul");
+    directorList.classList.add("explanation");
+    movie.dir.split(", ").forEach(director => {
+        let directorLink = document.createElement("a");
+        directorLink.href = "../pages/search_results.html?director="+director;
+        // Removes trailing commas
+        directorLink.innerHTML = director.split(',', 1);
+        directorList.appendChild(directorLink);
+    });
     parent.appendChild(createInfoElem("infoHeader", "regissører"));
-    parent.appendChild(createInfoElem("explanation", movie.dir));
+    parent.appendChild(directorList);
     toggleDescLength();
 }
 /**
@@ -284,5 +294,7 @@ function giveRatingToMovie(){
         console.log("2");                
     }else if(getElemId("star1").checked){
         console.log("1");                
+    }else {
+        console.log("0");
     }
 }
