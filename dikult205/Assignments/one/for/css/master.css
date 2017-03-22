@@ -18,27 +18,34 @@ ul {
 .next>h5 {
  color: #DF0D0D;
 }
-html, body {
+html{
  height: 100%;
  width: 100%;
+} body {
+ min-height: 100%;
  margin: 0;
  padding: 0;
 }
 body {
  display: flex;
  flex-direction: row;
+ border-right: 11px solid #316C95;
 }
 #leftContent {
  display: flex;
  flex-direction: column;
  flex: 8;
-
+}
+#topContent {
+ display: flex;
+ flex-direction: column;
 }
 header {
  flex: 1;
  padding: 1em;
  padding-right: 0;
  background: #316C95;
+ min-height: 18%;
  display: flex;
  justify-content: space-between;
 }
@@ -66,12 +73,14 @@ main {
  display: flex;
  flex-direction: column;
  border-right: 11px solid #316C95;
+ min-height: 85%;
 }
 #featuredItems {
- flex: 1;
  display: flex;
+ flex: 1;
  width: 100%;
  justify-content: center;
+ border-bottom: 11px solid #316C95;
 }
 main>h3{
  text-align: center;
@@ -86,17 +95,21 @@ main>h3{
  display: flex;
  flex-direction: column;
  align-items: center;
+ justify-content: flex-start;
+}
+#listOfFacts>li {
+ margin-bottom: 1.5em;
 }
 #companiesFor {
  flex: 1;
  display: flex;
  flex-direction: column;
  align-items: center;
-
+ justify-content: flex-start;
 }
 #companiesFor>ul>li>img {
  max-height: 170px;
- margin-bottom: 0.5em;
+ margin-bottom: 4em;
 }
 #companiesFor>ul>li {
  text-align: center;
@@ -116,7 +129,7 @@ main>h3{
  font-size: 150%;
 }
 #donateButton {
- height: 5%;
+ height: 4em;
  cursor: pointer;
 
 }
@@ -141,7 +154,6 @@ main>h3{
  flex: 2;
  background: white;
  padding-top: 2em;
- border-right: 11px solid #316C95;
 }
 #rightContent>* {
  color: black;
@@ -153,20 +165,32 @@ main>h3{
 
 #imageList>li{
  text-align: center;
+ margin-bottom: 1em;
+}
+#imageList>li>h4{
+ font-size: 130%;
+ margin: 0;
+}
+#imageList>li>p{
+ font-size: 140%;
+ margin: 0;
 }
 
 #imageList>li>img {
  height: 240px;
 }
 footer {
- position: fixed;
- bottom: 0;
- width: 80%;
  display: flex;
  height: 5em;
- margin-bottom: 1em;
+ margin-bottom: 3em;
+ justify-content: space-around;
 }
 footer>* {
  flex: 1;
  text-align: center;
+}
+footer>*>p{
+ width: 70%;
+ margin-left: auto;
+ margin-right: auto;
 }
