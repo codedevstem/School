@@ -57,6 +57,8 @@ header {
  margin-left: 1em;
 }
 #headerText {
+ margin-top: auto;
+ margin-bottom: auto;
  flex: 5;
 
 }
