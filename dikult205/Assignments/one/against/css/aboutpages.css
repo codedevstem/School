@@ -19,9 +19,30 @@
  max-width: 40%;
  min-height: 60%;
 }
-#about>h2 {
+#about>h2,
+#contact>h2 {
  font-size: 140%;
 }
-#about>p {
+#contact>ul,
+#about>ul {
+ list-style: none;
+ padding: 0;
+}
+#contact>ul>li {
+ display: flex;
+ align-items: center;
+
+}
+#about>ul>li>p,
+#contact>ul>li>p {
  font-size: 125%; 
+}
+#contact>ul>li>img{
+ height: 50px;
+ widows: auto;
+ margin-right: 1em;
+ background: transparent;
+}
+#contact>ul>li>p>a {
+ text-decoration: underline;
 }

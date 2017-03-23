@@ -29,7 +29,6 @@ html{
 body {
  display: flex;
  flex-direction: row;
- border-right: 5px solid #316C95;
 }
 #leftContent {
  display: flex;
@@ -76,7 +75,6 @@ main {
  flex: 5;
  display: flex;
  flex-direction: column;
- border-right: 6px solid #316C95;
  min-height: 85%;
 }
 #featuredItems {
@@ -84,7 +82,6 @@ main {
  flex: 1;
  width: 100%;
  justify-content: center;
- border-bottom: 3px solid #316C95;
 
  padding-right: 2em;
 }
@@ -114,7 +111,7 @@ main>h3{
  align-items: center;
  justify-content: flex-start;
 }
-#companiesFor>ul>li>img {
+#companiesFor>ul>li>a>img {
  max-height: 170px;
  margin-bottom: 4em;
 }
