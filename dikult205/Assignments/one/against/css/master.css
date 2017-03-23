@@ -23,7 +23,8 @@
  color: white;
 }
 .signSection>h3 {
- margin-left: -2em;
+ margin-left: -5em;
+ color: white;
 }
 #signInput {
  margin-left: 0.7em;
@@ -39,7 +40,23 @@
  flex-direction: column;
  padding-bottom: 0;
 }
+#signRequiredInfo>input,
+#signInput>textarea {
+ background: transparent;
+ border: none;
+ color: white;
+ border-bottom: 1px solid white;
+ font-size: 120%;
+}
 
+#signRequiredInfo>input:focus,
+#signInput>textarea:focus {
+ outline: none;
+}
+#signRequiredInfo>input::-webkit-input-placeholder,
+#signInput>textarea::-webkit-input-placeholder{
+ color: white;
+}
 #signRequiredInfo>input {
  max-width: 204px;
  margin-bottom: 1em;
@@ -65,7 +82,7 @@ textarea[name=comment] {
  min-width: 6em;
  min-height: 4em;
  border: none;
- box-shadow: 2px 2px 1px 1px #3bb0ee;
+
  padding: 8px 16px;
  -webkit-border-radius: 6px;
  -moz-border-radius: 6px;
@@ -77,6 +94,8 @@ textarea[name=comment] {
  color: white;
  font-size: 15px;
  vertical-align: middle;
+
+
 }
 #commentsAndArticles {
  display: flex;

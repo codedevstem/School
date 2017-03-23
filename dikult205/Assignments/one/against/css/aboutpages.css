@@ -9,7 +9,7 @@
  display: flex;
  flex-direction: row;
  justify-content: space-around;
-
+ align-items: center;
 }
 #mainContent * {
  color: white;
@@ -17,6 +17,7 @@
 #mainContent>section {
  flex: 1;
  max-width: 40%;
+ min-height: 60%;
 }
 #about>h2 {
  font-size: 140%;

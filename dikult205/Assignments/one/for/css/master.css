@@ -29,7 +29,7 @@ html{
 body {
  display: flex;
  flex-direction: row;
- border-right: 11px solid #316C95;
+ border-right: 5px solid #316C95;
 }
 #leftContent {
  display: flex;
@@ -53,12 +53,16 @@ header {
  margin-left: 3em;
 }
 #headerText>h1,
-#headerText>h2 {
+#headerText>h3 {
  color: white;
- font-size: 170%;
 }
 #headerText>h1 {
  font-size: 220%;
+ margin-bottom: 0;
+}
+#headerText>h3 {
+ font-size: 140%;
+ margin-left: 2em;
 }
 header>img {
  height: 150px;
@@ -72,7 +76,7 @@ main {
  flex: 5;
  display: flex;
  flex-direction: column;
- border-right: 11px solid #316C95;
+ border-right: 6px solid #316C95;
  min-height: 85%;
 }
 #featuredItems {
@@ -80,7 +84,9 @@ main {
  flex: 1;
  width: 100%;
  justify-content: center;
- border-bottom: 11px solid #316C95;
+ border-bottom: 3px solid #316C95;
+
+ padding-right: 2em;
 }
 main>h3{
  text-align: center;
@@ -96,6 +102,7 @@ main>h3{
  flex-direction: column;
  align-items: center;
  justify-content: flex-start;
+ 
 }
 #listOfFacts>li {
  margin-bottom: 1.5em;
@@ -124,6 +131,10 @@ main>h3{
 #donate {
  text-align: center;
 }
+.progress {
+ font-size: 120%;
+ color: #DF0D0D;
+}
 #donate>h4,
 #ourGoals>h4 {
  font-size: 150%;
@@ -136,12 +147,19 @@ main>h3{
 #donate>p{
  font-size: 110%;
 }
+#goalList {
+ max-width: 90%;
+ margin-right: auto;
+ margin-left: auto;
+}
 #goalList>li>h5 {
  margin: 0;
  font-size: 130%;
 }
 #ourGoals>h4 {
  text-align: center;
+ margin-bottom: 0.5em;
+ margin-top: 0.5em;
 }
 #goalList>li>p {
  margin-left: 1em;
@@ -162,7 +180,9 @@ main>h3{
 #rightContent>h3 {
  text-align: center;
 }
-
+#imageList {
+ padding: 0;
+}
 #imageList>li{
  text-align: center;
  margin-bottom: 1em;
