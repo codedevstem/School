@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<!-- Author: kos003 -->
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Profile page</title>
+ <link rel="stylesheet" href="../css/profile.css">
+ <link rel="stylesheet" href="../css/header.css">
+ <link rel="stylesheet" href="../css/common.css">
+ <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+</head>
+
+<body>
+ <header>
+  <h1>FilmNå!</h1>
+  <!-- Main nav element -->
+  <nav>
+   <ul>
+    <li><a href="../index.html">Hjem</a></li>
+    <li>
+     <!-- Simulated dropdown menu for profile and patterns for loans -->
+     <input type="checkbox" id="checkboxToggleProfile">
+     <label for="checkboxToggleProfile">Profil</label>
+     <ul id="profileOptions">
+      <li><a href="profile.html">Min Profil</a></li>
+      <li><a href="">Log Ut</a></li>
+     </ul>
+    </li>
+    <li>
+     <!-- Simulated dropdown menu with search field -->
+     <input type="checkbox" id="checkboxToggleSearch" checked>
+     <label for="checkboxToggleSearch">Søk</label>
+     <!-- Hidden form that is triggered with checkbox and shown in css -->
+     <form id="search" action="search_results.html" method="get">
+      <input id="titleSearch" name="film_title" type="text" minlength="3" placeholder="e.g. King Kong">
+      <input type="submit" id="submit_search" value="Søk">
+     </form>
+    </li>
+   </ul>
+  </nav>
+ </header>
+ <main>
+  <h2>Velkommen: Bob</h2>
+  <div id="contentSection">
+   <section id="haveLoanedSection">
+    <h3>Du har lånt:</h3>
+   </section>
+   <section id="wantLoanedSection">
+    <h3>Ønskeliste</h3>
+   </section>
+  </div>
+ </main>
+</body>
+
+</html>
