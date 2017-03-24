@@ -128,7 +128,11 @@ function filterTitle(movies, params) {
 	}
 	return movies;
 }
-
+/**
+	* @description | Filters moviearray based on Actor params
+	* @param {Array} movies | List of movies to be filtered. 
+	* @param {String} params | String containing the search term to be filter as Genre
+	*/
 function filterActor(movies, params) {
 	for (let i = movies.length - 1; i >= 0; i--) {
 		if (movies[i].folk == null){
@@ -145,7 +149,11 @@ function filterActor(movies, params) {
 	}
 	return movies;
 }
-
+/**
+	* @description | Filters moviearray based on country params
+	* @param {Array} movies | List of movies to be filtered. 
+	* @param {String} params | String containing the search term to be filter as Director
+	*/
 function filterDirector(movies, params) {
 	for (let i = movies.length - 1; i >= 0; i--) {
 		let movie = movies[i];
@@ -155,7 +163,11 @@ function filterDirector(movies, params) {
 	}
 	return movies;
 }
-
+/**
+	* @description | Filters moviearray based on country params.
+	* @param {Array} movies | List of movies to be filtered. 
+	* @param {String} params | String containing the search term to be filter as Genre
+	*/
 function filterGenre(movies, params) {
 	for (let i = movies.length - 1; i >= 0; i--) {
 		let movieNotFound = true;
@@ -181,9 +193,9 @@ function filterGenre(movies, params) {
 	return movies;
 }
 /**
-	* @description
+	* @description | Filters moviearray based on country params.
 	* @param {Array} movies | list of movies to be filtered.
-	* @param {String} params | String containing the search term to be filtered by country
+	* @param {String} params | String containing the search term to be filtered filter as Country.
 	*/
 function filterCountry(movies, params) {
 	for (let i = movies.length - 1; i >= 0; i--) {
