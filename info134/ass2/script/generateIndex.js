@@ -15,8 +15,11 @@ makeMovieArray();
 pushToArray(newMoviesArray);
 pushToArray(recentMoviesArray);
 pushToArray(suggestionMoviesArray);
-
 window.onload = function() {
+
+document.getElementById('newBack').style.opacity = "0";
+document.getElementById('recentBack').style.opacity = "0";
+document.getElementById('suggestedBack').style.opacity = "0";
 reviews = reviews_object;
 calculateAvgRatingAll();
 windowWidth = document.body.clientWidth;
@@ -166,16 +169,36 @@ function appendList(array, listName, fromIndex, numberOfElements){
 	for(let i = fromIndex; i < fromIndex+numberOfElements; i++){
 		if(array[i] != null){
 			let listItem = document.createElement("li");
+			listItem.id = array[i].id;
 			let itemLink = document.createElement("a");
 			itemLink.href = "pages/movieDetails.html?id=" + array[i].id;
 			let linkImage = document.createElement("img");
 			linkImage.src = "https://nelson.uib.no/o/"+ parseInt(array[i].id/1000) + "/" + array[i].id + ".jpg";
 			linkImage.alt = "Cover image of " + array[i].otitle;
+			linkImage.onerror = function() {
+				linkImage.style.display = "none";
+			}
+			linkImage.addEventListener("mouseover", function() {hideImage(array[i].id)}, false);
+			linkImage.addEventListener("mouseleave", function() {showImage(array[i].id)}, false);
+			let imageText = document.createElement("p");
+			imageText.classList.add("imageText");
+			imageText.innerHTML = array[i].otitle;
 			itemLink.appendChild(linkImage);
+			itemLink.appendChild(imageText);
 			listItem.appendChild(itemLink);
 			list.appendChild(listItem);
 		}
 	}
+}
+function hideImage(id) {
+	let listItem = document.getElementById(id);
+ listItem.querySelector("img").style.opacity = "0";
+	listItem.querySelector("p").style.opacity = "1";
+}
+function showImage(id) {
+	let listItem = document.getElementById(id);
+ listItem.querySelector("img").style.opacity = "1";
+ listItem.querySelector("p").style.opacity = "0";
 }
 function pushToArray(array){
 	movieArray.forEach(movie =>{
@@ -193,7 +216,7 @@ function filterMovies(array){
 	}
 }
 function changeWindowValues() {
-	windowWidth = document.body.clientWidth 
+	windowWidth = document.body.clientWidth;
 	chooseNumberOfMovies();	
 	clearSections();
 	appendList(newMoviesArray, 'newMovies', newMoviesIndex, numberOfMovies);
@@ -204,9 +227,9 @@ function chooseNumberOfMovies() {
 	if(windowWidth > 1410){
 		numberOfMovies = 11;
 	} else if(windowWidth < 840) {
-		numberOfMovies = Math.floor(windowWidth/115);
+		numberOfMovies = Math.floor(windowWidth/120);
 	} else {
-		numberOfMovies = Math.floor(windowWidth/150);
+		numberOfMovies = Math.floor(windowWidth/160);
 	}
 }
 function clearSections() {
@@ -218,10 +241,13 @@ function clearSections() {
 function increase(id) {
 	if(id == "newMovies"){
 		newMoviesIndex = increaseIndex(newMoviesIndex,newMoviesArray, 'newMovies');
+		document.getElementById('newBack').style.opacity = "1";
 	}else if(id == "recentMovies"){
 		recentMoviesIndex = increaseIndex(recentMoviesIndex,recentMoviesArray, 'recentMovies');
+		document.getElementById('recentBack').style.opacity = "1";
 	}else if(id == "suggestedMovies"){
 		suggestionMoviesIndex =	increaseIndex(suggestionMoviesIndex,suggestionMoviesArray, 'suggestedMovies');
+		document.getElementById('suggestedBack').style.opacity = "1";
 	}
 }
 
@@ -235,10 +261,16 @@ function increaseIndex(indexCounter, array, idName){
 
 function decrease(id) {
 	if(id == "newMovies"){
+		if(newMoviesIndex - numberOfMovies  == 0  || newMoviesIndex == 0) document.getElementById('newBack').style.opacity = "0";
+		else document.getElementById('newBack').style.opacity = "1";
 		newMoviesIndex =	decreaseIndex(newMoviesIndex, newMoviesArray, 'newMovies');
-	}else if(id== "recentMovies"){
+	}else if(id == "recentMovies"){
+		if(recentMoviesIndex - numberOfMovies == 0 || recentMoviesIndex == 0) document.getElementById('recentBack').style.opacity = "0";
+		else document.getElementById('recentBack').style.opacity = "1";
 		recentMoviesIndex =	decreaseIndex(recentMoviesIndex, recentMoviesArray, 'recentMovies');
 	}else if(id == "suggestedMovies"){
+		if(suggestionMoviesIndex - numberOfMovies  == 0  || suggestionMoviesIndex == 0) document.getElementById('suggestedBack').style.opacity = "0";
+		else document.getElementById('suggestedBack').style.opacity = "1";
 			suggestionMoviesIndex =	decreaseIndex(suggestionMoviesIndex, suggestionMoviesArray, 'suggestedMovies');
 	}
 }

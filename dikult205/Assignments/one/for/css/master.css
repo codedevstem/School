@@ -22,12 +22,10 @@ html{
  width: 100%;
 } 
 body {
+ display: flex;
+ flex-direction: column;
  margin: 0;
  padding: 0;
-}
-body {
- display: flex;
- flex-direction: row;
 }
 #leftContent {
  display: flex;
@@ -68,22 +66,13 @@ header>img {
 main {
  flex: 5;
  display: flex;
- flex-direction: column;
 }
-#featuredItems {
- display: flex;
- flex: 11;
- width: 100%;
- justify-content: center;
- padding-right: 2em;
+main>* {
+ flex: 1;
 }
 main>h3{
  text-align: center;
  font-size: 180%;
-}
-#featuredItems>section>h4 {
- font-size: 150%;
- margin-bottom: 0.2em;
 }
 #medicalCannabis {
  flex: 1;
@@ -96,25 +85,55 @@ main>h3{
 #listOfFacts>li {
  margin-bottom: 1.5em;
 }
-#companiesFor {
+#peopleSection {
  flex: 1;
  display: flex;
  flex-direction: column;
  align-items: center;
- justify-content: flex-start;
+ 
 }
-#companiesFor>ul>li>a>img {
- max-height: 170px;
- margin-bottom: 4em;
-}
-#companiesFor>ul>li {
+#mainPerson {
  text-align: center;
 }
+#mainPerson {
+ padding: 0;
+}
+#mainPerson>h4{
+ font-size: 130%;
+ margin: 0;
+}
+#mainPerson>p{
+ font-size: 140%;
+ margin: 0;
+}
+
+#mainPerson>img {
+ height: 240px;
+}
+#mainPerson>.patientExplanation {
+ margin-bottom: 0.5em;
+ margin-top: 0.5em;
+ font-size: 110%;
+ text-align: left;
+}
+#moreImages {
+ width: 400px;
+ display: flex;
+ padding-left: 0px;
+ align-items: center;
+ justify-content: space-around;
+
+}
+#moreImages>li>a {
+ height: 130px;
+}
+#moreImages>li>
 #donateAndGoals {
  flex: 1;
  display: flex;
  flex-direction: column;
  align-items: center;
+
 
 }
 #donate {
@@ -157,53 +176,45 @@ main>h3{
  margin-top:0;
 }
 
-#rightContent {
- flex: 2;
- background: white;
- padding-top: 2em;
-}
-#rightContent>* {
- color: black;
-}
-#rightContent>h2{
- text-align: center;
- max-width: 70%;
- margin-left: auto;
- margin-right: auto;
-}
-#imageList {
- padding: 0;
-}
-#imageList>li{
- text-align: center;
- margin-bottom: 1.5em;
-}
-#imageList>li>h4{
- font-size: 130%;
- margin: 0;
-}
-#imageList>li>p{
- font-size: 140%;
- margin: 0;
-}
-
-#imageList>li>img {
- height: 240px;
-}
 footer {
  flex:1;
  display: flex;
+ flex-direction: column;
  align-self: center;
- justify-content: space-around;
- width: 80%;
+
 }
-footer>* {
+#organizationInfo{
+ display: flex;
+ justify-content: space-around;
+}
+#aboutUs,
+#contact,
+#companies {
  flex: 1;
  text-align: center;
  margin-bottom: 2em;
 }
-footer>*>p{
+#aboutUs>p,
+#contact>p{
  width: 70%;
  margin-left: auto;
  margin-right: auto;
+}
+#companySection {
+ display: flex;
+ flex-direction: column;
+ align-self: center;
+
+}
+#companyList {
+ display: flex;
+ padding: none;
+ padding-left: 0px;
+ justify-content: space-around;
+}
+#companyList>li {
+ align-self: center;
+}
+#companyList>li>a>img{
+ width: 120px;
 }

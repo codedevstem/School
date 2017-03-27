@@ -1,10 +1,19 @@
 /* CSS for index site */
-
 main>section>h2 {
     margin: 0;
     padding: 0;
     text-align: center;
 }
+.imageText {
+    position: relative;
+    top: -100px;
+    max-width: 120px;
+    z-index: 1;
+    text-align: center;
+    font-size: 110%;
+    opacity: -1;
+}
+
 
 
 /* For each unordered list that is a direct child of a section */
@@ -34,9 +43,9 @@ main>section>h2 {
 #newMovies>li>a>img,
 #recentMovies>li>a>img,
 #suggestedMovies>li>a>img {
-    height: 120px;
-    min-height: 120px;
-    max-width: 80px;
+    height: 150px;
+    min-height: 150px;
+    max-width: 120px;
     overflow: hidden;
     transition: all 1s ease;
 }
@@ -52,6 +61,7 @@ main>section>h2 {
     margin-left: .8em;
     margin-right: .8em;
     overflow: visible;
+    opacity: 0;
 }
 .movieLists {
     display: flex;
