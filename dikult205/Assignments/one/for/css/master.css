@@ -33,6 +33,7 @@ body {
  flex: 8;
 }
 header {
+ min-height: 20%;
  flex: 1;
  padding: 1em;
  padding-right: 0;
@@ -59,32 +60,38 @@ header>img {
  height: 150px;
  background: white;
  padding: 1em;
+ padding-right: 10em;
 }
 .organizationName {
  color: #DF0D0D;
 }
 main {
- flex: 5;
+ flex: 6;
  display: flex;
+ min-height: 70%;
+ margin-bottom: 2em;
 }
 main>* {
- flex: 1;
+ margin-left: 1em;
+ margin-right: 1em;
 }
 main>h3{
  text-align: center;
  font-size: 180%;
 }
 #medicalCannabis {
+ padding-left: 2em;
+ padding-right: 2em;
  flex: 1;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: flex-start;
+
  
 }
-#listOfFacts>li {
- margin-bottom: 1.5em;
+
+#medicalCannabis>p {
+ font-size: 110%;
+ max-width: 90%;
 }
+
 #peopleSection {
  flex: 1;
  display: flex;
@@ -96,6 +103,7 @@ main>h3{
  text-align: center;
 }
 #mainPerson {
+ margin-top: 2em;
  padding: 0;
 }
 #mainPerson>h4{
@@ -108,33 +116,52 @@ main>h3{
 }
 
 #mainPerson>img {
- height: 240px;
+ height: 230px !important;
+ width: 210px !important;
+ margin-bottom: 1em;
 }
-#mainPerson>.patientExplanation {
- margin-bottom: 0.5em;
- margin-top: 0.5em;
- font-size: 110%;
- text-align: left;
-}
-#moreImages {
- width: 400px;
+#moreExamples {
+ width: 100%;
+ margin-top: 1em;
  display: flex;
+ flex-direction: row;
  padding-left: 0px;
- align-items: center;
- justify-content: space-around;
+ justify-content: center;
 
 }
-#moreImages>li>a {
- height: 130px;
+#moreExamples>.smallExample {
+ justify-content: flex-start;
 }
-#moreImages>li>
+#moreExamples>li {
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ text-align: center;
+}
+#moreExamples>li>h4,
+#moreExamples>li>p {
+ margin: 0;
+}
+
+#moreExamples>li>img {
+ width: 105px;
+ height: 120px;
+ margin-left: auto;
+ margin-right: auto;
+}
+#backgroundStory {
+ width: 80%;
+ margin-left: auto;
+ margin-right: auto;
+ font-size: 115%;
+}
+
 #donateAndGoals {
  flex: 1;
  display: flex;
  flex-direction: column;
  align-items: center;
-
-
 }
 #donate {
  text-align: center;
@@ -142,10 +169,6 @@ main>h3{
 .progress {
  font-size: 120%;
  color: #DF0D0D;
-}
-#donate>h4,
-#ourGoals>h4 {
- font-size: 150%;
 }
 #donateButton {
  height: 4em;
@@ -164,10 +187,10 @@ main>h3{
  margin: 0;
  font-size: 130%;
 }
-#ourGoals>h4 {
+#ourGoals>h2 {
  text-align: center;
  margin-bottom: 0.5em;
- margin-top: 0.5em;
+ margin-top: 1.5em;
 }
 #goalList>li>p {
  margin-left: 1em;
@@ -175,27 +198,36 @@ main>h3{
 #goalList>li>p {
  margin-top:0;
 }
+
 footer {
+ background: #EEE;
  flex:1;
+ min-height: 20%;
+ width: 100%;
  display: flex;
- flex-direction: column;
+ justify-content: center;
  align-self: center;
+ padding-top: 2em;
 
 }
-#organizationInfo{
- display: flex;
- justify-content: space-around;
-}
+
 #aboutUs,
 #contact,
 #companies {
  flex: 1;
  text-align: center;
- margin-bottom: 2em;
+ padding-bottom: 2em;
+ margin-left: 1em;
+ margin-right: 1em;
+}
+#companies {
+ flex: 2;
+ margin-left: 2em;
+ margin-right: 2em;
 }
 #aboutUs>p,
 #contact>p{
- width: 70%;
+
  margin-left: auto;
  margin-right: auto;
 }
@@ -215,5 +247,5 @@ footer {
  align-self: center;
 }
 #companyList>li>a>img{
- width: 120px;
+ width: 130px;
 }

@@ -7,24 +7,45 @@
  flex-direction: column;
  margin-left: 0.5em;
 }
+#picturesAndSign {
+ display: flex;
+ justify-content: space-between;
+ background:	#447DB2;
+}
 
+#picturesAndSign>img {
+ flex: 1;
+ width: 350px;
+ height: 200px;
+ align-self: center;
+ margin: 1em;
+}
 .signSection{
+ flex: 2;
  display: flex;
  flex-direction: column;
  align-items: center;
  margin-top: 0;
  padding: 1em;
- background:	#447DB2;
 }
+
 
 .signSection>h2 {
  margin-top: 0;
+ margin-left: 3em;
  padding-top: 1em;
  color: white;
 }
 .signSection>h3 {
  margin-left: -5em;
  color: white;
+ margin-top: 0;
+ margin-bottom: 0;
+}
+.signSection>h4 {
+ color: white;
+ margin-left: -7em;
+ margin-top: 0;
 }
 #signInput {
  margin-left: 0.7em;
@@ -79,7 +100,7 @@ textarea[name=comment] {
 .signSection input[type=submit] {
  margin-left: 1.1em;
  background-color: #EE3F3F;
- min-width: 6em;
+ min-width: 8em;
  min-height: 4em;
  border: none;
 
@@ -94,6 +115,7 @@ textarea[name=comment] {
  color: white;
  font-size: 15px;
  vertical-align: middle;
+ cursor: pointer;
 
 
 }
@@ -127,22 +149,25 @@ textarea[name=comment] {
 }
 .relatedArticles {
  background:	#447DB2; 
- margin-left: 0.5em;
+ margin-right: 0.5em;
  padding: 1em;
  flex: 3;
 }
 #aboutMarijuana {
- flex: 3;
+ flex: 4;
  padding: 1em;
  background:	#447DB2;
-
 }
-
+#aboutMarijuana>ul>li>p>.empasis{
+ font-size: 120%;
+ color: #EE3F3F;
+}
 #aboutMarijuana>.warning {
  font-size: 120%;
  text-align: center;
+ color: white;
 }
 #aboutMarijuana>:last-child {
  font-size: 140%;
- color: #650605;
+ color: #EE3F3F;
 }
