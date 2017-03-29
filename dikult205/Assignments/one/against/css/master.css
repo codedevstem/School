@@ -15,8 +15,8 @@
 
 #picturesAndSign>img {
  flex: 1;
- width: 350px;
- height: 200px;
+ width: 500px;
+ height: 275px;
  align-self: center;
  margin: 1em;
 }
@@ -131,17 +131,19 @@ textarea[name=comment] {
  margin-left: 0.5em;
  background:	#447DB2;
  margin-right: 0.5em;
- margin-bottom: 0.5em;
 }
 .testemonials *{
  color: whitesmoke;
 }
 .testemonials>ul>li>h4{
- margin-top: 0.2em;
+ margin-top: 0.7em;
+ margin-bottom: 0.7em;
  color: black;
 }
 .testemonials>ul>li>p {
  margin: 0.2em;
+ margin-bottom: 0.3em;
+ margin-left: 0.9em;
 }
 .testemonials>ul>li {
  border-bottom: 1px solid black;

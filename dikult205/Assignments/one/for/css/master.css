@@ -92,6 +92,9 @@ main>h3{
  max-width: 90%;
 }
 
+#medicalCannabis>h3 {
+ margin-top: 3em;
+}
 #peopleSection {
  flex: 1;
  display: flex;
