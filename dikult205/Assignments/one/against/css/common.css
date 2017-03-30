@@ -21,6 +21,23 @@ a {
 a>p{
  color: white;
 }
+#backLink {
+ align-self: center;
+ margin-top: 1em;
+ border: none;
+ height: 2em;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 10em;
+ align-self: flex-start;
+ margin-left: auto;
+ margin-right: auto;
+ font-size: 110%;
+ background-color: #EE3F3F;
+ color: white;
+}
 /* ----- Html, Body styling ----- */
 
 html,
