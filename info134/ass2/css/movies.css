@@ -78,7 +78,11 @@
     margin-left: 4em;
     margin-right: 4em;
 }
-
+#individualRatings>h3 {
+    color: darkorange;
+    text-decoration: underline;
+    cursor: pointer; cursor: hand;
+}
 
 input[type=checkbox] {
     display: none;

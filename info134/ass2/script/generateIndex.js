@@ -175,11 +175,6 @@ function appendList(array, listName, fromIndex, numberOfElements){
 			let linkImage = document.createElement("img");
 			linkImage.src = "https://nelson.uib.no/o/"+ parseInt(array[i].id/1000) + "/" + array[i].id + ".jpg";
 			linkImage.alt = "Cover image of " + array[i].otitle;
-			linkImage.onerror = function() {
-				linkImage.style.display = "none";
-			}
-			linkImage.addEventListener("mouseover", function() {hideImage(array[i].id)}, false);
-			linkImage.addEventListener("mouseleave", function() {showImage(array[i].id)}, false);
 			let imageText = document.createElement("p");
 			imageText.classList.add("imageText");
 			imageText.innerHTML = array[i].otitle;
@@ -190,16 +185,7 @@ function appendList(array, listName, fromIndex, numberOfElements){
 		}
 	}
 }
-function hideImage(id) {
-	let listItem = document.getElementById(id);
- listItem.querySelector("img").style.opacity = "0";
-	listItem.querySelector("p").style.opacity = "1";
-}
-function showImage(id) {
-	let listItem = document.getElementById(id);
- listItem.querySelector("img").style.opacity = "1";
- listItem.querySelector("p").style.opacity = "0";
-}
+
 function pushToArray(array){
 	movieArray.forEach(movie =>{
 		array.push(movie)
@@ -224,12 +210,10 @@ function changeWindowValues() {
 	appendList(suggestionMoviesArray, 'suggestedMovies', suggestionMoviesIndex, numberOfMovies)
 }
 function chooseNumberOfMovies() {
-	if(windowWidth > 1410){
-		numberOfMovies = 11;
-	} else if(windowWidth < 840) {
-		numberOfMovies = Math.floor(windowWidth/120);
-	} else {
+ if(windowWidth < 840) {
 		numberOfMovies = Math.floor(windowWidth/160);
+	} else {
+		numberOfMovies = Math.floor(windowWidth/200);
 	}
 }
 function clearSections() {

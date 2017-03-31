@@ -2,16 +2,9 @@
 main>section>h2 {
     margin: 0;
     padding: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
     text-align: center;
-}
-.imageText {
-    position: relative;
-    top: -100px;
-    max-width: 120px;
-    z-index: 1;
-    text-align: center;
-    font-size: 110%;
-    opacity: -1;
 }
 
 
@@ -27,7 +20,8 @@ main>section>h2 {
     justify-content: flex-start;
     padding: 0.2em;
     padding-top: 0;
-    margin-top: 0;
+    margin-top: auto;
+    margin-bottom: auto;
     overflow-y: visible;
     margin-left: 5%;
     margin-right: 5%;
@@ -38,31 +32,63 @@ main>section>h2 {
 #suggestedMovies>li {
     list-style: none;
     padding: 0.3em;
+    max-height: 180px;
+}
+#newMovies>li>a,
+#recentMovies>li>a,
+#suggestedMovies>li>a {
+    display: inline-block;
+    text-decoration:none;
+}
+#newMovies>li>a>p,
+#recentMovies>li>a>p,
+#suggestedMovies>li>a>p {
+    position: relative;
+    bottom: 140px;
+    font-size: 110%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90px;
+    opacity: 0;
+    min-height: 100px;
+    transition: all 1s ease;
+    color: black;
+
+}
+#newMovies>li:hover>a>p,
+#recentMovies>li:hover>a>p,
+#suggestedMovies>li:hover>a>p {
+    opacity: 1;
+}
+#newMovies>li>a>img,
+#recentMovies>li>a>img,
+#suggestedMovies>li>a>img {
+    opacity: 1;
+}
+#newMovies>li:hover>a>img,
+#recentMovies>li:hover>a>img,
+#suggestedMovies>li:hover>a>img {
+    opacity: 0;
 }
 
 #newMovies>li>a>img,
 #recentMovies>li>a>img,
-#suggestedMovies>li>a>img {
-    height: 150px;
+#suggestedMovies>li>a>img  {
+    height: 160px;
     min-height: 150px;
     max-width: 120px;
     overflow: hidden;
     transition: all 1s ease;
+    display: inherit;
+}
+#newMovies>li:hover>a>*,
+#recentMovies>li:hover>a>*,
+#suggestedMovies>li:hover>a>*{
+    transform: scale(1.3); 
 }
 
 
-/* Makes the image pop out enlarged in all sections */
-
-#newMovies>li>a>img:hover,
-#recentMovies>li>a>img:hover,
-#suggestedMovies>li>a>img:hover {
-    transform: scale(1.6);
-    z-index: 101;
-    margin-left: .8em;
-    margin-right: .8em;
-    overflow: visible;
-    opacity: 0;
-}
 .movieLists {
     display: flex;
     min-width: 100%;
