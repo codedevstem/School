@@ -7,13 +7,14 @@
  margin-left: 0.5em;
  margin-right: 0.5em;
  margin-bottom: 0.5em;
+ margin-top: 1em;
 
 }
 #companiesAgainst>h2 {
- padding-top: 1em;
  align-self: center;
  font-size: 220%;
  margin-bottom: 2px;
+ color: white;
 }
 .companiesList {
  display: flex;

@@ -116,15 +116,15 @@ textarea[name=comment] {
  font-size: 15px;
  vertical-align: middle;
  cursor: pointer;
-
-
 }
+
 #commentsAndArticles {
  display: flex;
  margin-top: 0.5em;
  flex: 4;
  margin-bottom: 0.5em;
 }
+
 .testemonials {
  flex: 3;
  padding: 1em;
@@ -132,19 +132,23 @@ textarea[name=comment] {
  background:	#447DB2;
  margin-right: 0.5em;
 }
+
 .testemonials *{
  color: whitesmoke;
 }
+
 .testemonials>ul>li>h4{
  margin-top: 0.7em;
  margin-bottom: 0.7em;
  color: black;
 }
+
 .testemonials>ul>li>p {
  margin: 0.2em;
  margin-bottom: 0.3em;
  margin-left: 0.9em;
 }
+
 .testemonials>ul>li {
  border-bottom: 1px solid black;
  padding-bottom: 0.2em;
