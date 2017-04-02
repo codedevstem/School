@@ -175,6 +175,7 @@ function appendList(array, listName, fromIndex, numberOfElements){
 			let linkImage = document.createElement("img");
 			linkImage.src = "https://nelson.uib.no/o/"+ parseInt(array[i].id/1000) + "/" + array[i].id + ".jpg";
 			linkImage.alt = "Cover image of " + array[i].otitle;
+			linkImage.addEventListener("error", replacePicture);
 			let imageText = document.createElement("p");
 			imageText.classList.add("imageText");
 			imageText.innerHTML = array[i].otitle;
@@ -185,7 +186,9 @@ function appendList(array, listName, fromIndex, numberOfElements){
 		}
 	}
 }
-
+function replacePicture() {
+	this.src="images/notFound.png";
+}
 function pushToArray(array){
 	movieArray.forEach(movie =>{
 		array.push(movie)
