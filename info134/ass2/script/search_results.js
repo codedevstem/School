@@ -19,7 +19,8 @@ function display(resultArray, objectToAppend) {
 		linkImage = document.createElement("img");
 		linkImage.src = "https://nelson.uib.no/o/" + parseInt(movie.id / 1000) + "/" + movie.id + ".jpg";
 		linkImage.alt = "Cover image of " + movie.otitle;
-
+		linkImage.addEventListener("error", replacePicture);
+		
 		extraSectionTitle = document.createElement("p");
 		extraSectionTitle.appendChild(document.createTextNode(movie.otitle));
 		linkExtraSection.appendChild(extraSectionTitle);
@@ -68,6 +69,9 @@ function display(resultArray, objectToAppend) {
 	});
 }
 
+function replacePicture() {
+	this.style.display = "none";
+}
 
 
 window.onload = function () {
