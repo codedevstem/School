@@ -63,13 +63,19 @@ main>section {
 
 #res_list {
     display: flex;
-    flex-direction: column;
-    width: 75%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
     list-style: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 #res_list>li {
+    width: 100%;
     margin-top: 0.2em;
-    margin-bottom: 0.2em;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     padding-top: 1em;
     padding-left: 1em;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#DDD));
@@ -126,5 +132,15 @@ main>section {
     padding-left: 0;
     flex: 1;
     flex-direction: row;
-    
+}
+
+@media screen and (min-width:650px) {
+ #res_list>li {
+    width: 43%;
+ }
+}
+@media screen and (min-width:1620px) {
+ #res_list>li {
+    width: 30%;
+ }
 }
