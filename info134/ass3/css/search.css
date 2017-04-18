@@ -1,0 +1,146 @@
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    padding-top: 0;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+#advancedSearch {
+    background: #CFEAFF;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.searchItem {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 16em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+.searchItem:first-of-type {
+    margin-top: 0.5em;
+}
+#advancedSearch>input {
+    min-width: 16em;
+    align-self: center;
+    margin-bottom: 0.5em;
+
+
+}
+
+main>section {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 0;
+    background: #CFEAFF;
+}
+
+#searchResultSection>h2 {
+    margin-top: 0;
+    padding-left: 1em;
+}
+
+#res_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+#res_list>li {
+    width: 100%;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding-top: 1em;
+    padding-left: 1em;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#DDD));
+    background-image: -webkit-linear-gradient(top, #EEE, #DDD);
+    background-image: -moz-linear-gradient(top, #EEE, #DDD);
+    background-image: linear-gradient(to bottom, #EEE, #DDD);
+}
+#res_list>li>a {
+    border-bottom: 1px solid black;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding-bottom: 0.5em;
+}
+
+#res_list>li>a:last-of-type {
+    border-bottom: none;
+}
+
+#res_list>li>a>img {
+    height: 160px;
+    min-height: 160px;
+    max-width: 110px;
+    width: auto;
+    margin-right: 0.5em;
+}
+
+#res_list>li>a>section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.extraInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.extraInfo>p {
+    color: black;
+    font-size: 120%;
+}
+.addToList, .addToWish {
+    max-height: 2.5em;
+    margin-top: 0.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+.buttonSection {
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+    flex: 1;
+    flex-direction: row;
+}
+
+@media screen and (min-width:650px) {
+ #res_list>li {
+    width: 43%;
+ }
+}
+@media screen and (min-width:1620px) {
+ #res_list>li {
+    width: 30%;
+ }
+}

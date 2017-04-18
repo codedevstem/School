@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<!-- Author: kos003 -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page for intouchables</title>
+  <link rel="stylesheet" href="../css/movies.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/rating.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <script type="text/javascript" src="../script/object.json"></script>
+  <script type="text/javascript" src="../script/genres.json"></script>
+  <script type="text/javascript" src="../script/reviews.json"></script>
+  <script type="text/javascript" src="../script/generateArray.js"></script>
+  <script type="text/javascript" src="../script/query_params.js"></script>
+  <script type="text/javascript" src="../script/show_movie.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>FilmNå!</h1>
+    <!-- Main nav element -->
+    <nav>
+      <ul>
+        <li><a href="../index.html">Hjem</a></li>
+        <li>
+          <!-- Simulated dropdown menu for profile and patterns for loans -->
+          <input type="checkbox" id="checkboxToggleProfile">
+          <label for="checkboxToggleProfile">Profil</label>
+          <ul id="profileOptions">
+            <li><a href="../pages/profile.html">Min Profil</a></li>
+            <li><a href="">Log Ut</a></li>
+          </ul>
+        </li>
+        <li>
+          <!-- Simulated dropdown menu with search field -->
+          <input type="checkbox" id="checkboxToggleSearch" checked>
+          <label for="checkboxToggleSearch">Søk</label>
+          <!-- Hidden form that is triggered with checkbox and shown in css -->
+          <form id="search" action="search_results.html" method="get">
+            <input id="titleSearch" name="film_title" type="text" minlength="3" placeholder="e.g. King Kong" >
+            <input type="submit" id="submit_search" value="Søk">
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="infoSection">
+      <h2 id="oTitle"></h2>
+      <h3 id="eTitle"></h3>
+      <h3 id="nTitle"></h3>
+      <ul id="detailedInfo"></ul>
+      <div id="ratingSection">
+        <h3 id="currentRating"></h3>
+        <form action="" id="ratingSystem">
+          <h3>Hva synest du om denne filmen?</h3>
+          <fieldset class="rating">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label class="star" for="star5" title="Superb"></label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label class="star" for="star4" title="Good"></label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label class="star" for="star3" title="Average"></label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label class="star" for="star2" title="Dissapointing"></label>
+            <input type="radio" id="star1" name="rating" value="1"/>
+            <label class="star" for="star1" title="Bad"></label>
+          </fieldset>
+          <input type="button" value="Gi rating" id="submitRating">
+        </form>
+      </div>
+    </section>
+    <section id="media">
+      <h3>Media</h3>
+      <div id="trailer">
+      </div>
+      <div id="images">
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
