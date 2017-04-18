@@ -19,11 +19,28 @@ main>h2 {
  padding-top: 0.5em;
  margin-left: 1.5em;
 }
+#contentSection>section>ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
 
-#contentSection>section>ul>a>img {
- height: 120px;
+}
+#contentSection>section>ul>li {
+    margin-bottom: 1em;
+}
+#contentSection>section>ul>li>a {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    text-decoration: none;
+    
 }
 
+#contentSection>section>ul>li>a>img {
+ height: 120px;
+ width: 100px;
+ margin-right: 1em;
+}
 @media screen and (min-width:900px) {
  #contentSection {
   display: flex;
