@@ -37,7 +37,7 @@ window.onload = function() {
 
         getElemId("submitRating").addEventListener("click", function(){giveRatingToMovie()}, false);
         //Tests for movies with youtube link. 
-        if(movie.id != "") {
+        if(movie.youtube_trailer_id != "") {
             let youtubeElem = document.createElement("iframe");
             youtubeElem.height = "315";
             youtubeElem.src = "https://www.youtube.com/embed/"+movie.youtube_trailer_id;
