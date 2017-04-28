@@ -78,133 +78,97 @@ window.onload = function () {
 	query_params = get_query_string_parameters();
 	const resultList = document.querySelector('#res_list');
 	makeMovieArray();
+	
 	let filteredList = movieArray;
-
-	if (query_params.film_title) {
-		seachTitle = document.getElementById("titleSearch");
-		seachTitle.placeholder = 'Siste søk: ' + query_params.film_title;
-		searchTermTitle = document.getElementById("film_title");
-		searchTermTitle.value = query_params.film_title;
-		filteredList = filterTitle(filteredList, query_params.film_title);
+	seachTitle = document.getElementById("titleSearch");
+	seachTitle.placeholder = 'Siste søk: ' + query_params.film_title;
+	searchTermTitle = document.getElementById("film_title");
+	searchTermTitle.value = query_params.film_title;
+	if (query_params.film_title != null) {
+		filteredList = generalFilter(filteredList, query_params.film_title, "otitle");
 	}
 
-	if (query_params.actor) {
-		actor = document.getElementById("actor");
-		actor.value = query_params.actor;
-		filteredList = filterActor(filteredList, query_params.actor);
+	actor = document.getElementById("actor");
+	actor.value = query_params.actor;
+	if (query_params.actor != null) {
+		filteredList = generalFilter(filteredList, query_params.actor, "folk");
 	}
 
-	if (query_params.director) {
-		director = document.getElementById("director");
-		director.value = query_params.director;
-		filteredList = filterDirector(filteredList, query_params.director);
-
-	}
-
-	if (query_params.genre) {
-		genre = document.getElementById("genre");
-		genre.value = query_params.genre;
-		filteredList = filterGenre(filteredList, query_params.genre);
+	director = document.getElementById("director");
+	director.value = query_params.director;
+	if (query_params.director != null) {
+		filteredList = generalFilter(filteredList, query_params.director, "dir");
 
 	}
 
-	if (query_params.country) {
-		country = document.getElementById("country");
-		country.value = query_params.country;
-		filteredList = filterCountry(filteredList, query_params.country);
+	genre = document.getElementById("genre");
+	genre.value = query_params.genre;
+	if (query_params.genre != null) {
+		filteredList = generalFilter(filteredList, query_params.genre, "genre");
+	}
+
+	country = document.getElementById("country");
+	country.value = query_params.country;
+	if (query_params.country != null) {
+		filteredList = generalFilter(filteredList, query_params.country, "country");
 
 	}
 	if (filteredList.length < 1) console.log('Empty search result');
-	display(filteredList, resultList);
-	//Her kan dere for eksempel kalle en (display) funksjon som viser søkeresultater 
+	if(filteredList.length > 100) {
+		let tooManyResults = document.createElement("p");
+		tooManyResults.innerHTML = "Too many search results. Narrow your search";
+		resultList.appendChild(tooManyResults);
+	}else {
+		display(filteredList, resultList);
+	}
 }
 /**
 	* @description | filters out the movies not containing the 
 	* @param {Array} movies | MovieArray to be filtered
 	* @param {SearchTerm} params | Search terms extracted from the string
+	* @param {String} filterValue | Value to get from the database and compare to.
 	*/
-function filterTitle(movies, params) {
-	for (let i = movies.length - 1; i >= 0; i--) {
-		let movie = movies[i];
-		if (!(movie.otitle.toLowerCase().includes(params.toLowerCase()))) {
-			movies.splice(movies.indexOf(movie), 1);
+function generalFilter(movies, params, filterValue) {
+	// Check if it is genre that is beeing filtered
+	if(filterValue == "genre") {
+		// Loop through
+		for (let i = movies.length - 1; i >= 0; i--) {
+			let movieNotFound = true;
+			// Check if movie har a genre.
+			for(genre in genres_object){
+				if(movies[i].id == genre) {
+					movieNotFound = false;
+				}
+			}
+			// If movie has no genre than remove.
+			if (movieNotFound){
+					movies.splice(movies.indexOf(movies[i]), 1);			
+			}
 		}
-	}
-	return movies;
-}
-/**
-	* @description | Filters moviearray based on Actor params
-	* @param {Array} movies | List of movies to be filtered. 
-	* @param {String} params | String containing the search term to be filter as Genre
-	*/
-function filterActor(movies, params) {
-	for (let i = movies.length - 1; i >= 0; i--) {
-		if (movies[i].folk == null){
-				movies.splice(movies.indexOf(movies[i]), 1);			
-		}
-	}
-	for (let i = movies.length - 1; i >= 0; i--) {
-		if (movies[i].folk != null) {
+		// Loop again
+		for (let i = movies.length - 1; i >= 0; i--) {
 			let movie = movies[i];
-			if (!(movie.folk.toLowerCase().includes(params.toLowerCase()))) {
-				movies.splice(movies.indexOf(movie), 1);
-			}
-		} 
-	}
-	return movies;
-}
-/**
-	* @description | Filters moviearray based on country params
-	* @param {Array} movies | List of movies to be filtered. 
-	* @param {String} params | String containing the search term to be filter as Director
-	*/
-function filterDirector(movies, params) {
-	for (let i = movies.length - 1; i >= 0; i--) {
-		let movie = movies[i];
-		if (!(movie.dir.toLowerCase().includes(params.toLowerCase()))) {
-			movies.splice(movies.indexOf(movie), 1);
-		}
-	}
-	return movies;
-}
-/**
-	* @description | Filters moviearray based on country params.
-	* @param {Array} movies | List of movies to be filtered. 
-	* @param {String} params | String containing the search term to be filter as Genre
-	*/
-function filterGenre(movies, params) {
-	for (let i = movies.length - 1; i >= 0; i--) {
-		let movieNotFound = true;
-		for(genre in genres_object){
-			if(movies[i].id == genre) {
-				movieNotFound = false;
-			}
-		}
-		if (movieNotFound){
-				movies.splice(movies.indexOf(movies[i]), 1);			
-		}
-	}
-	for (let i = movies.length - 1; i >= 0; i--) {
-		let movie = movies[i];
-		for(genre in genres_object){
-			if(movie.id == genre){
-				if(!(genres_object[genre].toString().toLowerCase().includes(params.toLowerCase()))) {
-					movies.splice(movies.indexOf(movie), 1);
+			// Subloop in genres
+			for(genre in genres_object){
+				// Find correct movie
+				if(movie.id == genre){
+					// Filter 
+					if(!(genres_object[genre].toString().toLowerCase().includes(params.toLowerCase()))) {
+						movies.splice(movies.indexOf(movie), 1);
+					}
 				}
 			}
 		}
+		// Return movies
+		return movies;
 	}
-	return movies;
-}
-/**
-	* @description | Filters moviearray based on country params.
-	* @param {Array} movies | list of movies to be filtered.
-	* @param {String} params | String containing the search term to be filtered filter as Country.
-	*/
-function filterCountry(movies, params) {
 	for (let i = movies.length - 1; i >= 0; i--) {
 		let movie = movies[i];
-		if (!(movie.country.toLowerCase().includes(params.toLowerCase()))) {
+		if (movie[filterValue] != null){
+			if (!(movie[filterValue].toLowerCase().includes(params.toLowerCase()))) {
+				movies.splice(movies.indexOf(movie), 1);
+			}
+		} else {
 			movies.splice(movies.indexOf(movie), 1);
 		}
 	}
