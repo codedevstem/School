@@ -1,3 +1,5 @@
+/* Author: 102 */
+
 makeMovieArray();
 window.onload = function() {
     const loanedMoviesList = document.getElementById('loanedMoviesList');
@@ -15,7 +17,7 @@ function fillInRatingSection(list){
     let listItem = document.createElement("li");
 	listItem.id = movie.id;
 	let itemLink = document.createElement("a");
-	itemLink.href = "pages/movieDetails.html?id=" + movie.id;
+	itemLink.href = "../pages/movieDetails.html?id=" + movie.id;
 	let linkImage = document.createElement("img");
 	linkImage.src = "https://nelson.uib.no/o/"+ parseInt(movie.id/1000) + "/" + movie.id + ".jpg";
 	linkImage.alt = "Cover image of " + movie.otitle;

@@ -1,4 +1,4 @@
-
+/* Author 102 */
 #ratingSystem {
     max-width: 15em;
     margin-bottom: 2em;
@@ -136,8 +136,11 @@ input[type=checkbox]:checked~#moreInfo {
 }
 
 #images img {
-    max-height: 600px;
-    width: auto;
+    display: block;
+    height: auto;
+    max-height: 700px;
+    min-width: 100%;
+    max-width: 100%;
     margin-right: 0.5em;
 }
 
@@ -171,20 +174,27 @@ input[type=checkbox]:checked~#moreInfo {
         margin-right: auto;
     }
     #images {
-        max-width: 100%;
+        max-width: 70%;
+
         flex-direction: column;
         margin-bottom: 0.5em;
         overflow-x: hidden;
         overflow-y: auto;
+        min-height: 800px;
     }
     #images img {
-        max-height: 700px;
-        width: auto;
+       max-height: 100%;
+       margin-bottom: 1em;
     }
     #infoSection>* {
         margin-left: 2%;
     }
     #infoSection>ul>li {
         max-width: 60%;
+    }
+}
+@media screen and (max-width:500px) {
+    #images {
+        max-height: 400px;
     }
 }

@@ -37,9 +37,12 @@
      <input type="checkbox" id="checkboxToggleSearch">
      <label for="checkboxToggleSearch">Søk</label>
      <!-- Hidden form that is triggered with checkbox and shown in css -->
-     <form id="search" action="pages/search_results.html" method="get">
-      <input id="titleSearch" name="film_title" type="text" minlength="3" placeholder="e.g. King Kong" >
-			<input type="submit" id="submit_search" value="Søk">
+     <form id="search" action="pages/searchResults.html" method="get">
+      <fieldset>
+        <input id="titleSearch" name="film_title" type="text" minlength="3" placeholder="e.g. King Kong" >
+        <input type="submit" id="submit_search" value="Søk">
+      </fieldset>
+      <a href="pages/searchResults.html?film_title=king">Advanced Search</a>
      </form>
     </li>
    </ul>

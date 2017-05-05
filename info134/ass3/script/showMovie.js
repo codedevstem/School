@@ -1,8 +1,10 @@
+/* Author: 102 */
+
 let movie;
 let movieGenres;
 let movieAvgRating;
 let descFlag;
-let query_params;
+let queryParams;
 let movieRatings = [];
 let commentFlag = false;
 function panic(message) {
@@ -13,8 +15,8 @@ function panic(message) {
  * @description | Started on finilization of the HTML. 
  */
 window.onload = function() {
-    query_params = get_query_string_parameters();
-    if (!query_params.id) {
+    queryParams = get_query_string_parameters();
+    if (!queryParams.id) {
         panic("No id given");
         return;
     }else{
@@ -131,11 +133,11 @@ function createImageElem(letter){
  */
 function getMovieIdAndGenre() {
     movieArray.forEach(movies => {
-        if(movies.id == query_params.id) {
+        if(movies.id == queryParams.id) {
             movie = movies;
             // check for genres and collect them
             for(let genreMovie in genres_object){
-                if(genreMovie == query_params.id){
+                if(genreMovie == queryParams.id){
                     movieGenres = genres_object[genreMovie].toString().replace(/\,/g, ", ");
                 }
             }
@@ -215,7 +217,7 @@ function createDetailedInfoSection(parent) {
     // Splits the actors into items
     movie.folk.split(", ").forEach(actors => {
         let actorLink = document.createElement("a");
-        actorLink.href = "../pages/search_results.html?actor="+actors;
+        actorLink.href = "../pages/searchResults.html?actor="+actors;
         // Removes trailing commas
         actorLink.innerHTML = actors.split(',', 1);
         actorList.appendChild(actorLink);
@@ -234,7 +236,7 @@ function createDetailedInfoSection(parent) {
     directorList.classList.add("explanation");
     movie.dir.split(", ").forEach(director => {
         let directorLink = document.createElement("a");
-        directorLink.href = "../pages/search_results.html?director="+director;
+        directorLink.href = "../pages/searchResults.html?director="+director;
         // Removes trailing commas
         directorLink.innerHTML = director.split(',', 1);
         directorList.appendChild(directorLink);

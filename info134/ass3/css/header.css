@@ -1,3 +1,4 @@
+/* Author 102 */
 /* CSS for header since all sites have the same header*/
 
 header {
@@ -81,6 +82,20 @@ input[type=checkbox] {
 li>ul,
 li>form {
     display: none;
+}
+li>form>fieldset {
+    border: none;
+}
+li>form>a {
+    color: white;
+    text-decoration: none;
+
+}
+li:hover>form>a{
+    color: black;
+}
+li>form>a:hover{
+    text-decoration: underline;
 }
 
 input[type=checkbox]:checked~form {

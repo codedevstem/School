@@ -1,3 +1,5 @@
+/* Author: 102 */
+
 let reviews;
 let numberOfMovies;
 let windowWidth;

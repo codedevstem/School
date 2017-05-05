@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- Author: kos003 -->
+<!-- Author: 102 -->
 
 <head>
   <meta charset="UTF-8">
@@ -15,8 +15,8 @@
   <script type="text/javascript" src="../script/genres.json"></script>
   <script type="text/javascript" src="../script/reviews.json"></script>
   <script type="text/javascript" src="../script/generateArray.js"></script>
-  <script type="text/javascript" src="../script/query_params.js"></script>
-  <script type="text/javascript" src="../script/show_movie.js"></script>
+  <script type="text/javascript" src="../script/queryParams.js"></script>
+  <script type="text/javascript" src="../script/showMovie.js"></script>
 </head>
 
 <body>
@@ -40,9 +40,12 @@
           <input type="checkbox" id="checkboxToggleSearch" checked>
           <label for="checkboxToggleSearch">Søk</label>
           <!-- Hidden form that is triggered with checkbox and shown in css -->
-          <form id="search" action="search_results.html" method="get">
-            <input id="titleSearch" name="film_title" type="text" minlength="3" placeholder="e.g. King Kong" >
-            <input type="submit" id="submit_search" value="Søk">
+          <form id="search" action="searchResults.html" method="get">
+            <fieldset>
+              <input id="titleSearch" name="film_title" type="text" minlength="3" placeholder="e.g. King Kong" >
+              <input type="submit" id="submit_search" value="Søk">
+            </fieldset>
+            <a href="../pages/searchResults.html?film_title=king">Advanced Search</a>
           </form>
         </li>
       </ul>
