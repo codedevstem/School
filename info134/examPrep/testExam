@@ -1,0 +1,30 @@
+1:
+    1.1:
+       	a: HTML = HyperText Markup Language
+       	b: CSS = Cascading Style Sheet
+       	c: REST = Representational State Transfere
+		
+		d: <title> is what is displayed in the brower tab
+  		   <h1> is a HTML header
+		e: The type attribute is what is displayed before each <li> element in the respective list
+		f: Relative link is a path to a local file 
+		g: Absolute link is a path to a file on the Web.		
+		h: B: and C: -> There should not be two identical IDs.
+		i: It will match any that starts with 'film' so one and two. -> '^' 
+		j: 
+			- 10hello
+			- NaN
+			- NaNhello
+	1.2
+		a: <head> Defines all the metadata of the Web-page.
+		b: <html lang="fr"> Defines that the document is in the french language
+		c: <meta charset="utf-8> Defines that the document should use the utf-8 charset.
+		d: <meta name="viewport" content="width=device-width"> Defines that the screen-width should be device-width
+		e: This defines that all elements shall have a border that is 3px solid and blue, rounded in the edges width a box-shadow and a text-shadow
+		f: This defines that the body shall have padding, increased font size, line height no margin on top or bottom and gives and color of all the text to a light color. also no margin.
+		g: Takes elements with class 'ImageCaption' and sets font-size, position, bottom and right properties 
+		h: This defines that if the width is more than 50rem the border of body should be 4px solid whitesmoke
+		
+
+2:
+	2.1: 
